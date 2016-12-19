@@ -1,0 +1,10 @@
+{
+  "name": "promo-maniacs",
+  "dependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-plumber": "^1.1.0"
+  },
+  "author": "Vladislav"
+}
