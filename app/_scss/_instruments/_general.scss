@@ -16,6 +16,7 @@ ul {
 a,
 a:hover,
 a:focus {
+	display: block;
 	text-decoration: none;
 	color: inherit;
 	outline: none;
@@ -29,6 +30,14 @@ html, body {
 body {
 	display: table;
 	font-family: 'raleway_regular';
+	background: url('../../images/body-bg.png') no-repeat;
+	background-size: cover;
+}
+
+.wrapper {
+	width: 1520px;
+	margin: 0 auto;
+	position: relative;
 }
 
 .img-responsive {

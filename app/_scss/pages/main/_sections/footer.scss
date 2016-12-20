@@ -1,0 +1,157 @@
+.footer  {
+	background: #2e254b;
+
+	.container {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+}
+
+.footer-top {
+	margin-bottom: 25px;
+}
+
+.footer-list-title {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'raleway_medium';
+	margin-bottom: 15px;
+}
+
+.footer-item {
+	color: #fff;
+	font-size: 14px;
+	font-family: 'raleway_medium';
+	margin-bottom: 5px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.footer-link {
+	text-decoration: underline;
+}
+
+.footer-tel {
+	margin-left: 35px;
+	padding-left: 30px;
+	color: #fff;
+	font-size: 22px;
+	font-family: 'raleway_extrabold';
+	position: relative;
+	margin-bottom: 50px;
+
+	&:before {
+		left: 0;
+		@extend %icons;
+		@include get-sprite($footer-spr, tel-footer);
+	}
+}
+
+.footer-adress {
+	position: relative;
+	margin-left: 35px;
+	padding-left: 30px;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'raleway_medium';
+
+	&:before {
+		top: 3px;
+		left: 0;
+		position: absolute;
+		display: block;
+		content: "";
+		@include get-sprite($footer-spr, location-footer);
+	}
+}
+
+.footer-subnav-list {
+	margin-right: -40px;
+	line-height: 32px;
+}
+
+.footer-subnav-item {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'raleway_medium';
+	margin-right: 25px;
+	text-decoration: underline;
+	display: inline-block;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.footer-socials-list {
+	margin-left: 80px;
+	font-size: 0;
+}
+
+.footer-socials-item {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 0;
+	height: 32px;
+	width: 32px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.footer-socials-link {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border: 1px solid #737188;
+	border-radius: 3px;
+
+	&:hover {
+		border: 1px solid #fff;
+	}
+}
+
+.footer-socials-link_vk:before {
+	@extend %icons;
+	@include get-sprite($footer-spr, socials_vk);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.footer-socials-link_vk:hover:before {
+	@include get-sprite($footer-spr, socials_vk-hover);
+}
+
+.footer-socials-link_tw:before {
+	@extend %icons;
+	@include get-sprite($footer-spr, socials_tw);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.footer-socials-link_tw:hover:before {
+	@include get-sprite($footer-spr, socials_tw-hover);
+}
+
+.footer-socials-link_fb:before {
+	@extend %icons;
+	@include get-sprite($footer-spr, socials_fb);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.footer-socials-link_fb:hover:before {
+	@include get-sprite($footer-spr, socials_fb-hover);
+}
+
+.footer-middle {
+	margin-bottom: 40px;
+}
+
+.footer-copyright {
+	font-size: 14px;
+	color: #746b90;
+}
