@@ -1,0 +1,189 @@
+.branding {
+	padding: 50px 0 0 0;
+	margin-bottom: 190px;
+}
+
+.branding-title {
+	font-size: 40px;
+	font-family: 'raleway_extrabold';
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+}
+
+.branding-slogan {
+	margin-right: -25px;
+	height: 240px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 670px;
+		height: 240px;
+		background: url('../../../../images/your-brand.png') no-repeat;
+		top: 0;
+		right: 0;
+		z-index: -1;
+	}
+}
+
+.branding-slogan-text {
+	font-size: 25px;
+	font-family: 'raleway_extrabold';
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	display: inline;
+	line-height: 29px;
+	position: absolute;
+	top: 125px;
+
+	p {
+		margin: 0;
+		background: #d0e159;
+		padding: 3px 10px 0 15px;
+		display: inline;
+
+		&:last-child {
+			padding-bottom: 5px;
+		}
+	}
+}
+
+.branding-rocket {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: "";
+		display: block;
+		background: url('../../../../images/rocket.png') no-repeat;
+		width: 790px;
+		height: 450px;
+		z-index: -1;
+		top: -40px;
+		left: 125px;
+	}
+}
+
+.branding-title_right {
+	padding-left: 100px;
+	position: relative;
+	margin-bottom: 30px;
+	margin-left: -30px;
+
+	&:before {
+		position: absolute;
+		content: "";
+		display: block;
+		height: 5px;
+		width: 80px;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background: black;
+	}
+
+	.for-pistol {
+		padding-left: 20px;
+		position: relative;
+
+		&:before {
+			@extend %icons;
+			@include get-sprite($main-spr, pistol);
+			left: -15px;
+		}
+	}
+}
+
+.branding-right-container_promo {
+	min-height: 320px;
+	position: relative;
+	margin-left: -30px;
+	padding-top: 190px;
+	padding-right: 20px;
+
+	&:before {
+		position: absolute;
+		display: block;
+		content: "";
+		top: 0;
+		left: 0;
+		background: url('../../../../images/big-bomb-house.png') no-repeat;
+		width: 276px;
+		height: 258px;
+		z-index: -1;
+	}
+}
+
+.branding-right-container_book {
+	min-height: 320px;
+	padding-top: 190px;
+	padding-right: 20px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		display: block;
+		content: "";
+		top: 45px;
+		left: 25px;
+		background: url('../../../../images/books.png') no-repeat;
+		width: 253px;
+		height: 267px;
+		z-index: -1;
+	}
+}
+
+.branding-right-description {
+	font-size: 25px;
+	font-family: 'raleway_extrabold';
+	letter-spacing: 5px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.branding-right-link,
+.branding-right-link:hover,
+.branding-right-link:focus {
+	font-size: 16px;
+	font-family: 'raleway_medium';
+	text-decoration: underline;
+	position: relative;
+
+	&:before {
+		content: " →";
+		bottom: 0px;
+		right: -5px;
+		position: absolute;
+		text-decoration: none;
+	}
+}
+
+.branding-right-description_promo {
+	margin-left: 95px;
+}
+
+.branding-right-description_book {
+	margin-left: 50px;
+}
+
+.branding-right-link_promo {
+	margin-left: 95px;
+}
+
+.branding-right-link_book,
+.branding-right-link_book:hover,
+.branding-right-link_book:focus {
+	padding-right: 10px;
+	margin-left: 50px;
+
+	&:before {
+		content: " →";
+		bottom: 0px;
+		right: 10px;
+		position: absolute;
+		text-decoration: none;
+	}
+}

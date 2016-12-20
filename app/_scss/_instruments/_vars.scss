@@ -9,5 +9,9 @@ $fiol : #7261aa;
 	transform: translateY(-50%);
 }
 
+// @include get-sprite($main-spr, arrow-right_small_pink);
 $header-spr : sprite-map('icons-header/*.png', $spacing: 70px);
 $footer-spr : sprite-map('icons-footer/*.png', $spacing: 70px);
+$main-spr : sprite-map('icons-main/*.png', $spacing: 70px);
+
+$souvenirs : clothes, pens, accessories, clock, relax, electro, dishes, sets, promo, bags, office, box, gifts, notebook, house, trinkets, umbrellas, honors, desk, postcards, smoking;

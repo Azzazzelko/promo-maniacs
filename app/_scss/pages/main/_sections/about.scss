@@ -1,0 +1,72 @@
+.about {
+	position: relative;
+	margin-bottom: 100px;
+
+	.wrapper {
+		background: url('../../../../images/about-block.png') no-repeat;
+		background-size: cover;
+		height: 655px;
+		overflow: hidden;
+		padding-top: 125px;
+	}
+
+	&:before {
+		position: absolute;
+		display: block;
+		content: "";
+		height: 380px;
+		width: 1920px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: url('../../../../images/about-bg.png') no-repeat;
+	}
+
+}
+
+.about-title {
+	color: #fff;
+	font-size: 60px;
+	line-height: 60px;
+	letter-spacing: 10px;
+	font-family: 'raleway_extrabold';
+	margin-bottom: 45px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+}
+
+.about-description {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'raleway_medium';
+
+	p {
+		margin: 0;
+	}
+
+	.grenade,
+	.knife {
+		padding-left: 30px;
+		position: relative;
+	}
+
+	.grenade:before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		top: -5px;
+		@include get-sprite($main-spr, grenade-yellow);
+	}
+
+	.knife:before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		top: -5px;
+		@include get-sprite($main-spr, knife-yellow);
+	}
+}

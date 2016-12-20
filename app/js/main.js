@@ -1,6 +1,6 @@
 $(function() {
 
-  /* ----- costum select ------*/
+  /* ----- custom select ------*/
   $('select').select2();
 
 }());
