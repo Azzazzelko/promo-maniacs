@@ -5,7 +5,11 @@
 .info__tel:hover:before,
 .info__tel:focus:before, .header-middle__button-full-catalog:before,
 .header-middle__button-full-catalog:hover:before,
-.header-middle__button-full-catalog:focus:before, .form-search:before, .form-search .select2-selection__arrow, .souvenirs-sub-item:before, .news-all-news:before, .souvenirs-sub-link_star:after, .souvenirs-sub-link_like:after, .souvenirs-sub-link_procent:after, .souvenirs-link__img.clothes:before, .souvenirs-link__img.pens:before, .souvenirs-link__img.accessories:before, .souvenirs-link__img.clock:before, .souvenirs-link__img.relax:before, .souvenirs-link__img.electro:before, .souvenirs-link__img.dishes:before, .souvenirs-link__img.sets:before, .souvenirs-link__img.promo:before, .souvenirs-link__img.bags:before, .souvenirs-link__img.office:before, .souvenirs-link__img.box:before, .souvenirs-link__img.gifts:before, .souvenirs-link__img.notebook:before, .souvenirs-link__img.house:before, .souvenirs-link__img.trinkets:before, .souvenirs-link__img.umbrellas:before, .souvenirs-link__img.honors:before, .souvenirs-link__img.desk:before, .souvenirs-link__img.postcards:before, .souvenirs-link__img.smoking:before {
+.header-middle__button-full-catalog:focus:before, .form-search:before, .form-search .select2-selection__arrow, .souvenirs-sub-item:before, .news-all-news:before,
+.souvenirs-sub-item:hover:before,
+.news-all-news:hover:before,
+.souvenirs-sub-item:focus:before,
+.news-all-news:focus:before, .souvenirs-sub-link_star:after, .souvenirs-sub-link_like:after, .souvenirs-sub-link_procent:after, .souvenirs-link__img.clothes:before, .souvenirs-link__img.pens:before, .souvenirs-link__img.accessories:before, .souvenirs-link__img.clock:before, .souvenirs-link__img.relax:before, .souvenirs-link__img.electro:before, .souvenirs-link__img.dishes:before, .souvenirs-link__img.sets:before, .souvenirs-link__img.promo:before, .souvenirs-link__img.bags:before, .souvenirs-link__img.office:before, .souvenirs-link__img.box:before, .souvenirs-link__img.gifts:before, .souvenirs-link__img.notebook:before, .souvenirs-link__img.house:before, .souvenirs-link__img.trinkets:before, .souvenirs-link__img.umbrellas:before, .souvenirs-link__img.honors:before, .souvenirs-link__img.desk:before, .souvenirs-link__img.postcards:before, .souvenirs-link__img.smoking:before {
   position: absolute;
   display: block;
   content: "";
@@ -1263,7 +1267,11 @@ body {
   margin-bottom: 25px;
 }
 
-.souvenirs-sub-item, .news-all-news {
+.souvenirs-sub-item, .news-all-news,
+.souvenirs-sub-item:hover,
+.news-all-news:hover,
+.souvenirs-sub-item:focus,
+.news-all-news:focus {
   display: inline-block;
   text-align: center;
   margin-right: 120px;
@@ -1273,13 +1281,21 @@ body {
   text-decoration: underline;
   position: relative;
 }
-.souvenirs-sub-item:before, .news-all-news:before {
+.souvenirs-sub-item:before, .news-all-news:before,
+.souvenirs-sub-item:hover:before,
+.news-all-news:hover:before,
+.souvenirs-sub-item:focus:before,
+.news-all-news:focus:before {
   background: url('../images/icons-main-sc09bf13950.png') 0 -102px no-repeat;
   width: 5px;
   height: 9px;
   right: -10px;
 }
-.souvenirs-sub-item:last-child, .news-all-news:last-child {
+.souvenirs-sub-item:last-child, .news-all-news:last-child,
+.souvenirs-sub-item:hover:last-child,
+.news-all-news:hover:last-child,
+.souvenirs-sub-item:focus:last-child,
+.news-all-news:focus:last-child {
   margin-right: 0;
 }
 

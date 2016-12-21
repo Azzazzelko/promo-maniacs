@@ -381,7 +381,46 @@
 								<a class="breadcrumbs-link" href="#">Каталог</a>
 							</li>
 							<li class="breadcrumbs-item active">
-								<a class="breadcrumbs-link breadcrumbs-link_carret" href="#">Промо-одежда</a>
+								<div class="dropdown"> 
+									<a class="breadcrumbs-link breadcrumbs-link_carret dropdown-toggle" href="#" data-toggle="dropdown">Промо-одежда</a>
+									<div class="dropdown-menu">
+										<ul class="breadcrumbs-item__list">
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Упаковка подарочная</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Открытки</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Деловые блокноты</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Аксессуары для курения</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Брелоки</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Деловые аксессуары</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Настольные календари</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Новогодние подарки</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Офисные принадлежности</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Подарочные наборы</a>
+											</li>
+											<li class="breadcrumbs-item__item">
+												<a href="#" class="breadcrumbs-item__link">Промо-одежда</a>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -395,8 +434,8 @@
 								<div class="dropdown">
 									<a href="#" class="dropdown-toggle filters-button-open" data-toggle="dropdown"></a>
 									<div class="dropdown-menu">
-										<a href="#" class="filters-price">сначала дешевые</a>
-										<a href="#" class="filters-price">сначала дорогие</a>
+										<a href="#" class="filters-price__select active">сначала дешевые</a>
+										<a href="#" class="filters-price__select">сначала дорогие</a>
 									</div>
 								</div>
 							</div>
@@ -404,14 +443,42 @@
 								<div class="filters-text">Цвет:</div>
 								<ul class="filters-list">
 									<li class="filters-item">
-										<div class="filters-item__text blue">Cиний</div>
+										<div class="filters-item__text blue">cиний</div>
 										<a href="#" class="filters-item__close"></a>	
 									</li>
 								</ul>
 								<div class="dropdown">
 									<a href="#" class="dropdown-toggle filters-button-open" data-toggle="dropdown"></a>
 									<div class="dropdown-menu">
-
+										<form action="#" class="filters-brand__form">
+											<ul class="drop-brand-list">
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="color" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">cиний</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="color" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">красный</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="color" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">черный</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="color" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">желтый</div>
+													</label>
+												</li>
+											</ul>
+											<button type="submit" class="filters-brand__form-submit">применить</button>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -430,7 +497,35 @@
 								<div class="dropdown">
 									<a href="#" class="dropdown-toggle filters-button-open" data-toggle="dropdown"></a>
 									<div class="dropdown-menu">
-
+										<form action="#" class="filters-brand__form">
+											<ul class="drop-brand-list">
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="brand" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">JRC</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="brand" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">Fruit of the Loom</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="brand" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">Sols</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="brand" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">Star</div>
+													</label>
+												</li>
+											</ul>
+											<button type="submit" class="filters-brand__form-submit">применить</button>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -445,26 +540,54 @@
 								<div class="dropdown">
 									<a href="#" class="dropdown-toggle filters-button-open" data-toggle="dropdown"></a>
 									<div class="dropdown-menu">
-
+										<form action="#" class="filters-brand__form">
+											<ul class="drop-brand-list">
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="color" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">Металл</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="color" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">Не металл</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="color" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">Ткань</div>
+													</label>
+												</li>
+												<li class="drop-brand-item">
+													<label class="drop-brand-label">
+														<input type="checkbox" name="color" class="drop-brand-input-checkbox">
+														<div class="drop-brand-label-text">Не ткань</div>
+													</label>
+												</li>
+											</ul>
+											<button type="submit" class="filters-brand__form-submit">применить</button>
+										</form>
 									</div>
 								</div>
 							</div>
 							<ul class="filters-check-list">
 								<li class="filters-check-item">
 									<label class="filters-check-label">
-										<input type="checkbox" name="quantity" class="filters-check-input-checkbox" checked>
+										<input type="checkbox" name="quantity" class="filters-check-input-checkbox">
 										<div class="filters-check-label-text">Распродажа</div>
 									</label>
 								</li>
 								<li class="filters-check-item">
 									<label class="filters-check-label">
-										<input type="checkbox" name="quantity" class="filters-check-input-checkbox" checked>
+										<input type="checkbox" name="quantity" class="filters-check-input-checkbox">
 										<div class="filters-check-label-text">Новинки</div>
 									</label>
 								</li>
 								<li class="filters-check-item">
 									<label class="filters-check-label">
-										<input type="checkbox" name="quantity" class="filters-check-input-checkbox" checked>
+										<input type="checkbox" name="quantity" class="filters-check-input-checkbox">
 										<div class="filters-check-label-text">Лучшее предложение</div>
 									</label>
 								</li>
@@ -475,69 +598,101 @@
 
 						<!-- Sidebar -->
 						<aside class="sidebar col-sm-3">
-							<ul class="sidebar-list">
-								<li class="sidebar-item">
+							<ul class="sidebar-list" id="sidebar-list">
+								<li class="sidebar-item panel">
 									<a href="#" class="sidebar-item__title">Бейсболки</a>
 								</li>
-								<li class="sidebar-item">
-									<a href="#" class="sidebar-item__title">Брюки и шорты</a>
+								<li class="sidebar-item panel">
+									<a href="#sidebar-accordion-2" class="sidebar-item__title" data-toggle="collapse" data-parent="#sidebar-list">Брюки и шорты</a>
+									<div class="collapse sidebar-collapse" id="sidebar-accordion-2">
+										<ul class="sidebar-item__list">
+											<li class="sidebar-item__item">
+												<a href="#" class="sidebar-item__link female">Женские</a>
+												<ul class="sidebar-item__item__list">
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">JRC</a>
+													</li>
+												</ul>
+											</li>
+											<li class="sidebar-item__item">
+												<a href="#" class="sidebar-item__link">Мужские</a>
+												<ul class="sidebar-item__item__list">
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">Fruit of the Loom</a>
+													</li>
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">Happy Gifts</a>
+													</li>
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">JRC</a>
+													</li>
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">Sol's</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
 								</li>
-								<li class="sidebar-item">
-									<a href="#" class="sidebar-item__title">Ветровки, куртки, жилеты</a>
-									<ul class="sidebar-item__list">
-										<li class="sidebar-item__item">
-											<a href="#" class="sidebar-item__link">Женские</a>
-											<ul class="sidebar-item__item__list">
-												<li class="sidebar-item__item__item">
-													<a href="#" class="sidebar-item__item__link">JRC</a>
-												</li>
-											</ul>
-										</li>
-										<li class="sidebar-item__item">
-											<a href="#" class="sidebar-item__link">Мужские</a>
-											<ul class="sidebar-item__item__list">
-												<li class="sidebar-item__item__item">
-													<a href="#" class="sidebar-item__item__link">Fruit of the Loom</a>
-												</li>
-												<li class="sidebar-item__item__item">
-													<a href="#" class="sidebar-item__item__link">Happy Gifts</a>
-												</li>
-												<li class="sidebar-item__item__item">
-													<a href="#" class="sidebar-item__item__link">JRC</a>
-												</li>
-												<li class="sidebar-item__item__item">
-													<a href="#" class="sidebar-item__item__link">Sol's</a>
-												</li>
-											</ul>
-										</li>
-									</ul>
+								<li class="sidebar-item panel">
+									<a href="#sidebar-accordion-3" class="sidebar-item__title" data-toggle="collapse" data-parent="#sidebar-list">Ветровки, куртки, жилеты</a>
+									<div class="collapse sidebar-collapse" id="sidebar-accordion-3">
+										<ul class="sidebar-item__list">
+											<li class="sidebar-item__item">
+												<a href="#" class="sidebar-item__link female">Женские</a>
+												<ul class="sidebar-item__item__list">
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">JRC</a>
+													</li>
+												</ul>
+											</li>
+											<li class="sidebar-item__item">
+												<a href="#" class="sidebar-item__link">Мужские</a>
+												<ul class="sidebar-item__item__list">
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">Fruit of the Loom</a>
+													</li>
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">Happy Gifts</a>
+													</li>
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">JRC</a>
+													</li>
+													<li class="sidebar-item__item__item">
+														<a href="#" class="sidebar-item__item__link">Sol's</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
 								</li>
-								<li class="sidebar-item">
+								<li class="sidebar-item panel">
 									<a href="#" class="sidebar-item__title">Поло</a>
 								</li>
-								<li class="sidebar-item">
+								<li class="sidebar-item panel">
 									<a href="#" class="sidebar-item__title">Полотенца</a>
 								</li>
-								<li class="sidebar-item">
+								<li class="sidebar-item panel">
 									<a href="#" class="sidebar-item__title">Рубашки</a>
 								</li>
-								<li class="sidebar-item">
+								<li class="sidebar-item panel">
 									<a href="#" class="sidebar-item__title">Толстовки</a>
 								</li>
-								<li class="sidebar-item">
+								<li class="sidebar-item panel">
 									<a href="#" class="sidebar-item__title">Футболки</a>
 								</li>
-								<li class="sidebar-item">
+								<li class="sidebar-item panel">
 									<a href="#" class="sidebar-item__title">Шапки, шарфы, перчатки</a>
 								</li>
 							</ul>
 						</aside>
 
+						<!-- Clothing-list -->
 						<div class="col-sm-9">
 							<ul class="clothing-list row">
 								<li class="clothing-item col-sm-4">
 									<div class="clothing-item__img-container">
-										<img src="" alt="img" class="clothing-item__img img-responsive">
+										<img src="../images/cloth-1.png" alt="img" class="clothing-item__img img-responsive">
 									</div>
 									<ul class="clothing-item__color-list">
 										<li class="clothing-item__color-item blue">
@@ -550,42 +705,173 @@
 											<a href="#" class="clothing-item__color-link"></a>
 										</li>
 									</ul>
-									<div class="clothing-item__title">Allesandria Жен. Толстовка Италия с капюшоном, на молнии</div>
+									<a href="#" class="clothing-item__title">Allesandria Жен. Толстовка Италия с капюшоном, на молнии</a>
 									<div class="clothing-item__price">3 035.00 &#8381;</div>
-									<div class="clithing-item__button">в корзину</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-2.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+										<li class="clothing-item__color-item blue">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+									</ul>
+									<a href="#" class="clothing-item__title">AMALFI Куртка нейлон теслон бежевый</a>
+									<div class="clothing-item__price">2 700.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-3.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+									</ul>
+									<a href="#" class="clothing-item__title">ASPEN Жилет софтшел, водонеприницаемый, темно-синий</a>
+									<div class="clothing-item__price">3 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4 bomb">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-4.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+									</ul>
+									<a href="#" class="clothing-item__title">ALESSANDRIA Жен. Толстовка Италия с капюшоном, на молнии</a>
+									<div class="clothing-item__price">3 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-5.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+										<li class="clothing-item__color-item blue">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+									</ul>
+									<a href="#" class="clothing-item__title">AMALFI Куртка нейлон теслон бежевый</a>
+									<div class="clothing-item__price">2 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-6.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+									</ul>
+									<a href="#" class="clothing-item__title">ASPEN Жилет софтшел, водонеприницаемый, темно-синий</a>
+									<div class="clothing-item__price">3 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-1.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+										<li class="clothing-item__color-item blue">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+										<li class="clothing-item__color-item green">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+										<li class="clothing-item__color-item red">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+									</ul>
+									<a href="#" class="clothing-item__title">Allesandria Жен. Толстовка Италия с капюшоном, на молнии</a>
+									<div class="clothing-item__price">3 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-2.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+										<li class="clothing-item__color-item blue">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+									</ul>
+									<a href="#" class="clothing-item__title">AMALFI Куртка нейлон теслон бежевый</a>
+									<div class="clothing-item__price">2 700.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-3.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+									</ul>
+									<a href="#" class="clothing-item__title">ASPEN Жилет софтшел, водонеприницаемый, темно-синий</a>
+									<div class="clothing-item__price">3 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4 bomb">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-4.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+									</ul>
+									<a href="#" class="clothing-item__title">ALESSANDRIA Жен. Толстовка Италия с капюшоном, на молнии</a>
+									<div class="clothing-item__price">3 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-5.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+										<li class="clothing-item__color-item blue">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+									</ul>
+									<a href="#" class="clothing-item__title">AMALFI Куртка нейлон теслон бежевый</a>
+									<div class="clothing-item__price">2 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
+								</li>
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="../images/cloth-6.png" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+									</ul>
+									<a href="#" class="clothing-item__title">ASPEN Жилет софтшел, водонеприницаемый, темно-синий</a>
+									<div class="clothing-item__price">3 035.00 &#8381;</div>
+									<a href="#" class="clothing-item__button">в корзину</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<!-- Pagination -->
-						<ul class="page-pagination-list col-sm-5 col-centered">
-							<li class="page-pagination-item active">
-								<a href="#" class="page-pagination-link">1</a>
+						<ul class="paggination-list">
+							<li class="paggination-item active">
+								<a href="#" class="paggination-link">1</a>
 							</li>
-							<li class="page-pagination-item">
-								<a href="#" class="page-pagination-link">2</a>
+							<li class="paggination-item">
+								<a href="#" class="paggination-link">2</a>
 							</li>
-							<li class="page-pagination-item">
-								<a href="#" class="page-pagination-link">3</a>
+							<li class="paggination-item">
+								<a href="#" class="paggination-link">3</a>
 							</li>
-							<li class="page-pagination-item">
-								<a href="#" class="page-pagination-link">4</a>
+							<li class="paggination-item">
+								<a href="#" class="paggination-link">4</a>
 							</li>
-							<li class="page-pagination-item">
-								<a href="#" class="page-pagination-link">5</a>
+							<li class="paggination-item">
+								<a href="#" class="paggination-link">5</a>
 							</li>
-							<li class="page-pagination-item">
-								<a href="#" class="page-pagination-link">6</a>
+							<li class="paggination-item">
+								<a href="#" class="paggination-link">6</a>
 							</li>
-							<li class="page-pagination-item">
-								<a href="#" class="page-pagination-link">7</a>
+							<li class="paggination-item">
+								<a href="#" class="paggination-link">7</a>
 							</li>
-							<li class="page-pagination-item">
-								<a href="#" class="page-pagination-link">...</a>
+							<li class="paggination-item">
+								<a href="#" class="paggination-link">...</a>
 							</li>
-							<li class="page-pagination-item">
-								<a href="#" class="page-pagination-link">84</a>
+							<li class="paggination-item">
+								<a href="#" class="paggination-link">99</a>
 							</li>
 						</ul>
 					</div>
