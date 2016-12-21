@@ -35,6 +35,11 @@
 	&:last-child {
 		margin-right: 0;
 	}
+
+	&:hover {
+		color: $pink;
+		text-decoration: underline;
+	}
 }
 
 .header-top__info {
@@ -98,7 +103,7 @@
 .header-middle__button-full-catalog:focus {
 	height: 38px;
 	border: 3px solid $pink;
-	line-height: 32px;
+	line-height: 34px;
 	text-align: center;
 	padding-right: 35px;
 	font-size: 18px;
@@ -107,11 +112,17 @@
 	border-radius: 3px;
 	padding-left: 10px;
 	margin-right: -30px;
+	position: relative;
+	z-index: 3;
 
 	&:before {
 		@extend %icons;
 		@include get-sprite($header-spr, full-catalog);
-		right: 0;
+		right: 12px;
+	}
+
+	&[aria-expanded=true]:before {
+		@include get-sprite($main-spr, carret-pink);
 	}
 }
 

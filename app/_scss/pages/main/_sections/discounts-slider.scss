@@ -40,6 +40,7 @@
 
 	.carousel-indicators {
 		bottom: -40px !important;
+		z-index: 1 !important;
 
 		li {
 			margin: 0 10px 0 0;

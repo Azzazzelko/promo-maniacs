@@ -1,0 +1,121 @@
+.dropdown.open{
+	&:before {
+		position: absolute;
+		display: block;
+		content: "";
+		background: white;
+		width: 240px;
+		height: 80px;
+		z-index: 3;
+		left: -20px;
+		top: -20px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	&:after {
+		display: block;
+		top: 0;
+		left: 0;
+		content: "";
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		z-index: 2;
+	}
+}
+
+.dropdown-menu {
+	border: none;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	top: 50px;
+	z-index: 3;
+}
+
+.full-catalog-container {
+	background: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -20px;
+		width: 1215px;
+		height: 100%;
+		background: white;
+		z-index: -1;
+		border-radius: 5px;
+		border-top-left-radius: 0;
+	}
+}
+
+.full-catalog_col-pad {
+	padding-left: 15px;
+}
+
+.full-catalog-title-list {
+	margin-bottom: 45px;
+}
+
+.full-catalog-title-item {
+	font-size: 18px;
+	color: black;
+	font-family: 'raleway_medium';
+	margin-bottom: 15px;
+	line-height: 18px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.full-catalog-title-item_procent {
+	font-family: 'raleway_extrabold';
+	color: $pink;
+	position: relative;
+
+	&:before {
+		@extend %icons;
+		@include get-sprite($main-spr, procent-tip);
+		left: -50px;
+	}
+}
+
+.full-catalog-subtitle {
+	font-size: 18px;
+	line-height: 18px;
+	font-family: 'raleway_extrabold';
+	margin-bottom: 10px;
+
+	&:hover {
+		color: $pink;
+		text-decoration: underline;
+	}
+}
+
+.full-catalog-item {
+	font-size: 14px;
+	font-family: 'raleway_medium';
+	margin-bottom: 5px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.full-catalog-list-container {
+	margin-bottom: 50px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
