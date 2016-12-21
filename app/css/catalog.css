@@ -1,5 +1,131 @@
 /* ======= mixins ========= */
 /* ===== instruments ====== */
+.breadcrumbs-item.active:before, .filters-button-open:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* ======= sections ====== */
+.clothing {
+  margin-bottom: 100px;
+}
+.clothing .wrapper {
+  min-height: 200px;
+  background: #fff;
+  padding-top: 50px;
+}
+.clothing .container {
+  position: relative;
+}
+
+.clothing-title {
+  font-size: 60px;
+  line-height: 60px;
+  font-family: 'raleway_extrabold';
+  width: 100%;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.breadcrumbs-list {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px;
+  font-size: 16px;
+  color: #f7689e;
+  font-family: 'raleway_medium';
+  position: relative;
+  border-bottom: 1px solid #f7689e;
+  line-height: 16px;
+  position: relative;
+}
+.breadcrumbs-item:last-child:after {
+  display: none;
+}
+.breadcrumbs-item:after {
+  content: "/";
+  display: block;
+  position: absolute;
+  right: -21px;
+  top: 0;
+  color: #d6d6d6;
+}
+.breadcrumbs-item.active {
+  border-bottom: 0.1px dashed #f7689e;
+}
+.breadcrumbs-item.active:before {
+  background: url('../images/icons-catalog-s9e9ff57b48.png') 0 0 no-repeat;
+  width: 9px;
+  height: 5px;
+  right: -20px;
+}
+
+.filters {
+  min-height: 115px;
+  padding: 25px 10px;
+  background: #f7689e;
+  border-radius: 5px;
+}
+.filters .dropdown {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.filters-price,
+.filters-color,
+.filters-brand,
+.filters-material {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.filters-material {
+  margin-right: 0;
+}
+
+.filters-text {
+  font-size: 16px;
+  display: inline-block;
+  color: #fff;
+  font-family: 'raleway_medium';
+  vertical-align: middle;
+}
+
+.filters-price__selected {
+  font-size: 16px;
+  display: inline-block;
+  color: #fff;
+  line-height: 16px;
+  font-family: 'raleway_medium';
+  vertical-align: middle;
+  border-bottom: 0.1px dashed #fff;
+}
+
+.filters-button-open {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+.filters-button-open:before {
+  background: url('../images/icons-catalog-s9e9ff57b48.png') 0 -75px no-repeat;
+  width: 9px;
+  height: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*# sourceMappingURL=catalog.css.map */

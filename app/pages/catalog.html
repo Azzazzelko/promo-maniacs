@@ -380,47 +380,214 @@
 							<li class="breadcrumbs-item">
 								<a class="breadcrumbs-link" href="#">Каталог</a>
 							</li>
-							<li class="breadcrumbs-item">
+							<li class="breadcrumbs-item active">
 								<a class="breadcrumbs-link breadcrumbs-link_carret" href="#">Промо-одежда</a>
 							</li>
 						</ul>
 					</div>
-					<div class="row">
+					<div class="row text-center">
 						<div class="filters">
 							<div class="filters-price">
 								<div class="filters-text">
 									Цена:
 								</div>
-								<select name="price" id="filter-price" class="filter-price">
-									<option value="low">Самые дешевые</option>
-									<option value="hight">Самые дорогие</option>
-								</select>
+								<div class="filters-price__selected">cначала дешевые</div>
+								<div class="dropdown">
+									<a href="#" class="dropdown-toggle filters-button-open" data-toggle="dropdown"></a>
+									<div class="dropdown-menu">
+										<a href="#" class="filters-price">сначала дешевые</a>
+										<a href="#" class="filters-price">сначала дорогие</a>
+									</div>
+								</div>
 							</div>
 							<div class="filters-color">
 								<div class="filters-text">Цвет:</div>
-								<ul class="filters-color-list">
-									<li class="filters-color-item">
-										<div class="filters-color-item__text blue">Cиний</div>
-										<a href="#" class="filters-color-item__close"></a>	
+								<ul class="filters-list">
+									<li class="filters-item">
+										<div class="filters-item__text blue">Cиний</div>
+										<a href="#" class="filters-item__close"></a>	
 									</li>
 								</ul>
 								<div class="dropdown">
 									<a href="#" class="dropdown-toggle filters-button-open" data-toggle="dropdown"></a>
 									<div class="dropdown-menu">
-									
+
 									</div>
 								</div>
 							</div>
 							<div class="filters-brand">
 								<div class="filters-text">Бренд:</div>
-								<select name="brand" id="filter-brand" class="filter-brand">
-									<option value="blue">Голубой</option>
-									<option value="red">Красный</option>
-									<option value="black">Черный</option>
-								</select>
-							</div>
+								<ul class="filters-list">
+									<li class="filters-item">
+										<div class="filters-item__text">Sols</div>
+										<a href="#" class="filters-item__close"></a>	
+									</li>
+									<li class="filters-item">
+										<div class="filters-item__text">Angelo Moretti</div>
+										<a href="#" class="filters-item__close"></a>	
+									</li>
+								</ul>
+								<div class="dropdown">
+									<a href="#" class="dropdown-toggle filters-button-open" data-toggle="dropdown"></a>
+									<div class="dropdown-menu">
 
+									</div>
+								</div>
+							</div>
+							<div class="filters-material">
+								<div class="filters-text">Материал:</div>
+								<ul class="filters-list">
+									<li class="filters-item">
+										<div class="filters-item__text">Металл</div>
+										<a href="#" class="filters-item__close"></a>	
+									</li>
+								</ul>
+								<div class="dropdown">
+									<a href="#" class="dropdown-toggle filters-button-open" data-toggle="dropdown"></a>
+									<div class="dropdown-menu">
+
+									</div>
+								</div>
+							</div>
+							<ul class="filters-check-list">
+								<li class="filters-check-item">
+									<label class="filters-check-label">
+										<input type="checkbox" name="quantity" class="filters-check-input-checkbox" checked>
+										<div class="filters-check-label-text">Распродажа</div>
+									</label>
+								</li>
+								<li class="filters-check-item">
+									<label class="filters-check-label">
+										<input type="checkbox" name="quantity" class="filters-check-input-checkbox" checked>
+										<div class="filters-check-label-text">Новинки</div>
+									</label>
+								</li>
+								<li class="filters-check-item">
+									<label class="filters-check-label">
+										<input type="checkbox" name="quantity" class="filters-check-input-checkbox" checked>
+										<div class="filters-check-label-text">Лучшее предложение</div>
+									</label>
+								</li>
+							</ul>
 						</div>
+					</div>
+					<div class="row">
+
+						<!-- Sidebar -->
+						<aside class="sidebar col-sm-3">
+							<ul class="sidebar-list">
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Бейсболки</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Брюки и шорты</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Ветровки, куртки, жилеты</a>
+									<ul class="sidebar-item__list">
+										<li class="sidebar-item__item">
+											<a href="#" class="sidebar-item__link">Женские</a>
+											<ul class="sidebar-item__item__list">
+												<li class="sidebar-item__item__item">
+													<a href="#" class="sidebar-item__item__link">JRC</a>
+												</li>
+											</ul>
+										</li>
+										<li class="sidebar-item__item">
+											<a href="#" class="sidebar-item__link">Мужские</a>
+											<ul class="sidebar-item__item__list">
+												<li class="sidebar-item__item__item">
+													<a href="#" class="sidebar-item__item__link">Fruit of the Loom</a>
+												</li>
+												<li class="sidebar-item__item__item">
+													<a href="#" class="sidebar-item__item__link">Happy Gifts</a>
+												</li>
+												<li class="sidebar-item__item__item">
+													<a href="#" class="sidebar-item__item__link">JRC</a>
+												</li>
+												<li class="sidebar-item__item__item">
+													<a href="#" class="sidebar-item__item__link">Sol's</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Поло</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Полотенца</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Рубашки</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Толстовки</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Футболки</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="#" class="sidebar-item__title">Шапки, шарфы, перчатки</a>
+								</li>
+							</ul>
+						</aside>
+
+						<div class="col-sm-9">
+							<ul class="clothing-list row">
+								<li class="clothing-item col-sm-4">
+									<div class="clothing-item__img-container">
+										<img src="" alt="img" class="clothing-item__img img-responsive">
+									</div>
+									<ul class="clothing-item__color-list">
+										<li class="clothing-item__color-item blue">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+										<li class="clothing-item__color-item green">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+										<li class="clothing-item__color-item red">
+											<a href="#" class="clothing-item__color-link"></a>
+										</li>
+									</ul>
+									<div class="clothing-item__title">Allesandria Жен. Толстовка Италия с капюшоном, на молнии</div>
+									<div class="clothing-item__price">3 035.00 &#8381;</div>
+									<div class="clithing-item__button">в корзину</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<!-- Pagination -->
+						<ul class="page-pagination-list col-sm-5 col-centered">
+							<li class="page-pagination-item active">
+								<a href="#" class="page-pagination-link">1</a>
+							</li>
+							<li class="page-pagination-item">
+								<a href="#" class="page-pagination-link">2</a>
+							</li>
+							<li class="page-pagination-item">
+								<a href="#" class="page-pagination-link">3</a>
+							</li>
+							<li class="page-pagination-item">
+								<a href="#" class="page-pagination-link">4</a>
+							</li>
+							<li class="page-pagination-item">
+								<a href="#" class="page-pagination-link">5</a>
+							</li>
+							<li class="page-pagination-item">
+								<a href="#" class="page-pagination-link">6</a>
+							</li>
+							<li class="page-pagination-item">
+								<a href="#" class="page-pagination-link">7</a>
+							</li>
+							<li class="page-pagination-item">
+								<a href="#" class="page-pagination-link">...</a>
+							</li>
+							<li class="page-pagination-item">
+								<a href="#" class="page-pagination-link">84</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

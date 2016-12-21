@@ -5,7 +5,7 @@
 .info__tel:hover:before,
 .info__tel:focus:before, .header-middle__button-full-catalog:before,
 .header-middle__button-full-catalog:hover:before,
-.header-middle__button-full-catalog:focus:before, .form-search:before, .select2-selection__arrow, .souvenirs-sub-item:before, .news-all-news:before, .souvenirs-sub-link_star:after, .souvenirs-sub-link_like:after, .souvenirs-sub-link_procent:after, .souvenirs-link__img.clothes:before, .souvenirs-link__img.pens:before, .souvenirs-link__img.accessories:before, .souvenirs-link__img.clock:before, .souvenirs-link__img.relax:before, .souvenirs-link__img.electro:before, .souvenirs-link__img.dishes:before, .souvenirs-link__img.sets:before, .souvenirs-link__img.promo:before, .souvenirs-link__img.bags:before, .souvenirs-link__img.office:before, .souvenirs-link__img.box:before, .souvenirs-link__img.gifts:before, .souvenirs-link__img.notebook:before, .souvenirs-link__img.house:before, .souvenirs-link__img.trinkets:before, .souvenirs-link__img.umbrellas:before, .souvenirs-link__img.honors:before, .souvenirs-link__img.desk:before, .souvenirs-link__img.postcards:before, .souvenirs-link__img.smoking:before {
+.header-middle__button-full-catalog:focus:before, .form-search:before, .form-search .select2-selection__arrow, .souvenirs-sub-item:before, .news-all-news:before, .souvenirs-sub-link_star:after, .souvenirs-sub-link_like:after, .souvenirs-sub-link_procent:after, .souvenirs-link__img.clothes:before, .souvenirs-link__img.pens:before, .souvenirs-link__img.accessories:before, .souvenirs-link__img.clock:before, .souvenirs-link__img.relax:before, .souvenirs-link__img.electro:before, .souvenirs-link__img.dishes:before, .souvenirs-link__img.sets:before, .souvenirs-link__img.promo:before, .souvenirs-link__img.bags:before, .souvenirs-link__img.office:before, .souvenirs-link__img.box:before, .souvenirs-link__img.gifts:before, .souvenirs-link__img.notebook:before, .souvenirs-link__img.house:before, .souvenirs-link__img.trinkets:before, .souvenirs-link__img.umbrellas:before, .souvenirs-link__img.honors:before, .souvenirs-link__img.desk:before, .souvenirs-link__img.postcards:before, .souvenirs-link__img.smoking:before {
   position: absolute;
   display: block;
   content: "";
@@ -821,7 +821,7 @@ body {
   color: #746b90;
 }
 
-.dropdown.open:before {
+.header .dropdown.open:before {
   position: absolute;
   display: block;
   content: "";
@@ -834,7 +834,7 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.dropdown.open:after {
+.header .dropdown.open:after {
   display: block;
   top: 0;
   left: 0;
@@ -845,8 +845,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
-
-.dropdown-menu {
+.header .dropdown-menu {
   border: none;
   background: none;
   border-radius: 0;
@@ -1105,6 +1104,43 @@ body {
   left: 125px;
   z-index: 1;
 }
+.form-search .select2.select2-container.select2-container--default {
+  width: 155px !important;
+  right: 222px;
+  position: absolute;
+  border-left: 2px solid #efefef;
+}
+.form-search .select2-selection.select2-selection--single {
+  border-radius: 3px;
+  border: none;
+  height: 40px;
+  outline: none !important;
+}
+.form-search .select2-selection__rendered {
+  height: 40px !important;
+  line-height: 40px !important;
+  padding-left: 25px !important;
+  padding-right: 60px !important;
+  color: #f7689e !important;
+  text-transform: lowercase;
+  font-size: 18px !important;
+  font-family: 'raleway_medium' !important;
+}
+.form-search .select2-selection__arrow {
+  top: 50% !important;
+  background: url('../images/icons-header-se7fe14011c.png') 0 0 no-repeat;
+  width: 13px;
+  height: 8px;
+  right: 25px;
+}
+
+.select2-search--dropdown {
+  display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
 
 .form-search__search {
   height: 40px;
@@ -1147,47 +1183,6 @@ body {
 .header-bottom__example .example__border {
   border-bottom: 0.1px dashed #fff;
   display: inline;
-}
-
-.select2.select2-container.select2-container--default {
-  width: 155px !important;
-  right: 222px;
-  position: absolute;
-  border-left: 2px solid #efefef;
-}
-
-.select2-search--dropdown {
-  display: none;
-}
-
-.select2-selection.select2-selection--single {
-  border-radius: 3px;
-  border: none;
-  height: 40px;
-  outline: none !important;
-}
-
-.select2-selection__rendered {
-  height: 40px !important;
-  line-height: 40px !important;
-  padding-left: 25px !important;
-  padding-right: 60px !important;
-  color: #f7689e !important;
-  text-transform: lowercase;
-  font-size: 18px !important;
-  font-family: 'raleway_medium' !important;
-}
-
-.select2-selection__arrow {
-  top: 50% !important;
-  background: url('../images/icons-header-se7fe14011c.png') 0 0 no-repeat;
-  width: 13px;
-  height: 8px;
-  right: 25px;
-}
-
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-  display: none;
 }
 
 .news {
