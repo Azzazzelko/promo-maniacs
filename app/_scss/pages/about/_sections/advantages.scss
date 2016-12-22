@@ -1,0 +1,39 @@
+.advantages {
+	.wrapper {
+		background: #fff;
+		min-height: 590px;
+		padding-top: 125px;
+		padding-bottom: 30px;
+	}
+}
+
+.advantages-title {
+	font-size: 60px;
+	@include font(ext);
+	letter-spacing: 10px;
+	line-height: 60px;
+	margin-bottom: 90px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.advantages-item {
+	font-size: 22px;
+	@include font(med);
+	padding: 135px 50px 0 50px;
+	position: relative;
+}
+
+@each $item in $advantages {
+	.advantages-item.icons-#{$item}:before {
+		@extend %pseudo;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		@include get-sprite($about-spr, #{$item});
+	}
+}
+
+.feedback .wrapper {
+	background: #7362ab url("../../../../images/face.png") no-repeat;
+}

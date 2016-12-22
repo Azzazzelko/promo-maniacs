@@ -1,0 +1,31 @@
+.casualties {
+
+	.wrapper {
+		background: #f6f6f6 url('../../../../images/scream-woman.png') no-repeat;
+		background-size: contain;
+		min-height: 715px;
+		padding-top: 130px;
+		padding-bottom: 20px;
+	}
+}
+
+.casualties-title {
+	font-size: 60px;
+	line-height: 60px;
+	color: black;
+	letter-spacing: 15px;
+	@include font(ext);
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+
+.casualties-description {
+	font-size: 22px;
+	line-height: 37px;
+	color: black;
+	@include font(med);
+
+	p {
+		margin-bottom: 50px;
+	}
+}

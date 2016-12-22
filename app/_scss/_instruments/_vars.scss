@@ -30,5 +30,8 @@ $footer-spr : sprite-map('icons-footer/*.png' , $spacing: 70px);
 $main-spr   : sprite-map('icons-main/*.png'   , $spacing: 70px);
 $catalog-spr: sprite-map('icons-catalog/*.png', $spacing: 70px);
 $details-spr: sprite-map('icons-details/*.png', $spacing: 70px);
+$about-spr  : sprite-map('icons-about/*.png'  , $spacing: 70px);
 
 $souvenirs : clothes, pens, accessories, clock, relax, electro, dishes, sets, promo, bags, office, box, gifts, notebook, house, trinkets, umbrellas, honors, desk, postcards, smoking;
+
+$advantages : items, note, cloth;
