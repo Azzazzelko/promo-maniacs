@@ -1,0 +1,108 @@
+.clothing-list {
+	margin-bottom: 50px;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.clothing-item  {
+	text-align: center;
+	border: 5px solid transparent;
+	position: relative;
+	margin-bottom: 5px;
+
+	&.bomb:before {
+		@extend %pseudo;
+		left: 25px;
+		top: 0;
+		background: url('../../../../images/bomb_small.png') no-repeat;
+		width: 81px;
+		height: 54px;
+		z-index: 1;
+	}
+
+	&:hover {
+		border: 5px solid $fiol;
+	}
+}
+
+.clothing-item__img {
+	max-height: 100%;
+	display: inline-block;
+}
+
+.clothing-item__img-container {
+	max-width: 100%;
+	height: 245px;
+	line-height: 245px;
+	position: relative;
+}
+
+.clothing-item__color-list {
+	height: 24px;
+	text-align: center;
+}
+
+.clothing-item__color-item {
+	display: inline-block;
+	margin-right: 5px;
+	width: 10px;
+	height: 10px;
+	line-height: 24px;
+	border-radius: 50%;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&.blue {
+		background: blue;
+	}
+
+	&.green {
+		background: green;
+	}
+
+	&.red {
+		background: red;
+	}
+}
+
+.clothing-item__title {
+	color: black;
+	font-size: 16px;
+	font-family: 'raleway_medium';
+	text-decoration: underline;
+	margin-bottom: 45px;
+}
+
+.clothing-item__price {
+	color: $fiol;
+	font-size: 25px;
+	font-family: 'raleway_extrabold';
+	line-height: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 25px;
+	letter-spacing: 5px;
+}
+
+.clothing-item__button,
+.clothing-item__button:hover,
+.clothing-item__button:focus {
+	width: 165px;
+	height: 48px;
+	background: $pink;
+	color: #fff;
+	text-transform: lowercase;
+	font-size: 22px;
+	line-height: 46px;
+	font-family: 'raleway_medium';
+	text-align: center;
+	display: inline-block;
+	border-radius: 2px;
+	margin-bottom: 34px;
+}
+
+

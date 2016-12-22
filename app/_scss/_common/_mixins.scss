@@ -12,4 +12,12 @@
 
 	width: $sprite-width;
 	height: $sprite-height;
-}  
+} 
+
+@mixin font($font) {
+	@if $font == med {
+		font-family: 'raleway_medium';
+	} @elseif $font == ext {
+		font-family: 'raleway_extrabold';
+	}
+}

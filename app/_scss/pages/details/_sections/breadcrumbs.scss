@@ -30,12 +30,17 @@
 
 	&.active {
 		border-bottom: 0.1px dashed $pink;
+		margin-right: 45px;
+	}
+
+	&.active:after {
+		right: -38px;
 	}
 
 	&.active:before {
 		@extend %icons;
 		@include get-sprite($catalog-spr, arrow-down_small_pink);
-		right: -20px;
+		right: -15px;
 	}
 
 	.dropdown-menu {

@@ -1,0 +1,35 @@
+.header {
+	margin-bottom: 55px;
+}
+
+.search {
+	margin-bottom: 100px;
+
+	.wrapper {
+		min-height: 200px;
+		background: #fff;
+		padding-top: 50px;
+	}
+
+	.container {
+		position: relative;
+	}
+} 
+
+.search-title {
+	font-size: 30px;
+	font-family: 'raleway_extrabold';
+	color: black;
+	letter-spacing: 5px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.search-description {
+	font-size: 16px;
+	font-family: 'raleway_medium';
+	color: black;
+	line-height: 16px;
+	margin-bottom: 40px;
+}

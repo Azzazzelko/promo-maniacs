@@ -1,0 +1,75 @@
+.nav-tabs {
+	border: none;
+}
+
+.nav-tabs>li {
+	display: inline-block;
+	float: none;
+	margin-bottom: 0;
+}
+
+.nav-tabs>li>a, 
+.nav-tabs>li>a:hover, 
+.nav-tabs>li>a:focus {
+	color: black;
+	@include font(ext);
+	letter-spacing: 5px;
+	border: none;
+	border-bottom: 0.1px dashed black;
+	font-size: 18px;
+	line-height: normal;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus {
+	border: none;
+	color: $pink;
+}
+
+.price-tab-item {
+	position: relative;
+	margin-right: 45px;
+
+	&:before {
+		position: absolute;
+		content: "/";
+		display: block;
+		right: -27px;
+		color: black;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 18px;
+		@include font(ext);
+	}
+
+	&:last-child:before {
+		display: none;
+	}
+}
+
+.tab-pane {
+	padding: 20px 10px 0 0;
+}
+
+.tab__item {
+	margin-bottom: 25px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.tab__item-title {
+	color: $fiol;
+	font-size: 16px;
+	@include font(ext);
+	margin-bottom: 5px;
+}
+
+.tab__item-description {
+	font-size: 16px;
+	@include font(med);
+}

@@ -1,8 +1,8 @@
 /* ======= mixins ========= */
 /* ===== instruments ====== */
-.breadcrumbs-item.active:before, .filters-button-open:before, .filters-item__close,
+.filters-button-open:before, .filters-item__close,
 .filters-item__close:hover,
-.filters-item__close:focus, .filters-color .filters-item__text.blue:before, .drop-brand-input-checkbox:checked + .drop-brand-label-text:after, .filters-check-input-checkbox:checked + .filters-check-label-text:after, .sidebar-item__link.female:before {
+.filters-item__close:focus, .filters-color .filters-item__text.blue:before, .drop-brand-input-checkbox:checked + .drop-brand-label-text:after, .filters-check-input-checkbox:checked + .filters-check-label-text:after {
   position: absolute;
   display: block;
   content: "";
@@ -17,68 +17,11 @@
 }
 
 /* ======= sections ====== */
-.breadcrumbs-list {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.breadcrumbs-item {
-  display: inline-block;
-  text-align: center;
-  margin-right: 20px;
-  font-size: 16px;
-  color: #f7689e;
-  font-family: 'raleway_medium';
-  position: relative;
-  border-bottom: 1px solid #f7689e;
-  line-height: 16px;
-  position: relative;
-}
-.breadcrumbs-item:last-child:after {
-  display: none;
-}
-.breadcrumbs-item:after {
-  content: "/";
-  display: block;
-  position: absolute;
-  right: -16px;
-  top: 0;
-  color: #d6d6d6;
-}
-.breadcrumbs-item.active {
-  border-bottom: 0.1px dashed #f7689e;
-}
-.breadcrumbs-item.active:before {
-  background: url('../images/icons-catalog-scae96c2fb6.png') 0 0 no-repeat;
-  width: 9px;
-  height: 5px;
-  right: -20px;
-}
-.breadcrumbs-item .dropdown-menu {
-  width: 260px;
-  min-height: 370px;
-  padding: 20px 20px 25px 25px;
-  top: -23px;
-  left: -25px;
-  background: #fff;
-  border: none;
-  box-shadow: none;
-}
-.breadcrumbs-item .breadcrumbs-item__item {
-  font-size: 16px;
-  font-family: 'raleway_medium';
-  margin-bottom: 15px;
-  color: black;
-}
-.breadcrumbs-item .breadcrumbs-item__item:last-child {
-  margin-bottom: 0;
-}
-.breadcrumbs-item .breadcrumbs-item__item:hover {
-  color: #f7689e;
-}
-
 .clothing-list {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .clothing-item {
@@ -523,75 +466,38 @@
   text-decoration: none;
 }
 
-.sidebar-item {
-  text-transform: uppercase;
-  font-size: 17px;
-  line-height: 17px;
-  font-family: 'raleway_extrabold';
-  color: #7261aa;
-  margin-bottom: 30px;
-}
-.sidebar-item:last-child {
-  margin-bottom: 0;
-}
-.sidebar-item .sidebar-item__title[aria-expanded=true] + .sidebar-collapse .sidebar-item__link.female:before {
-  left: -40px;
+.header {
+  margin-bottom: 55px;
 }
 
-.sidebar-item__title {
-  letter-spacing: 3px;
+.search {
+  margin-bottom: 100px;
 }
-.sidebar-item__title[aria-expanded=true] {
-  color: #f7689e;
+.search .wrapper {
+  min-height: 200px;
+  background: #fff;
+  padding-top: 50px;
 }
-.sidebar-item__title[aria-expanded=true] + .sidebar-collapse .sidebar-item__list {
-  color: #f7689e;
-}
-
-.sidebar-item__item,
-.sidebar-item__item__item {
-  padding-left: 20px;
-  text-decoration: underline;
-  font-size: 16px;
-  font-family: 'raleway_medium';
-  line-height: 16px;
-  margin-bottom: 10px;
-  text-transform: none;
-}
-
-.sidebar-item__link.female {
+.search .container {
   position: relative;
 }
-.sidebar-item__link.female:before {
-  background: url('../images/icons-catalog-scae96c2fb6.png') 0 -379px no-repeat;
-  width: 35px;
-  height: 13px;
-  left: 80px;
-  transition: all 1s;
+
+.search-title {
+  font-size: 30px;
+  font-family: 'raleway_extrabold';
+  color: black;
+  letter-spacing: 5px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-.sidebar-item__link {
-  margin-bottom: 10px;
+.search-description {
+  font-size: 16px;
+  font-family: 'raleway_medium';
+  color: black;
+  line-height: 16px;
+  margin-bottom: 40px;
 }
 
-.sidebar-item__item__item {
-  padding-left: 10px;
-}
-.sidebar-item__item__item:last-child {
-  margin-bottom: 0;
-}
-
-.sidebar-item__item:last-child {
-  margin-bottom: 0;
-}
-
-.panel {
-  border: none;
-  box-shadow: none;
-}
-
-.sidebar-item__list {
-  padding-top: 15px;
-}
-
-/*# sourceMappingURL=catalog.css.map */
+/*# sourceMappingURL=search-extradition.css.map */
