@@ -555,7 +555,7 @@
 					<div class="row text-center">
 						<div class="card-articul col-sm-4 col-centered">Артикул товара: JRC98959.6</div>
 					</div>
-					<div class="row">
+					<div class="row row_relative">
 						<div class="col-sm-5">
 							<div class="row">
 								<div class="col-sm-10">
@@ -576,13 +576,13 @@
 												</div>
 											</div>
 										</div>
-										<a href="#" class="custom-picture-button">Нанести свой рисунок</a>
+										<a href="#custom-img-creator" class="custom-picture-button" data-toggle="collapse">Нанести свой рисунок</a>
 									</div>
 								</div>
 								<div class="col-sm-2">
 									<div class="slider-thumbs" id="slider-thumbs">
 										<ul class="slider-thumbs__list row">
-											<li class="slider-thumbs__item">
+											<li class="slider-thumbs__item active">
 												<a href="#carousel-card" data-slide-to="0" class="slider-thumbs__link">
 													<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
 												</a>
@@ -750,6 +750,116 @@
 											</li>
 										</ul>
 									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 custom-img-creator collapse" id="custom-img-creator">
+							<a href="#custom-img-creator" class="creator-close-button" data-toggle="collapse"></a>
+							<div class="row">
+								<div class="creator-title col-sm-12">Создание своего дизайна</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3 creator_padding">
+									<a href="#" class="creator-upload-button">загрузить картинку</a>
+									<ul class="creator-list">
+										<li class="creator-item active">
+											<img src="../images/small-img-1.png" alt="img" class="creator-img img-responsive">
+											<a href="#" class="creator-item-close"></a>
+										</li>
+										<li class="creator-item">
+											<img src="../images/small-img-2.png" alt="img" class="creator-img img-responsive">
+											<a href="#" class="creator-item-close"></a>
+										</li>
+									</ul>
+									<ul class="creator-warning-list">
+										<li class="creator-warning-item">Загрузите .png или .jpg;</li>
+										<li class="creator-warning-item">Маленькое фото нельзя напечатать в большом размере;</li>
+										<li class="creator-warning-item">Чтобы нанести фото на всю ширину области печати, нужен размер не менее 1500х1500 пикселей;</li>
+										<li class="creator-warning-item">Максимальный размер файла 8мб;</li>
+										<li class="creator-warning-item">Использование изображения не должно нарушать авторских прав.</li>
+									</ul>
+								</div>
+								<div class="col-sm-4 col-sm-offset-1">
+									<div class="card-tabs">
+										<ul class="nav nav-tabs price-tab-list">
+											<li class="price-tab-item active">
+												<a href="#front-side" class="price-tab-link" data-toggle="tab">лицевая сторона</a>
+											</li>
+											<li class="price-tab-item">
+												<a href="#back-side" class="price-tab-link" data-toggle="tab">обратная сторона</a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane fade in active" id="front-side">
+												<img src="../images/cloth-7.png" alt="img" class="img-responsive tab-img">
+											</div>
+											<div class="tab-pane fade" id="back-side">
+												<img src="../images/cloth-7.png" alt="img" class="img-responsive tab-img">
+											</div>
+
+											<div class="overlay-img-container">
+												<a href="#" class="overlay-img-control refresh"></a>
+												<a href="#" class="overlay-img-control resize"></a>
+												<img src="../images/small-img-1.png" alt="img" class="overlay-img img-responsive">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-sm-offset-1 creator_padding">
+									<form action="#" class="form-creator">
+										<div class="creator-select-size">Выберите размер изделия:</div>
+										<ul class="card-size__list">
+											<li class="card-size__item">
+												<label class="card-size__label">
+													<input type="radio" name="size" class="card-size__input-radio">
+													<div class="card-size__label-text">xs</div>
+												</label>
+											</li>
+											<li class="card-size__item">
+												<label class="card-size__label">
+													<input type="radio" name="size" class="card-size__input-radio">
+													<div class="card-size__label-text">s</div>
+												</label>
+											</li>
+											<li class="card-size__item">
+												<label class="card-size__label">
+													<input type="radio" name="size" class="card-size__input-radio" checked>
+													<div class="card-size__label-text">m</div>
+												</label>
+											</li>
+											<li class="card-size__item">
+												<label class="card-size__label">
+													<input type="radio" name="size" class="card-size__input-radio">
+													<div class="card-size__label-text">l</div>
+												</label>
+											</li>
+											<li class="card-size__item">
+												<label class="card-size__label">
+													<input type="radio" name="size" class="card-size__input-radio">
+													<div class="card-size__label-text">xl</div>
+												</label>
+											</li>
+											<li class="card-size__item">
+												<label class="card-size__label">
+													<input type="radio" name="size" class="card-size__input-radio">
+													<div class="card-size__label-text">xxl</div>
+												</label>
+											</li>
+											<li class="card-size__item">
+												<label class="card-size__label">
+													<input type="radio" name="size" class="card-size__input-radio">
+													<div class="card-size__label-text">xxxl</div>
+												</label>
+											</li>
+										</ul>
+										<div class="card-price">3 035.00 ₽</div>
+										<div class="card-count">
+											<a href="#" class="card-count__minus"></a>
+											<div class="card-count__text">2</div>
+											<a href="#" class="card-count__plus"></a>
+										</div>
+										<button type="submit" class="form-card__submit-button">в корзину</button>
+									</form>
 								</div>
 							</div>
 						</div>
