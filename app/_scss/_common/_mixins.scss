@@ -19,5 +19,7 @@
 		font-family: 'raleway_medium';
 	} @elseif $font == ext {
 		font-family: 'raleway_extrabold';
+	} @elseif $font == bold {
+		font-family: 'raleway_bold';
 	}
 }

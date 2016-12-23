@@ -1,0 +1,154 @@
+/* ======= mixins ========= */
+/* ===== instruments ====== */
+/* ======= sections ====== */
+.news-item-page {
+  margin-bottom: 80px;
+}
+.news-item-page .wrapper {
+  min-height: 400px;
+  background: #fff;
+  padding-top: 50px;
+}
+.news-item-page .container {
+  position: relative;
+}
+
+.header {
+  margin-bottom: 155px;
+}
+
+.news-back {
+  margin-bottom: 35px !important;
+  display: block;
+}
+.news-back:before {
+  display: none;
+}
+
+.news-data {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.h1-title {
+  font-size: 60px;
+  line-height: 60px;
+  font-family: 'raleway_extrabold';
+  width: 100%;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.h2-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'raleway_extrabold';
+  color: black;
+  margin-bottom: 65px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.container-block {
+  margin-bottom: 65px;
+}
+.container-block p {
+  font-size: 16px;
+  font-family: 'raleway_medium';
+  color: black;
+  margin-bottom: 30px;
+}
+.container-block .padding_left {
+  padding-left: 55px;
+}
+.container-block ul {
+  padding-left: 60px;
+  margin-bottom: 30px;
+}
+.container-block ul li {
+  padding-left: 20px;
+  position: relative;
+  font-size: 16px;
+  font-family: 'raleway_medium';
+  color: black;
+  margin-bottom: 3px;
+}
+.container-block ul li:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  background: #7261aa;
+  border-radius: 50%;
+  left: 0;
+}
+.container-block ol {
+  padding-left: 60px;
+  margin-bottom: 30px;
+  counter-reset: myCounter;
+}
+.container-block ol li {
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: 'raleway_medium';
+  color: black;
+  margin-bottom: 3px;
+  list-style: none;
+  position: relative;
+}
+.container-block ol li:before {
+  left: -2px;
+  position: absolute;
+  counter-increment: myCounter;
+  content: counter(myCounter) ".";
+  color: #7261aa;
+  display: inline;
+  font-family: 'raleway_extrabold';
+  font-size: 16px;
+}
+.container-block table {
+  padding-left: 22px !important;
+  font-size: 16px;
+  font-family: 'raleway_medium';
+  color: black;
+}
+.container-block table thead {
+  background: #f4f4f4;
+}
+.container-block table thead tr th {
+  font-weight: normal;
+  border: none;
+}
+.container-block table td {
+  border: 1px solid #f4f4f4 !important;
+}
+.container-block table td:last-child {
+  border-right: none !important;
+}
+.container-block table td:first-child {
+  border-left: none !important;
+}
+
+.some-img-container {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.h3-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'raleway_extrabold';
+  color: black;
+  margin-bottom: 65px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=static-details-news.css.map */

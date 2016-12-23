@@ -1,0 +1,43 @@
+.header {
+	background: none;
+	min-height: 1px;
+	margin-bottom: 225px;
+}
+
+.error-title {
+	padding-left: 30px;
+	text-align: center;
+	font-size: 234px;
+	@include font(ext);
+	margin-bottom: 30px;
+	line-height: 234px;
+	letter-spacing: 35px;
+}
+
+.error-description {
+	margin-bottom: 60px;
+	font-size: 47px;
+	line-height: 47px;
+	text-align: center;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	@include font(ext);
+}
+
+.header-top-list {
+	text-align: center;
+	display: block;
+    position: relative;
+    top: auto;
+    transform: none;
+}
+
+.nav-list {
+	margin-bottom: 15px;
+}
+
+body {
+	background: url('../../../../images/404-bg.png') center top no-repeat,
+				url('../../../../images/body-bg.png') no-repeat;
+	background-size: 780px 987px, cover;
+}

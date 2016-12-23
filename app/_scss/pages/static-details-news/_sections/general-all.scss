@@ -1,0 +1,169 @@
+.news-item-page {
+	margin-bottom: 80px;
+
+	.wrapper {
+		min-height: 400px;
+		background: #fff;
+		padding-top: 50px;
+	}
+
+	.container {
+		position: relative;
+	}
+}
+
+.header {
+	margin-bottom: 155px;
+}
+
+.news-back {
+	margin-bottom: 35px !important;
+	display: block;
+
+	&:before {
+		display: none;
+	}
+}
+
+.news-data {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.h1-title {
+	font-size: 60px;
+	line-height: 60px;
+	font-family: 'raleway_extrabold';
+	width: 100%;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	top: -80px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.h2-title {
+	text-align: center;
+	font-size: 40px;
+	@include font(ext);
+	color: black;
+	margin-bottom: 65px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+.container-block {
+	margin-bottom: 65px;
+
+	p {
+		font-size: 16px;
+		@include font(med);
+		color: black;
+		margin-bottom: 30px;
+	}
+
+	.padding_left {
+		padding-left: 55px;
+	}
+
+	ul {
+		padding-left: 60px;
+		margin-bottom: 30px;
+
+		li {
+			padding-left: 20px;
+			position: relative;
+			font-size: 16px;
+			font-family: 'raleway_medium';
+			color: black;
+			margin-bottom: 3px;
+
+			&:before {
+				position: absolute;
+				display: block;
+				content: "";
+				top: 8px;
+				width: 4px;
+				height: 4px;
+				background: #7261aa;
+				border-radius: 50%;
+				left: 0;
+			}
+		}
+	}
+
+	ol {
+		padding-left: 60px;
+		margin-bottom: 30px;
+		counter-reset: myCounter;
+
+		li {
+			padding-left: 20px;
+			font-size: 16px;
+			font-family: 'raleway_medium';
+			color: black;
+			margin-bottom: 3px;
+			list-style: none;
+			position: relative;
+
+			&:before {
+				left: -2px;
+				position: absolute;
+				counter-increment: myCounter;
+				content: counter(myCounter) ".";
+				color: $fiol;
+				display: inline;
+				@include font(ext);
+				font-size: 16px;
+			}
+		}
+	}
+
+	table {
+		padding-left: 22px !important;
+		font-size: 16px;
+		@include font(med);
+		color: black;
+
+		thead {
+			background: #f4f4f4;
+
+			tr {
+				th {
+					font-weight: normal;
+					border: none;
+				}
+			}
+		}
+
+		td {
+			border: 1px solid #f4f4f4 !important;
+
+			&:last-child {
+				border-right: none !important; 
+			}
+
+			&:first-child {
+				border-left: none !important;
+			}
+		}
+	}
+}
+
+.some-img-container {
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+.h3-title {
+	text-align: center;
+	font-size: 30px;
+	@include font(ext);
+	color: black;
+	margin-bottom: 65px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
