@@ -1,0 +1,273 @@
+@media screen and (max-width: 767px) {
+	
+	.info__cabinet,
+	.info__cabinet:hover,
+	.info__cabinet:focus {
+		width: auto;
+		padding-left: 0;
+	}
+
+	.info__cabinet-aut-false,
+	.info__cabinet-aut-false:hover,
+	.info__cabinet-aut-false:focus {
+		font-size: 0;
+		width: 13px;
+		height: 14px;
+		line-height: 26px;
+		transform: scale(1.8);
+
+		&:before {
+			top: 50%;
+			transform: translate(-50%, -50%);
+			left: 0;
+		}
+	}
+
+	.info__cabinet .info__cabinet-aut-false:before,
+	.info__cabinet:hover .info__cabinet-aut-false:before,
+	.info__cabinet:focus .info__cabinet-aut-false:before {
+		left: 0;
+	}
+
+	.header-top__info {
+		right: 20px;
+	}
+
+	.header {
+		min-height: 195px;
+		margin-bottom: 0;
+	}
+
+	.header-top__menu-xs {
+		@include get-sprite($header-spr, menu);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 20px;
+	}
+
+	.header-bottom {
+		.select2 {
+			display: none;
+		}
+	}
+
+	.form-search:before {
+		display: none;
+	}
+
+	.form-search__button-submit {
+		position: absolute;
+		@include get-sprite($header-spr, arrow_xs);
+		border: none;
+		font-size: 0;
+		right: 30px;
+		top: 14px;
+	}
+
+	.form-search {
+		margin: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.form-search__search {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 35px;
+		margin: 0;
+	}
+
+	.header-bottom {
+		border-radius: 0;
+		min-height: 105px; 
+	}
+
+	.main {
+		padding-top: 0;
+	}
+
+	.slider-block_xs {
+		.wrapper {
+			background: #fff;
+			padding-top: 30px;
+			padding-bottom: 80px;
+		}
+	}
+
+	.carousel-blocks {
+
+		width: 280px;
+		margin: 0 auto;
+
+		&:before {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #e5e5e5;
+			bottom: -34px;
+		}
+
+		.item-wrap {
+			padding: 15px 15px 15px 15px;
+			background: url('../../../../images/pink-block.png') no-repeat;
+			background-size: cover;
+		}
+
+		.item {
+			margin: 0 auto;
+			max-width: 100%;
+			height: 290px;
+			width: 280px;
+			border-radius: 6px;
+			padding: 0 15px 0 15px;
+		}
+
+		.img-container {
+			max-width: 100%;
+			padding-top: 20px;
+			height: 155px;
+			line-height: 155px;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		.slide-img {
+			display: inline-block;
+			vertical-align: middle;
+			max-height: 100%;
+		}
+
+		.carousel-blocks-caption {
+
+			.carousel-blocks-title {
+				font-size: 18px;
+				@include font(ext);
+				letter-spacing: 3px;
+				color: black;
+				line-height: 22px;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+			}
+
+			.carousel-blocks-link,
+			.carousel-blocks-link:hover,
+			.carousel-blocks-link:focus {
+				font-size: 18px;
+				font-family: 'raleway_medium';
+				border-bottom: 1px solid black;
+				display: inline-block;
+				line-height: 18px;
+				position: relative;
+
+				&:after {
+					content: " →";
+					right: -25px;
+					position: absolute;
+					text-decoration: none;
+				}
+			}
+
+		}
+
+		.carousel-indicators {
+			bottom: -55px !important;
+			z-index: 1 !important;
+
+			li {
+				margin: 0 10px 0 0;
+				width: 14px;
+				height: 14px;
+				border: none;
+				background: #7261aa;
+				position: relative;
+
+				&:last-child {
+					margin: 0;
+				}
+
+				&.active {
+					background: none;
+
+					&:before {
+						display: block;
+						content: "";
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						@include get-sprite($main-spr, grenade);
+					}
+				}
+			}
+		}
+	}
+
+	.carousel-discounts {
+
+		&:before {
+			bottom: -34px;
+		}
+
+		.item {
+			overflow: hidden;
+		}
+
+		.slide-img {
+			width: auto;
+			max-width: none !important;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.slider-title {
+			font-size: 35px;
+			line-height: 38px;
+		}
+
+		.carousel-indicators {
+			bottom: -55px !important;
+		}
+	}
+
+	.discounts {
+
+		.wrapper {
+			background: #fff;
+			padding-bottom: 75px;
+		}
+
+	}
+
+	.souvenirs-title {
+		font-size: 30px;
+		line-height: 38px;
+		letter-spacing: 5px;
+	}
+
+	.souvenirs-list {
+		display: block;
+		padding: 0 15px 10px 15px;
+	}
+
+	.souvenirs-link:hover {
+		.souvenirs-link__title:before {
+			display: none;
+		}
+	}
+
+	.souvenirs-item {
+		display: block;
+		padding: 10px 0 5px 0;
+		border-bottom: 1px solid #f5f5f5;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+}

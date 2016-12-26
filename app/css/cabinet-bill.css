@@ -100,6 +100,15 @@
   transform: translateX(-50%);
 }
 
+.cabinet-buy-button,
+.cabinet-buy-button:hover,
+.cabinet-buy-button:active,
+.cabinet-buy-button:focus {
+  width: 125px;
+  height: 50px;
+  line-height: 49px;
+}
+
 .cabinet-sidebar {
   padding-left: 50px;
 }
