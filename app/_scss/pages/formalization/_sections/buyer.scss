@@ -1,0 +1,18 @@
+.input-default {
+	width: 100%;
+}
+
+.buyer-form__textarea {
+	resize: none;
+	min-height: 150px;
+	line-height: 24px;
+	padding: 10px 15px;
+}
+
+.formalization__sumbit-button,
+.formalization__sumbit-button:focus,
+.formalization__sumbit-button:hover,
+.formalization__sumbit-button:active {
+	height: 50px;
+	width: 220px;
+}

@@ -1,0 +1,104 @@
+.order-formed {
+	margin-bottom: 80px;
+
+	.wrapper {
+		min-height: 400px;
+		background: #fff;
+		padding-top: 50px;
+	}
+
+	.container {
+		position: relative;
+	}
+}
+
+.order-formed-title {
+	font-size: 60px;
+	line-height: 60px;
+	font-family: 'raleway_extrabold';
+	width: 100%;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	top: -80px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.order-formed-description {
+	font-size: 18px;
+	@include font(med);
+	color: black;
+	margin-bottom: 10px; 
+}
+
+.order-formed-tracking {
+	font-size: 18px;
+	@include font(med);
+	color: black;
+	margin-bottom: 30px;
+
+	.order-formed-tracking__personal,
+	.order-formed-tracking__personal:hover,
+	.order-formed-tracking__personal:focus {
+		display: inline-block;
+		color: $pink;
+		text-decoration: underline;
+	}
+}
+
+.order-formed__payment-order {
+	position: relative;
+	margin-bottom: 130px;
+	font-size: 22px;
+	@include font(med);
+	color: black;
+
+	&:before {
+		@extend %pseudo;
+		background: url('../../../../images/yandex-money.png') no-repeat;
+		background-size: cover;
+		width: 131px;
+		height: 67px;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -90px;
+	}
+}
+
+.order-formed__services {
+	font-size: 18px;
+	@include font(med);
+	color: black;
+	margin-bottom: 15px; 
+}
+
+.order-formed__summ {
+	font-size: 25px;
+	@include font(ext);
+	color: $fiol;
+	letter-spacing: 5px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.order-formed__submit-button:hover,
+.order-formed__submit-button:active,
+.order-formed__submit-button:focus,
+.order-formed__submit-button {
+	width: 225px;
+	height: 50px;
+	margin-bottom: 30px;
+	line-height: 50px;
+	display: inline-block;
+}
+
+.order-formed__attention {
+	font-size: 18px;
+	@include font(med);
+	color: black;
+	margin-bottom: 55px;
+}
+
+

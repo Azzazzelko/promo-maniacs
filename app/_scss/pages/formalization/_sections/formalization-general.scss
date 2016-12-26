@@ -1,0 +1,89 @@
+.formalization {
+	margin-bottom: 80px;
+
+	.wrapper {
+		min-height: 400px;
+		background: #fff;
+		padding-top: 50px;
+	}
+
+	.container {
+		position: relative;
+	}
+}
+
+.formalization-title {
+	font-size: 60px;
+	line-height: 60px;
+	font-family: 'raleway_extrabold';
+	width: 100%;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	top: -80px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.formalization__block {
+	padding-bottom: 35px;
+	padding-right: 0;
+	margin-bottom: 35px;
+	position: relative;
+
+	&:last-child {
+		margin-bottom: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&:before {
+		@extend %pseudo;
+		bottom: 0;
+		left: 15px;
+		width: 100%;
+		height: 8px;
+		background: #f5f5f5;
+	}
+}
+
+.formalization__block-title {
+	margin-bottom: 35px;
+	font-size: 30px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	color: $fiol;
+	@include font(ext);
+}
+
+.buyer-form__input-label {
+	font-size: 16px;
+	color: black;
+	@include font(med);
+	position: absolute;
+	line-height: 38px;
+	left: 15px;
+	top: 0;
+	font-weight: normal;
+
+	span {
+		color: red;
+	}
+}
+
+.buyer-form__inputs-wrapper {
+	position: relative;
+}
+
+.buyer-form__input:valid + .buyer-form__input-label,
+.buyer-form__textarea:valid + .buyer-form__input-label {
+    display: none;
+}
+
+.buyer-form__input:focus + .buyer-form__input-label,
+.buyer-form__textarea:focus + .buyer-form__input-label {
+    display: none;
+}

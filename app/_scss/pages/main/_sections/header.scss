@@ -82,6 +82,7 @@
 	color: $pink;
 	display: inline-block;
 	position: relative;
+	width: 151px;
 
 	.avatar-container {
 		max-width: 100%;
@@ -89,6 +90,31 @@
 		top: 50%;
 		transform: translateY(-50%);
 		left: 0;
+	}
+
+	.info__cabinet-aut-true {
+		display: none;
+	}
+
+	.info__cabinet-aut-false {
+		display: block;
+		position: relative;
+
+		&:before {
+			left: 35px;
+			@extend %icons;
+			@include get-sprite($header-spr, lock);
+		}
+	}
+
+	&.authorized {
+		.info__cabinet-aut-true {
+			display: block;
+		}
+
+		.info__cabinet-aut-false {
+			display: none;
+		}
 	}
 }
 
@@ -220,6 +246,7 @@
 
 .search__select {
 	position: absolute;
+	display: none;
 }
 
 .form-search__button-submit {

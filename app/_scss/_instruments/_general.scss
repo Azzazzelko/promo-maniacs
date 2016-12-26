@@ -60,3 +60,172 @@ body {
 	margin: 0 auto;
 	text-align: center;
 }
+
+
+
+.input-default {
+	height: 38px;
+	border: 2px solid #a0a0a0;
+	border-radius: 3px;
+	padding: 0 15px;
+	line-height: 36px;
+	margin-bottom: 22px;
+	font-size: 16px;
+	@include font(med);
+	color: black;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+} 
+
+.input-default:focus,
+.input_focus {
+	outline: none;
+	border-color: $fiol;
+}
+
+.input_error {
+	color: #ff3030;
+	border-color: #ff3030;
+}
+
+.input_success {
+	border-color: #53d350;
+}
+
+.input-default:disabled,
+.input_disabled {
+	border-color: #f5f5f5;
+	background: none;
+
+	&::-webkit-input-placeholder {
+		color: #f5f5f5;
+	}
+}
+
+.button-default,
+.button-default:focus {
+	font-size: 22px;
+	@include font(med);
+	height: 38px;
+	line-height: 35px;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	background: #f7689e;
+	outline: none;
+	border: none;
+	margin-bottom: 12px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+
+.button_hover,
+.button-default:hover {
+	color: #fff;
+	background: #fe3d86;
+}
+
+.button-default:active,
+.button_active {
+	color: #fff;
+	background: #b42a5e;
+}
+
+.button_disabled,
+.button-default:disabled
+{
+	background: #dcdcdc;
+}
+
+
+.radio-default__text,
+.checkbox-default__text {
+	font-weight: normal;
+	padding-left: 22px;
+	font-size: 16px;
+	@include font(med);
+	color: black;
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.radio-default,
+.checkbox-default {
+	display: none;
+}
+
+.checkbox-default__text {
+	&:before {
+		@extend %icons;
+		left: 0;
+		width: 15px;
+		height: 15px;
+		border: 1px solid $fiol;
+	}
+}
+
+.checkbox-default:checked + .checkbox-default__text:after {
+	@extend %icons;
+	left: 3px;
+	@include get-sprite($header-spr, fiol-check);
+}
+
+.radio-default__text {
+	&:before {
+		@extend %icons;
+		left: 3px;
+		width: 11px;
+		height: 11px;
+		border-radius: 50%;
+		border: 1px solid $fiol;
+	}
+}
+
+.radio-default:checked + .radio-default__text:after {
+	@extend %icons;
+	left: 6px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: $fiol;
+}
+
+
+/****** valid - errors *****/
+
+.qtip-content {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	background: $fiol;
+	color: #fff;
+	font-size: 18px;
+	@include font(med);
+	overflow: visible;
+
+	&:after {
+		content: ''; 
+		display: block;
+	    position: absolute; 
+	    left: -12px; 
+	    top: 50%;
+	    transform: translateY(-50%);
+	    border: 6px solid transparent;
+	    border-right: 6px solid $fiol;
+	}
+}
+
+.qtip-default {
+	border: none;
+}

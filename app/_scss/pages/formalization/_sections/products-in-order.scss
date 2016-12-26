@@ -1,0 +1,109 @@
+.products-in-order__item {
+	height: 140px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	position: relative;
+	font-size: 0;
+
+	.item_height {
+		height: 100%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.description-block {
+		width: 367px;
+		padding: 0 5px; 
+	}
+
+	.flex {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+
+.products-in-order__item-img-container {
+	max-width: 100%;
+	width: 125px;
+	height: 140px;
+	line-height: 140px;
+	position: relative;
+	text-align: center;
+}
+
+.products-in-order__item-img {
+	max-width: inherit;
+	max-height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.products-in-order__item-colors-list {
+	position: absolute;
+	font-size: 0;
+	top: 20px;
+	left: 30px;
+}
+
+.products-in-order__item-colors-item {
+	width: 10px;
+	height: 10px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+
+	&.violet {
+		background: violet;
+	}
+
+	&.green {
+		background: green;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.products-in-order__item-code {
+	font-size: 16px;
+	color: #b7b7b7;
+	font-family: 'raleway_medium';
+	margin-bottom: 15px;
+}
+
+.products-in-order__item-description,
+.products-in-order__item-description:hover,
+.products-in-order__item-description:focus {
+	text-decoration: underline;
+	font-size: 16px;
+	color: black;
+	font-family: 'raleway_medium';
+}
+
+.products-in-order__count {
+	width: 80px;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	@include font(med);
+}
+
+.products-in-order__item-price {
+	font-size: 18px;
+	font-family: 'raleway_extrabold';
+	color: #7261aa;
+	position: relative;
+	letter-spacing: 3px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.products-in-order__item-total-price {
+	display: block;
+	font-size: 25px;
+	color: #7261aa;
+	font-family: 'raleway_extrabold';
+	letter-spacing: 5px;
+}

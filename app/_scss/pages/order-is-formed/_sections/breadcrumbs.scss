@@ -1,0 +1,71 @@
+.breadcrumbs-list {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	font-size: 16px;
+	color: #f7689e;
+	font-family: 'raleway_medium';
+	position: relative;
+	border-bottom: 1px solid $pink;
+	line-height: 16px;
+	position: relative;
+
+	&:last-child:after {
+		display: none;
+	}
+
+	&:after {
+		content: "/";
+		display: block;
+		position: absolute;
+		right: -16px;
+		top: 0;
+		color: #d6d6d6;
+	}
+
+	&.active {
+		border-bottom: 0.1px dashed $pink;
+		margin-right: 45px;
+	}
+
+	&.active:after {
+		right: -38px;
+	}
+
+	&.active:before {
+		@extend %icons;
+		@include get-sprite($catalog-spr, arrow-down_small_pink);
+		right: -15px;
+	}
+
+	.dropdown-menu {
+		width: 260px;
+		min-height: 370px;
+		padding: 20px 20px 25px 25px;
+		top: -23px;
+		left: -25px;
+		background: #fff;
+		border: none;
+		box-shadow: none;
+	}
+
+	.breadcrumbs-item__item {
+		font-size: 16px;
+		font-family: 'raleway_medium';
+		margin-bottom: 15px;
+		color: black;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			color: $pink;
+		}
+	}
+}

@@ -1,0 +1,139 @@
+.authorization-pop-up__dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 620px;
+	text-align: center;
+}
+
+.authorization-pop__container {
+	background: #fff ;
+	min-height: 600px;
+	padding: 45px 130px 0 130px;
+	border-radius: 3px;
+}
+
+.authorization-pop__close-button {
+	position: absolute;
+	top: 50px;
+	right: 45px;
+	@include get-sprite($header-spr, pop-exit);
+}
+
+.authorization-pop__title {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 34px;
+	color: black;
+	letter-spacing: 5px;
+	@include font(ext);
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.authorization-pop__description {
+	font-size: 18px;
+	@include font(med);
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.authorization-pop__register,
+.authorization-pop__register:hover,
+.authorization-pop__register:focus {
+	color: $pink;
+	font-size: 18px;
+	@include font(med);
+	text-align: center;
+	margin-bottom: 25px;
+	text-decoration: underline;
+}
+
+.authorization-pop__form {
+	margin-bottom: 35px;
+}
+
+.authorization-pop__input-email,
+.authorization-pop__input-password {
+	width: 100%;
+	display: block;
+}
+
+.authorization-pop__input-password {
+	margin-bottom: 15px;
+}
+
+.authorization-pop__forgot-password,
+.authorization-pop__forgot-password:focus,
+.authorization-pop__forgot-password:hover {
+	text-decoration: underline;
+	font-size: 16px;
+	@include font(med);
+	margin: 0 0 10px 15px;
+	text-align: left;
+}
+
+.authorization-pop__remember-label {
+	margin-bottom: 30px;
+	margin-left: 15px;
+}
+
+.authorization-pop__button-sumbit,
+.authorization-pop__button-sumbit:focus {
+	width: 110px;
+	margin: 0 auto;
+	display: block;
+}
+
+.authorization-pop__socials-block {
+	margin: 0 -130px 0 -130px;
+	padding: 35px 130px 40px 130px;
+	background: url('../../../../images/pop-bg.png') no-repeat;
+	background-size: cover;
+}
+
+.authorization-pop__socials-title {
+	font-size: 18px;
+	@include font(med);
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.authorization-pop__socials-list {
+	font-size: 0;
+}
+
+.authorization-pop__socials-item {
+	display: inline-block;
+	margin-right: 8px;
+	width: 32px;
+	height: 32px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.authorization-pop__socials-link {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-size: 0;
+
+	&.vk:before {
+		@extend %icons;
+		@include get-sprite($header-spr, vk);
+	}
+
+	&.fb:before {
+		@extend %icons;
+		@include get-sprite($header-spr, fb);
+	}
+
+	&.google:before {
+		@extend %icons;
+		@include get-sprite($header-spr, google);
+	}
+}
+

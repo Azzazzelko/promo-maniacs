@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/jquery.qtip.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -38,12 +39,17 @@
 				</a>
 				<div class="header-top__info pull-right text-right">
 					<a href="#" class="info__tel">8 (495) <span class="info__tel_bold">222-22-22</span></a>
-					<a href="#" class="info__cabinet">
-						<div class="avatar-container">
-							<img src="images/avatar.png" alt="img" class="avatar img-responsive">
-						</div>
-						Мой кабинет
-					</a>
+					<div class="info__cabinet">
+						<a href="#" class="info__cabinet-aut-true">
+							<div class="avatar-container">
+								<img src="images/avatar.png" alt="img" class="avatar img-responsive">
+							</div>
+							Мой кабинет
+						</a>
+						<a href=".authorization-pop-up" data-toggle="modal" class="info__cabinet-aut-false">
+							Войти
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="header-middle container">
@@ -878,6 +884,74 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Authorization Pop-Up -->
+		<div class="modal fade authorization-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="authorization-pop-up__dialog">
+				<div class="authorization-pop__container">
+					<a href="#" class="authorization-pop__close-button" data-dismiss="modal"></a>
+					<div class="authorization-pop__title">Вход</div>
+					<div class="authorization-pop__description">Вы еще не зарегистрированы?</div>
+					<a href="#" class="authorization-pop__register">Зарегистрируйтесь</a>
+					<form action="post" class="authorization-pop__form text-left" novalidate>
+						<input type="email" class="input-default authorization-pop__input-email" placeholder="Электронная почта" name="email"  required>
+						<input type="password" class="input-default authorization-pop__input-password" placeholder="Пароль" name="password" required>
+						<a href="#" class="authorization-pop__forgot-password">Забыл пароль?</a>
+						<label class="authorization-pop__remember-label">
+							<input class="checkbox-default" type="checkbox" name="remember">
+							<div class="checkbox-default__text">Запомнить меня на этом компьютере</div>
+						</label>
+						<button type="submit" class="authorization-pop__button-sumbit button-default">Войти</button>
+					</form>
+					<div class="authorization-pop__socials-block">
+						<div class="authorization-pop__socials-title">или войдите с помощью соц. сетей</div>
+						<ul class="authorization-pop__socials-list">
+							<li class="authorization-pop__socials-item">
+								<a href="#" class="authorization-pop__socials-link vk">VK</a>
+							</li>
+							<li class="authorization-pop__socials-item">
+								<a href="#" class="authorization-pop__socials-link fb">FB</a>
+							</li>
+							<li class="authorization-pop__socials-item">
+								<a href="#" class="authorization-pop__socials-link google">G+</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Feedback Pop-Up -->
+		<div class="modal fade feedback-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="feedback-pop-up__dialog">
+				<div class="feedback-pop__container">
+					<a href="#" class="feedback-pop__close-button" data-dismiss="modal"></a>
+					<div class="feedback-pop__title">Связаться с нами</div>
+					<div class="feedback-pop__description">Если рискнёте</div>
+					<form action="#" class="feedback-pop__form" novalidate="">
+						<input type="text" class="feedback-pop__input-name input-default" name="name" placeholder="Ваше имя" required="">
+						<input type="text" class="feedback-pop__input-tel input-default" name="tel" placeholder="Номер телефона" required="">
+						<textarea class="input-default feedback-pop__textarea" name="text" placeholder="Ваше сообщение"></textarea required="">
+						<button type="submit" class="feedback-pop__button-submit feedback-form__button-submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Password-reset Pop-Up -->
+		<div class="modal pass-res-pop-up inner-modal" id="pass-res-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="pass-res-pop-up__dialog">
+				<div class="pass-res-pop__container">
+					<a href="#" class="pass-res-pop__close-button"></a>
+					<div class="pass-res-pop__title">Восстановление пароля</div>
+					<div class="pass-res-pop__description">Введите электронную почту указанную <br> при регистрации и мы вышлем вам дальнейшие инструкции</div>
+					<form action="#" class="pass-res-pop__form text-left" novalidate="">
+						<input type="text" class="input-default pass-res-pop__input-email" placeholder="Электронная почта" name="email" required="">
+						<button type="submit" class="pass-res-pop__button-sumbit button-default">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<footer class="footer">
@@ -1027,6 +1101,7 @@
 	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/select2.full.min.js"></script>
+	<script src="js/jquery.qtip.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

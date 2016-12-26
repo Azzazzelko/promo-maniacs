@@ -1,0 +1,93 @@
+.cabinet-sidebar {
+	padding-left: 50px;
+}
+
+.cabinet-sidebar-list {
+	font-size: 0;
+	margin-bottom: 70px;
+}
+
+.cabinet-sidebar-item {
+	font-size: 17px;
+	@include font(ext);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: $fiol;
+	margin-bottom: 22px;
+	position: relative;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.active {
+		color: $pink;
+
+		&:before {
+			@extend %icons;
+			@include get-sprite($cabinet-spr, pistol);
+			left: -45px;
+			top: 70%;
+		}
+	}
+}
+
+.cabinet-sidebar-socials-title {
+	font-size: 17px;
+	@include font(ext);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: black;
+	margin-bottom: 15px;
+}
+
+.cabinet-sidebar-socials-list {
+	font-size: 0;
+	margin-bottom: 55px;
+}
+
+.cabinet-sidebar-socials-item {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 8px;
+	display: inline-block;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.cabinet-sidebar-socials-link {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+$socials : fb, google, tw, vk, inst;
+
+@each $item in $socials {
+	.cabinet-sidebar-socials-link.#{$item}:before {
+		@extend %icons;
+		@include get-sprite($cabinet-spr, #{$item});		
+	}
+};
+
+.cabinet-sidebar-delivery {
+	font-size: 17px;
+	@include font(ext);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: black;
+	margin-bottom: 10px;
+}
+
+.cabinet-sidebar-delivery__button-submit,
+.cabinet-sidebar-delivery__button-submit:hover,
+.cabinet-sidebar-delivery__button-submit:active,
+.cabinet-sidebar-delivery__button-submit:focus {
+	width: 175px;
+	height: 50px;
+	line-height: 50px;
+}

@@ -21,16 +21,18 @@ $fiol : #7261aa;
 	content: "";
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%); 
 }
 
-// @include get-sprite($details-spr, arrow-right_small_pink);
+// @include get-sprite($cabinet-spr, arrow);
 $header-spr : sprite-map('icons-header/*.png' , $spacing: 70px);
 $footer-spr : sprite-map('icons-footer/*.png' , $spacing: 70px);
 $main-spr   : sprite-map('icons-main/*.png'   , $spacing: 70px);
 $catalog-spr: sprite-map('icons-catalog/*.png', $spacing: 70px);
 $details-spr: sprite-map('icons-details/*.png', $spacing: 70px);
 $about-spr  : sprite-map('icons-about/*.png'  , $spacing: 70px);
+$cabinet-spr: sprite-map('icons-cabinet/*.png', $spacing: 70px);
+                         
 
 $souvenirs : clothes, pens, accessories, clock, relax, electro, dishes, sets, promo, bags, office, box, gifts, notebook, house, trinkets, umbrellas, honors, desk, postcards, smoking;
 

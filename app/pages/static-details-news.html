@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/fonts.css">
 	<link rel="stylesheet" href="../css/select2.min.css">
+	<link rel="stylesheet" href="../css/jquery.qtip.min.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/static-details-news.css">
 
@@ -39,12 +40,17 @@
 				</a>
 				<div class="header-top__info pull-right text-right">
 					<a href="#" class="info__tel">8 (495) <span class="info__tel_bold">222-22-22</span></a>
-					<a href="#" class="info__cabinet">
-						<div class="avatar-container">
-							<img src="../images/avatar.png" alt="img" class="avatar img-responsive">
-						</div>
-						Мой кабинет
-					</a>
+					<div class="info__cabinet authorized">
+						<a href="#" class="info__cabinet-aut-true">
+							<div class="avatar-container">
+								<img src="..images/avatar.png" alt="img" class="avatar img-responsive">
+							</div>
+							Мой кабинет
+						</a>
+						<a href=".authorization-pop-up" data-toggle="modal" class="info__cabinet-aut-false">
+							Войти
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="header-middle container">
@@ -483,21 +489,21 @@
 						
 						<div class="row">
 							<div class="col-sm-3">
-								<label>
-									<input type="radio" name="radio">
-									<div>Радио</div>
+								<label class="col-sm-12">
+									<input type="radio" name="radio" class="radio-default">
+									<div class="radio-default__text">Радио</div>
 								</label>
-								<label>
-									<input type="radio" name="radio" checked>
-									<div>Радио checked</div>
+								<label class="col-sm-12">
+									<input type="radio" name="radio" class="radio-default" checked>
+									<div class="radio-default__text">Радио checked</div>
 								</label>
-								<label>
-									<input type="text" name="checkbox">
-									<div>Чекбокс</div>
+								<label class="col-sm-12">
+									<input type="checkbox" name="checkbox" class="checkbox-default">
+									<div class="checkbox-default__text">Чекбокс</div>
 								</label>
-								<label>
-									<input type="text" name="checkbox" checked>
-									<div>Чекбокс checked</div>
+								<label class="col-sm-12">
+									<input type="checkbox" name="checkbox" class="checkbox-default" checked>
+									<div class="checkbox-default__text">Чекбокс checked</div>
 								</label>
 							</div>
 							<div class="col-sm-3">
@@ -505,7 +511,7 @@
 								<input type="text" class="input-default input_focus" value="инпут фокус">
 								<input type="text" class="input-default input_error" value="ошибка">
 								<input type="text" class="input-default input_success" value="профит">
-								<input type="text" class="input-default input_disabled" value="профит" disabled>
+								<input type="text" class="input-default input_disabled" placeholder="дизейбл" disabled>
 							</div>
 							<div class="col-sm-3">
 								<a href="#" class="button-default">нормал</a>
@@ -686,6 +692,7 @@
 	<script src="../js/jquery-1.11.0.min.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/select2.full.min.js"></script>
+	<script src="../js/jquery.qtip.min.js"></script>
 	<script src="../js/main.js"></script>
 </body>
 </html>
