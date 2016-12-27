@@ -21,26 +21,40 @@ $(function() {
 	**   inner-pop-up - password pop   **
 	*************************************/
 
-	$(".authorization-pop__forgot-password").on("click", openPopup);
-	$(".inner-modal").on("click", closePopup);
+	var innerModal = $(".inner-modal");			 //Внутренние модалки
+	var openButtons = $("[data-my-pop='true']"); //Кнопки с дата атрибутом, открывающие внутренние модалки.
 
-	function openPopup(e) { 
+	innerModal.on("click", closePopup);
+	openButtons.on("click", thatWillBeOpen);
+
+	function thatWillBeOpen(e){		//открываем модалку по Хрефу.
 		e.preventDefault();
-		$("#pass-res-pop-up").fadeIn(200);
+
+		var $this = $(this);
+		var href = $this.attr("href");
+
+		openPopup(href);
+	};
+
+	function openPopup(target) { 
+		$(target).fadeIn(200);
 	};
 
 	function closePopup(e) {
-		e.preventDefault();
 		var $target = $(e.target);
 
-		if ($target.hasClass('inner-modal') || $target.hasClass('pass-res-pop__close-button')) {
-			$('.inner-modal').fadeOut(200);
+		if ($target.hasClass('inner-modal') || $target.attr('data-my-pop-close')) {
+			innerModal.fadeOut(200);
 			$('.qtip').hide();
 		}
 	};
 
 	$(".modal").on('hidden.bs.modal', function () {
-		 $('.qtip').hide();
+		$('.qtip').hide();
+	});
+
+	$(".modal a").on("click", function(e){     //при клике на любой линк в модалке, убираем ошибки валида
+		$('.qtip').hide();
 	});
 
     /******************
