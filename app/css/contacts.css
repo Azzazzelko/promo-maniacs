@@ -156,4 +156,72 @@
   max-width: 100%;
 }
 
+/* ======== media ========= */
+@media screen and (max-width: 767px) {
+  .header {
+    margin-bottom: 35px;
+  }
+
+  .contacts {
+    padding-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .contacts .wrapper {
+    padding-top: 0;
+    background: none;
+  }
+  .contacts .container {
+    margin: 0 15px;
+    padding-top: 40px;
+    background: #fff;
+  }
+
+  .contacts-title {
+    top: -15px;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 5px;
+  }
+
+  .breadcrumbs-list {
+    margin-bottom: 30px;
+  }
+
+  .contacts-adress {
+    padding-right: 0;
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+
+  .contacts-email {
+    text-align: center;
+  }
+
+  .contacts-tel {
+    font-size: 28px;
+  }
+
+  .contacts-schedule {
+    margin-bottom: 35px;
+  }
+
+  .contacts-email,
+  .contacts-email:hover,
+  .contacts-email:focus {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contacts-tel {
+    font-size: 25px;
+  }
+
+  .contacts-adress,
+  .contacts-email {
+    font-size: 18px;
+  }
+}
+
 /*# sourceMappingURL=contacts.css.map */

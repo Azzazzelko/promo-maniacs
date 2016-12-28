@@ -1,0 +1,83 @@
+@media screen and (max-width: 767px) {
+
+	.about .wrapper {
+		position: relative;
+	}
+
+	.header {
+		margin-bottom: 35px;
+	}
+
+	.about {
+		color: black;
+		padding-top: 15px;
+		margin-bottom: 0;
+		text-align: left;
+
+		.wrapper {
+			padding-top: 0;
+			background: none;
+		}
+
+		.container {
+			margin: 0 15px;
+			padding-top: 40px;
+			background: #fff;
+		}
+
+		.breadcrumbs-list {
+			margin-bottom: 30px;
+		}
+
+		.breadcrumbs-item {
+			color: $pink;
+			border-color: $pink;
+
+			&:last-child {
+				color: #bbbbbb;
+			}
+		}
+
+		.about-description {
+			color: black;
+			font-size: 17px;
+			text-align: left;
+			line-height: 27px;
+			margin-bottom: 25px;
+
+			&.top {
+				margin-bottom: 25px;
+			}
+
+			.knife {
+				padding-left: 30px;
+
+				&:before {
+					display: block;
+				}
+			}
+
+			.grenade {
+				padding-left: 30px;
+
+				&:before {
+					display: block;
+				}
+			}
+		}
+
+		.about-wiki-button,
+		.about-wiki-button:hover,
+		.about-wiki-button:focus {
+			position: relative;
+			bottom: auto;
+		}
+	}
+
+	.about-title {
+		top: -15px;
+		font-size: 30px;
+		line-height: 38px;
+		letter-spacing: 5px;
+	}
+}

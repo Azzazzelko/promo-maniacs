@@ -1,0 +1,44 @@
+@media screen and (max-width: 767px) {
+
+	.error-title {
+		font-size: 108px;
+		line-height: 108px;
+		margin-bottom: 15px;
+		letter-spacing: 25px;
+		padding-left: 0;
+		margin-right: -25px;
+	}
+
+	.error-description {
+		font-size: 20px;
+		letter-spacing: 4px;
+		margin-bottom: 110px;
+	}
+
+	.error-button,
+	.error-button:hover,
+	.error-button:active,
+	.error-button:focus {
+		font-size: 17px;
+		line-height: 40px;
+		height: 42px;
+		width: 100%;
+		border-radius: 5px;
+	}
+
+	.main {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.header-middle.container {
+		padding: 0;
+	}
+
+	body {
+		background-size: contain, auto;
+	}
+
+}

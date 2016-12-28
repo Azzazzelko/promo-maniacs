@@ -720,7 +720,6 @@ body {
   transform: translate(-50%, -50%);
 }
 .carousel-discounts .item {
-  height: 180px;
   max-width: 100%;
 }
 .carousel-discounts .slide-img {
@@ -1019,6 +1018,7 @@ body {
 }
 
 .full-catalog-container {
+  width: 1150px;
   background: #fff;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -1031,7 +1031,7 @@ body {
   position: absolute;
   top: 0;
   left: -20px;
-  width: 1215px;
+  width: 1180px;
   height: 100%;
   background: white;
   z-index: -1;
@@ -2388,6 +2388,7 @@ body {
   }
   .carousel-discounts .item {
     overflow: hidden;
+    height: 140px;
   }
   .carousel-discounts .slide-img {
     width: auto;
@@ -2634,6 +2635,16 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-size: initial;
+  }
+
+  .qtip-content {
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
   .header .header__top-item {
     font-size: 15px;
     margin-right: 10px;
@@ -2726,7 +2737,41 @@ body {
   .header .header-bottom__example {
     font-size: 16px;
   }
+  .header .full-catalog-title-item {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .header .full-catalog-subtitle {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .header .full-catalog-item {
+    font-size: 14px;
+  }
+  .header .full-catalog-list-container {
+    margin-bottom: 35px;
+  }
+  .header .full-catalog-title-item_procent:before {
+    left: -35px;
+    transform: translateY(-50%) scale(0.8);
+  }
+  .header .dropdown.open:before {
+    width: 170px;
+  }
+  .header .dropdown-menu {
+    left: 0px;
+  }
+  .header .full-catalog-container {
+    width: 722px;
+    padding-bottom: 10px;
+  }
+  .header .full-catalog-container:before {
+    width: 755px;
+  }
 
+  .big-blocks {
+    margin-bottom: 50px;
+  }
   .big-blocks .big-blocks__link,
   .big-blocks .big-blocks__link:hover,
   .big-blocks .big-blocks__link:focus {
@@ -2775,11 +2820,229 @@ body {
     margin-bottom: 10px;
   }
 
+  .feedback {
+    margin-bottom: 50px;
+  }
+  .feedback .wrapper {
+    padding: 50px 0 40px 0;
+  }
   .feedback .feedback-title {
-    font-size: 55px;
+    font-size: 50px;
   }
   .feedback .feedback-description {
+    font-size: 23px;
+  }
+  .feedback .feedback-form__button-submit {
+    font-size: 22px;
+  }
+
+  .discounts {
+    margin-bottom: 50px;
+  }
+  .discounts .carousel-discounts .slider-title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .discounts .carousel-discounts .item {
+    height: auto;
+  }
+
+  .branding {
+    margin-bottom: 100px;
+  }
+  .branding .branding-title {
+    font-size: 33px;
+    letter-spacing: 1px;
+  }
+  .branding .branding-title_right .for-pistol:before {
+    left: -8px;
+  }
+  .branding .branding-slogan-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .branding .branding-right-description_promo {
+    margin-left: 40px;
+  }
+  .branding .branding-right-description {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .branding .branding-right-link_promo {
+    margin-left: 40px;
+  }
+  .branding .branding-right-description_book {
+    margin-left: 20px;
+  }
+  .branding .branding-right-link_book,
+  .branding .branding-right-link_book:hover,
+  .branding .branding-right-link_book:focus {
+    margin-left: 20px;
+  }
+  .branding .branding-right-link:before {
+    display: none;
+  }
+  .branding .branding-right-container_promo:before {
+    transform: scale(0.8);
+    left: -40px;
+    top: -30px;
+  }
+  .branding .branding-right-container_promo,
+  .branding .branding-right-container_book {
+    padding-top: 170px;
+    min-height: auto;
+  }
+  .branding .branding-right-container_book:before {
+    transform: scale(0.8);
+    left: 0;
+    top: 30px;
+  }
+
+  .souvenirs {
+    margin-bottom: 50px;
+  }
+  .souvenirs .souvenirs-title, .souvenirs .news-title, .souvenirs .news-title {
+    font-size: 40px;
+    line-height: 40px;
+    top: -70px;
+  }
+  .souvenirs .souvenirs-link__title {
+    font-size: 14px;
+  }
+  .souvenirs .souvenirs-link__inner-item {
+    font-size: 14px;
+  }
+
+  .about {
+    margin-bottom: 75px;
+  }
+  .about .wrapper {
+    height: 600px;
+    padding-top: 105px;
+  }
+  .about .about-title {
+    font-size: 40px;
+    letter-spacing: 5px;
+    line-height: 40px;
+  }
+  .about .about-description {
+    font-size: 18px;
+  }
+  .about .about-description br {
+    display: none;
+  }
+
+  .news {
+    margin-bottom: 50px;
+  }
+  .news .news-title {
+    font-size: 40px;
+    line-height: 40px;
+    top: -70px;
+  }
+
+  .footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer .footer-list-title {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .footer .footer-item {
+    font-size: 13px;
+  }
+  .footer .footer-tel {
+    font-size: 18px;
+  }
+  .footer .footer-adress {
+    font-size: 16px;
+  }
+  .footer .footer-socials-list {
+    margin-left: 60px;
+  }
+  .footer .footer-subnav-item {
+    font-size: 17px;
+  }
+  .footer .footer-middle {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header .info__cabinet-aut-false {
+    font-size: 17px;
+  }
+  .header .info__cabinet,
+  .header .info__cabinet:hover,
+  .header .info__cabinet:focus {
+    width: 140px;
+    padding-left: 25px;
+  }
+  .header .info__cabinet .info__cabinet-aut-false:before,
+  .header .info__cabinet:hover .info__cabinet-aut-false:before,
+  .header .info__cabinet:focus .info__cabinet-aut-false:before {
+    left: 35px;
+  }
+  .header .info__tel {
+    font-size: 22px;
+    margin-right: 15px;
+  }
+  .header .info__tel:before {
+    display: block;
+  }
+  .header .info__cabinet.authorized .info__cabinet-aut-true {
+    font-size: 17px;
+    background: none;
+    width: auto;
+    height: auto;
+  }
+  .header .header__top-item {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .header .header-middle__button-full-catalog {
+    font-size: 18px;
+  }
+  .header .form-search .select2.select2-container.select2-container--default {
+    right: 172px;
+  }
+  .header .form-search:before {
+    left: 105px;
+  }
+  .header .dropdown.open:before {
+    width: 205px;
+  }
+  .header .dropdown-menu {
+    left: 0px;
+  }
+  .header .full-catalog-container {
+    width: 940px;
+  }
+  .header .full-catalog-container:before {
+    width: 965px;
+  }
+
+  .feedback .feedback-form__button-submit {
+    font-size: 20px;
+  }
+
+  .branding .branding-title {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .branding .branding-right-description {
+    font-size: 26px;
+  }
+  .branding .branding-slogan-text {
     font-size: 25px;
+    line-height: 29px;
+  }
+
+  .souvenirs .souvenirs-title, .souvenirs .news-title,
+  .news .news-title {
+    font-size: 50px;
+    line-height: 50px;
+    top: -75px;
   }
 }
 

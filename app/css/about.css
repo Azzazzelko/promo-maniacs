@@ -213,4 +213,76 @@
   margin-bottom: 50px;
 }
 
+/* ======== media ========= */
+@media screen and (max-width: 767px) {
+  .about .wrapper {
+    position: relative;
+  }
+
+  .header {
+    margin-bottom: 35px;
+  }
+
+  .about {
+    color: black;
+    padding-top: 15px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .about .wrapper {
+    padding-top: 0;
+    background: none;
+  }
+  .about .container {
+    margin: 0 15px;
+    padding-top: 40px;
+    background: #fff;
+  }
+  .about .breadcrumbs-list {
+    margin-bottom: 30px;
+  }
+  .about .breadcrumbs-item {
+    color: #f7689e;
+    border-color: #f7689e;
+  }
+  .about .breadcrumbs-item:last-child {
+    color: #bbbbbb;
+  }
+  .about .about-description {
+    color: black;
+    font-size: 17px;
+    text-align: left;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+  .about .about-description.top {
+    margin-bottom: 25px;
+  }
+  .about .about-description .knife {
+    padding-left: 30px;
+  }
+  .about .about-description .knife:before {
+    display: block;
+  }
+  .about .about-description .grenade {
+    padding-left: 30px;
+  }
+  .about .about-description .grenade:before {
+    display: block;
+  }
+  .about .about-wiki-button,
+  .about .about-wiki-button:hover,
+  .about .about-wiki-button:focus {
+    position: relative;
+    bottom: auto;
+  }
+
+  .about-title {
+    top: -15px;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 5px;
+  }
+}
+
 /*# sourceMappingURL=about.css.map */

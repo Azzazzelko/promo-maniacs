@@ -59,8 +59,12 @@
 .container-block {
 	margin-bottom: 65px;
 
-	.padding_left {
-		padding-left: 55px;
+	.padding-text {
+		padding: 0 15px;
+	}
+
+	.text-wrap {
+		margin-right: 40px;
 	}
 
 	p {

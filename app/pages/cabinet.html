@@ -23,7 +23,7 @@
 	<header class="header">
 		<div class="wrapper">
 			<div class="header-top container">
-				<ul class="header-top-list pull-left">
+				<ul class="header-top-list pull-left hidden-xs">
 					<li class="header__top-item">
 						<a href="#" class="header__top-link">О компании</a>
 					</li>
@@ -34,18 +34,126 @@
 						<a href="#" class="header__top-link">Новости</a>
 					</li>
 				</ul>
+				<a href="#header-top__mobile-nav" class="header-top__menu-xs pull-left visible-xs" data-toggle="collapse"></a>
+				<nav class="header-top__mobile-nav collapse container" id="header-top__mobile-nav">
+					<div class="mobile-nav__top">
+						<a href="#header-top__mobile-nav" class="mobile-nav__exit" data-toggle="collapse"></a>
+						<a href="#" class="mobile-nav__top-tel">+8 (495) 222-22-22</a>
+						<div class="info__cabinet">
+							<a href="#" class="info__cabinet-aut-true">
+								<div class="avatar-container hidden-xs">
+									<img src="../images/avatar.png" alt="img" class="avatar img-responsive">
+								</div>
+								Мой кабинет
+								<div class="info__cabinet-aut-true__count visible-xs">21</div>
+							</a>
+							<a href=".authorization-pop-up" data-toggle="modal" class="info__cabinet-aut-false">
+								Войти
+							</a>
+						</div>
+					</div>
+					<ul class="mobile-nav__list" id="mobile-nav__list">
+						<li class="mobile-nav__item panel">
+							<a href="#mobile-nav__item-list-1" class="mobile-nav__item-link" data-toggle="collapse" data-parent="#mobile-nav__list">Промо-одежда</a>
+							<div class="collapse" id="mobile-nav__item-list-1">
+								<div class="mobile-nav__item-list-wrapper">
+									<ul class="mobile-nav__item-list">
+										<li class="mobile-nav__item-item">
+											<a href="#" class="mobile-nav__item-item-link">бейсболки</a>
+											<ul class="mobile-nav__item-item-list">
+												<li class="mobile-nav__item-item-item">
+													<a href="#" class="mobile-nav__item-item-item-link">брюки и шорты</a>
+												</li>
+												<li class="mobile-nav__item-item-item">
+													<a href="#" class="mobile-nav__item-item-item-link">ветровки, куртки</a>
+												</li>
+											</ul>
+										</li>
+										<li class="mobile-nav__item-item">
+											<a href="#" class="mobile-nav__item-item-link">поло</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="mobile-nav__item panel">
+							<a href="#mobile-nav__item-list-2" class="mobile-nav__item-link" data-toggle="collapse" data-parent="#mobile-nav__list">Ручки</a>
+							<div class="collapse" id="mobile-nav__item-list-2">
+								<div class="mobile-nav__item-list-wrapper">
+									<ul class="mobile-nav__item-list">
+										<li class="mobile-nav__item-item">
+											<a href="#" class="mobile-nav__item-item-link">бейсболки</a>
+											<ul class="mobile-nav__item-item-list">
+												<li class="mobile-nav__item-item-item">
+													<a href="#" class="mobile-nav__item-item-item-link">брюки и шорты</a>
+												</li>
+												<li class="mobile-nav__item-item-item">
+													<a href="#" class="mobile-nav__item-item-item-link">ветровки, куртки</a>
+												</li>
+											</ul>
+										</li>
+										<li class="mobile-nav__item-item">
+											<a href="#" class="mobile-nav__item-item-link">поло</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="mobile-nav__item panel">
+							<a href="#mobile-nav__item-list-3" class="mobile-nav__item-link" data-toggle="collapse" data-parent="#mobile-nav__list">Деловые аксессуары</a>
+							<div class="collapse" id="mobile-nav__item-list-3">
+								<div class="mobile-nav__item-list-wrapper">
+									<ul class="mobile-nav__item-list">
+										<li class="mobile-nav__item-item">
+											<a href="#" class="mobile-nav__item-item-link">бейсболки</a>
+											<ul class="mobile-nav__item-item-list">
+												<li class="mobile-nav__item-item-item">брюки и шорты</li>
+												<li class="mobile-nav__item-item-item">ветровки, куртки</li>
+											</ul>
+										</li>
+										<li class="mobile-nav__item-item">
+											<a href="#" class="mobile-nav__item-item-link">поло</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#" class="mobile-nav__item-link">Часы</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#" class="mobile-nav__item-link">Путешествие и отдых</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#" class="mobile-nav__item-link">Электроника</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#" class="mobile-nav__item-link">Посуда</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#" class="mobile-nav__item-link">Наборы</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#" class="mobile-nav__item-link">Промо-сувениры</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#" class="mobile-nav__item-link">Сумки</a>
+						</li>
+					</ul>
+				</nav>
 				<a href="#" class="header-top__logo-link">
 					<h1 class="sr-only">maniacs</h1>
 					<img src="../images/logo.png" alt="img" class="img-responsive">
 				</a>
 				<div class="header-top__info pull-right text-right">
-					<a href="#" class="info__tel">8 (495) <span class="info__tel_bold">222-22-22</span></a>
+					<a href="#" class="info__tel hidden-xs">8 (495) <span class="info__tel_bold">222-22-22</span></a>
 					<div class="info__cabinet">
 						<a href="#" class="info__cabinet-aut-true">
-							<div class="avatar-container">
+							<div class="avatar-container hidden-xs hidden-sm">
 								<img src="../images/avatar.png" alt="img" class="avatar img-responsive">
 							</div>
 							Мой кабинет
+							<div class="info__cabinet-aut-true__count visible-xs visible-sm">21</div>
 						</a>
 						<a href=".authorization-pop-up" data-toggle="modal" class="info__cabinet-aut-false">
 							Войти
@@ -53,11 +161,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="header-middle container">
+			<div class="header-middle container hidden-xs">
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="dropdown">
-							<a href="#full-catalog" class="header-middle__button-full-catalog dropdown-toggle" data-toggle="dropdown">Полный каталог</a>
+							<a href="#full-catalog" class="header-middle__button-full-catalog dropdown-toggle hidden-xs" data-toggle="dropdown"><span class="hidden-sm hidden-md">Полный каталог</span><span class="visible-sm visible-md">Каталог</span></a>
 							<div class="dropdown-menu">
 								<div class="container full-catalog-container">
 									<div class="row">
@@ -326,7 +434,7 @@
 						</div>
 					</div>
 					<nav class="col-sm-10">
-						<ul class="nav-list text-center">
+						<ul class="nav-list text-center hidden-xs">
 							<li class="nav-item">
 								<a href="#" class="nav-link">Брелоки</a>
 							</li>
@@ -363,7 +471,7 @@
 							</select>
 							<button class="form-search__button-submit col-sm-1" type="submit">искать</button>
 						</form>
-						<div class="header-bottom__example col-sm-offset-1">
+						<div class="header-bottom__example col-sm-offset-1 hidden-xs">
 							Например: <a href="#" class="example__border">Обложки для документов</a>
 						</div>
 					</div>
@@ -494,10 +602,10 @@
 		</div>
 	</main>
 
-	<footer class="footer">
+ 	<footer class="footer">
 		<div class="container">
 			<div class="footer-top row">
-				<div class="col-sm-2">
+				<div class="col-sm-2 hidden-xs">
 					<div class="footer-list-title">
 						Каталог
 					</div>
@@ -522,7 +630,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-sm-2 hidden-xs">
 					<div class="footer-list-title">
 						О компании
 					</div>
@@ -544,7 +652,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-sm-2 hidden-xs">
 					<div class="footer-list-title">
 						Акции
 					</div>
@@ -563,7 +671,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-sm-2 hidden-xs">
 					<div class="footer-list-title">
 						Условия работы
 					</div>
@@ -591,6 +699,8 @@
 						Центральный офис:
 						<div>Екатеринбург, ул. Черняховского, 86, корпус 8</div>
 					</div>
+					<a href="#" class="footer-emal_xs visible-xs">info@promo-maniac.ru</a>
+					<a href="#" class="button-default footer-tofull-button_xs visible-xs">Перейти на полный сайт</a>
 				</div>
 			</div>
 			<div class="footer-middle row">
@@ -612,7 +722,7 @@
 							<a href="#" class="footer-subnav-link">Личный кабинет</a>
 						</li>
 						<li class="footer-subnav-item">
-							<a href="#" class="footer-subnav-link">Написать сообщение</a>
+							<a href=".feedback-pop-up" data-toggle="modal" class="footer-subnav-link">Написать сообщение</a>
 						</li>
 					</ul>
 				</div>

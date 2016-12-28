@@ -1,0 +1,37 @@
+@media screen and (max-width: 767px) {
+
+	.header {
+		margin-bottom: 35px;
+	}
+
+	.news {
+		padding-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	.news .wrapper {
+		padding-top: 0;
+		background: none;
+	}
+
+	.news .container {
+		margin: 0 15px;
+		padding-top: 40px;
+		background: #fff;
+	}
+
+	.news-title {
+		top: -15px;
+	}
+
+	.news-item {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.paggination-list {
+		margin-bottom: 50px;
+	}
+
+}
