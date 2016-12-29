@@ -11,7 +11,7 @@
 	}
 
 	.sidebar-item__title[aria-expanded=true] + .sidebar-collapse {
-		.sidebar-item__link.female:before {
+		.sidebar-item__link.active:before {
 			left: -40px;
 		}
 	}
@@ -40,7 +40,7 @@
 	text-transform: none;
 }
 
-.sidebar-item__link.female {
+.sidebar-item__link.active {
 	position: relative;
 
 	&:before {

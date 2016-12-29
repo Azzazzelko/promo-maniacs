@@ -123,6 +123,8 @@
 
 .feedback .wrapper {
   background: #7362ab url("../../../../images/face.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .breadcrumbs-list {
@@ -215,6 +217,11 @@
 
 /* ======== media ========= */
 @media screen and (max-width: 767px) {
+  .wrap_xs {
+    background: #fff;
+    margin: 15px 15px 0 15px;
+  }
+
   .about .wrapper {
     position: relative;
   }
@@ -225,8 +232,7 @@
 
   .about {
     color: black;
-    padding-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 35px !important;
     text-align: left;
   }
   .about .wrapper {
@@ -234,12 +240,12 @@
     background: none;
   }
   .about .container {
-    margin: 0 15px;
     padding-top: 40px;
-    background: #fff;
+    background: none;
   }
   .about .breadcrumbs-list {
     margin-bottom: 30px;
+    padding-top: 25px;
   }
   .about .breadcrumbs-item {
     color: #f7689e;
@@ -263,18 +269,33 @@
   }
   .about .about-description .knife:before {
     display: block;
+    background: url('../images/icons-main-s3ada57b914.png') 0 -1782px no-repeat;
+    width: 25px;
+    height: 26px;
   }
   .about .about-description .grenade {
     padding-left: 30px;
   }
   .about .about-description .grenade:before {
     display: block;
+    background: url('../images/icons-main-s3ada57b914.png') 0 -1384px no-repeat;
+    width: 26px;
+    height: 31px;
   }
   .about .about-wiki-button,
   .about .about-wiki-button:hover,
   .about .about-wiki-button:focus {
     position: relative;
     bottom: auto;
+    font-size: 17px;
+    color: #d9d9d9;
+  }
+  .about .about-img-container {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+  .about .about-img {
+    width: 100%;
   }
 
   .about-title {
@@ -282,6 +303,115 @@
     font-size: 30px;
     line-height: 38px;
     letter-spacing: 5px;
+  }
+
+  .casualties {
+    margin-bottom: 35px;
+  }
+  .casualties .wrapper {
+    min-height: auto;
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .casualties .casualties-title {
+    font-size: 30px;
+    margin-bottom: 35px;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  .casualties .casualties-description {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .casualties .casualties-description p {
+    margin-bottom: 30px;
+  }
+  .casualties .casualties-description p:last-child {
+    margin-bottom: 0;
+  }
+  .casualties .about-img-container {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+  .casualties .about-img {
+    width: 100%;
+  }
+
+  .advantages .wrapper {
+    min-height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none;
+  }
+  .advantages .advantages-title {
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+  }
+  .advantages .advantages-item {
+    padding: 130px 50px 0 50px;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
+
+  .feedback {
+    margin-bottom: 0;
+  }
+  .feedback .wrapper {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    min-height: auto;
+  }
+  .feedback .feedback-title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+  }
+  .feedback .feedback-description {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+  }
+  .feedback .feedback-form__button-submit {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .about .breadcrumbs-list {
+    margin-bottom: 30px;
+  }
+
+  .about .about-description.top {
+    margin-bottom: 20px;
+  }
+
+  .about-title {
+    top: -20px;
+  }
+
+  .casualties .wrapper {
+    background-size: cover;
+    background-position: -190px;
+    padding-top: 40px;
+  }
+
+  .casualties-title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .casualties-description {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .advantages .wrapper {
+    padding-top: 75px;
   }
 }
 

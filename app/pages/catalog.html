@@ -485,7 +485,7 @@
 		<div class="clothing">
 			<div class="wrapper">
 				<div class="container">
-					<div class="row">
+					<div class="row mobile_bg">
 						<div class="clothing-title">Промо-одежда</div>
 						<ul class="breadcrumbs-list">
 							<li class="breadcrumbs-item">
@@ -538,8 +538,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="row text-center">
-						<div class="filters">
+					<div class="row">
+						<div class="filters text-center hidden-xs">
 							<div class="filters-price">
 								<div class="filters-text">
 									Цена:
@@ -721,7 +721,7 @@
 									<div class="collapse sidebar-collapse" id="sidebar-accordion-2">
 										<ul class="sidebar-item__list">
 											<li class="sidebar-item__item">
-												<a href="#" class="sidebar-item__link female">Женские</a>
+												<a href="#" class="sidebar-item__link active">Женские</a>
 												<ul class="sidebar-item__item__list">
 													<li class="sidebar-item__item__item">
 														<a href="#" class="sidebar-item__item__link">JRC</a>
@@ -753,7 +753,7 @@
 									<div class="collapse sidebar-collapse" id="sidebar-accordion-3">
 										<ul class="sidebar-item__list">
 											<li class="sidebar-item__item">
-												<a href="#" class="sidebar-item__link female">Женские</a>
+												<a href="#" class="sidebar-item__link active">Женские</a>
 												<ul class="sidebar-item__item__list">
 													<li class="sidebar-item__item__item">
 														<a href="#" class="sidebar-item__item__link">JRC</a>
@@ -800,6 +800,186 @@
 								</li>
 							</ul>
 						</aside>
+						
+						<!-- Filters-xs -->
+						<div class="filters_xs visible-xs">
+							<a href="#filters_xs-container" class="filters_xs-button button-default" data-toggle="collapse">Фильтр</a>
+							<div class="filters_xs-container collapse container" id="filters_xs-container">
+								<div class="filters_xs__top">
+									<div class="filters_xs__top-title">Фильтр</div>
+									<a href="#filters_xs-container" class="filters_xs__exit" data-toggle="collapse"></a>
+								</div>
+								<div class="filters_xs__wrapper text-left">
+									<div class="filters_xs__block">
+										<div class="filters_xs__block-title">Цена</div>
+										<label class="filters_xs-label">
+											<input type="radio" name="price" class="radio-default" checked="">
+											<div class="radio-default__text">Сначала дешевые</div>
+										</label>
+										<label class="filters_xs-label">
+											<input type="radio" name="price" class="radio-default">
+											<div class="radio-default__text">Сначала дорогие</div>
+										</label>
+									</div>
+
+									<a href="#filters_xs__block-inner_color" class="filters_xs__block carret" data-toggle="collapse">
+										<div class="filters_xs__block-title">Цвет</div>
+										<ul class="filters_xs-list">
+											<li class="filters_xs-item">
+												<div class="filters-item_xs__text blue">Cиний</div>	
+											</li>
+										</ul>
+									</a>
+									<div class="filters_xs__block-inner collapse container" id="filters_xs__block-inner_color">
+										<div class="filters_xs__top">
+											<div class="filters_xs__top-title">Фильтр</div>
+											<a href="#filters_xs__block-inner_color" class="filters_xs__exit" data-toggle="collapse"></a>
+										</div>
+										<div class="filters_xs__wrapper text-left">
+											<div class="filters_xs__block">
+												<div class="filters_xs__block-title">Цвет</div>
+												<ul class="filters_xs__inner-brend-list">
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="color" class="checkbox-default" checked="">
+															<div class="checkbox-default__text">Синий</div>
+														</label>	
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="color" class="checkbox-default">
+															<div class="checkbox-default__text">Красный</div>
+														</label>
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="color" class="checkbox-default">
+															<div class="checkbox-default__text">Зеленый</div>
+														</label>
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="color" class="checkbox-default">
+															<div class="checkbox-default__text">Фиолетовый</div>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<a href="#filters_xs__block-inner_brand" class="filters_xs__block carret" data-toggle="collapse">
+										<div class="filters_xs__block-title">Бренд</div>
+										<ul class="filters_xs-list">
+											<li class="filters_xs-item">
+												<div class="filters-item_xs__text">Angelo Moretti</div>
+											</li>
+											<li class="filters_xs-item">
+												<div class="filters-item_xs__text">Sols</div>
+											</li>
+										</ul>
+									</a>
+									<div class="filters_xs__block-inner collapse container" id="filters_xs__block-inner_brand">
+										<div class="filters_xs__top">
+											<div class="filters_xs__top-title">Фильтр</div>
+											<a href="#filters_xs__block-inner_brand" class="filters_xs__exit" data-toggle="collapse"></a>
+										</div>
+										<div class="filters_xs__wrapper text-left">
+											<div class="filters_xs__block">
+												<div class="filters_xs__block-title">Бренд</div>
+												<ul class="filters_xs__inner-brend-list">
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="brand" class="checkbox-default" checked="">
+															<div class="checkbox-default__text">Angelo Moretti</div>
+														</label>	
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="brand" class="checkbox-default" checked="">
+															<div class="checkbox-default__text">Sols</div>
+														</label>
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="brand" class="checkbox-default">
+															<div class="checkbox-default__text">JRC</div>
+														</label>
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="brand" class="checkbox-default">
+															<div class="checkbox-default__text">Start</div>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<a href="#filters_xs__block-inner_material" class="filters_xs__block carret" data-toggle="collapse">
+										<div class="filters_xs__block-title">Материал</div>
+										<ul class="filters_xs-list">
+											<li class="filters_xs-item">
+												<div class="filters-item_xs__text">Металл</div>
+											</li>
+										</ul>
+									</a>
+									<div class="filters_xs__block-inner collapse container" id="filters_xs__block-inner_material">
+										<div class="filters_xs__top">
+											<div class="filters_xs__top-title">Фильтр</div>
+											<a href="#filters_xs__block-inner_material" class="filters_xs__exit" data-toggle="collapse"></a>
+										</div>
+										<div class="filters_xs__wrapper text-left">
+											<div class="filters_xs__block">
+												<div class="filters_xs__block-title">Материал</div>
+												<ul class="filters_xs__inner-brend-list">
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="material" class="checkbox-default" checked="">
+															<div class="checkbox-default__text">Металл</div>
+														</label>	
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="material" class="checkbox-default">
+															<div class="checkbox-default__text">Чекбокс-2</div>
+														</label>
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="material" class="checkbox-default">
+															<div class="checkbox-default__text">Чекбокс-3</div>
+														</label>
+													</li>
+													<li class="filters_xs__inner-brend-item">
+														<label class="filters_xs-label filters_xs-label-checkbox">
+															<input type="checkbox" name="material" class="checkbox-default">
+															<div class="checkbox-default__text">Чекбокс-4</div>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="filters_xs__block">
+										<label class="filters_xs-label filters_xs-label-checkbox">
+											<input type="checkbox" name="quantity" class="checkbox-default" checked="">
+											<div class="checkbox-default__text">Распродажа</div>
+										</label>
+										<label class="filters_xs-label filters_xs-label-checkbox">
+											<input type="checkbox" name="quantity" class="checkbox-default" checked="">
+											<div class="checkbox-default__text">Новинки</div>
+										</label>
+										<label class="filters_xs-label filters_xs-label-checkbox">
+											<input type="checkbox" name="quantity" class="checkbox-default" checked="">
+											<div class="checkbox-default__text">Лучшее предложение</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
 
 						<!-- Clothing-list -->
 						<div class="col-sm-9">
@@ -994,7 +1174,7 @@
 		</div>
 
 		<!-- News -->
-		<div class="news">
+		<div class="news hidden-xs">
 			<div class="wrapper">
 				<div class="container">
 					<div class="news-title">новости и события</div>
@@ -1039,7 +1219,7 @@
 		</div>
 	</main>
 
- 	<footer class="footer">
+	<footer class="footer">
 		<div class="container">
 			<div class="footer-top row">
 				<div class="col-sm-2 hidden-xs">

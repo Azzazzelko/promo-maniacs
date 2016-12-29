@@ -295,7 +295,7 @@ body {
   position: absolute;
   left: 0;
   top: -5px;
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1194px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -1194px no-repeat;
   width: 26px;
   height: 31px;
 }
@@ -305,7 +305,7 @@ body {
   position: absolute;
   left: 0;
   top: -5px;
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1585px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -1686px no-repeat;
   width: 25px;
   height: 26px;
 }
@@ -338,7 +338,7 @@ body {
   position: relative;
 }
 .basket-in.ico_basket:before {
-  background: url('../images/icons-main-sc09bf13950.png') 0 -287px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -287px no-repeat;
   width: 16px;
   height: 16px;
   left: -30px;
@@ -596,7 +596,7 @@ body {
   position: relative;
 }
 .branding-title_right .for-pistol:before {
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2081px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2278px no-repeat;
   width: 26px;
   height: 21px;
   left: -15px;
@@ -747,7 +747,7 @@ body {
 .carousel-discounts .carousel-indicators .active:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1295px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -1295px no-repeat;
   width: 18px;
   height: 19px;
 }
@@ -1064,7 +1064,7 @@ body {
   position: relative;
 }
 .full-catalog-title-item_procent:before {
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2278px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2475px no-repeat;
   width: 30px;
   height: 20px;
   left: -50px;
@@ -1257,7 +1257,7 @@ body {
 .header-middle__button-full-catalog[aria-expanded=true]:before,
 .header-middle__button-full-catalog:hover[aria-expanded=true]:before,
 .header-middle__button-full-catalog:focus[aria-expanded=true]:before {
-  background: url('../images/icons-main-sc09bf13950.png') 0 -475px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -475px no-repeat;
   width: 18px;
   height: 12px;
 }
@@ -1747,7 +1747,7 @@ body {
 .news-all-news:hover:before,
 .souvenirs-sub-item:focus:before,
 .news-all-news:focus:before {
-  background: url('../images/icons-main-sc09bf13950.png') 0 -102px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -102px no-repeat;
   width: 5px;
   height: 9px;
   right: -10px;
@@ -1761,21 +1761,21 @@ body {
 }
 
 .souvenirs-sub-link_star:after {
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2859px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -3056px no-repeat;
   width: 12px;
   height: 12px;
   left: -20px;
 }
 
 .souvenirs-sub-link_like:after {
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1681px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -1878px no-repeat;
   width: 14px;
   height: 12px;
   left: -20px;
 }
 
 .souvenirs-sub-link_procent:after {
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2368px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2565px no-repeat;
   width: 14px;
   height: 14px;
   left: -20px;
@@ -1860,7 +1860,7 @@ body {
 .souvenirs-link__img.clothes:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -669px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -669px no-repeat;
   width: 41px;
   height: 37px;
   z-index: 1;
@@ -1869,7 +1869,7 @@ body {
 .souvenirs-link__img.pens:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1974px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2171px no-repeat;
   width: 38px;
   height: 37px;
   z-index: 1;
@@ -1878,7 +1878,7 @@ body {
 .souvenirs-link__img.accessories:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 0 no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 0 no-repeat;
   width: 35px;
   height: 32px;
   z-index: 1;
@@ -1887,7 +1887,7 @@ body {
 .souvenirs-link__img.clock:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -557px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -557px no-repeat;
   width: 23px;
   height: 42px;
   z-index: 1;
@@ -1896,7 +1896,7 @@ body {
 .souvenirs-link__img.relax:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2553px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2750px no-repeat;
   width: 35px;
   height: 34px;
   z-index: 1;
@@ -1905,7 +1905,7 @@ body {
 .souvenirs-link__img.electro:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -982px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -982px no-repeat;
   width: 32px;
   height: 33px;
   z-index: 1;
@@ -1914,7 +1914,7 @@ body {
 .souvenirs-link__img.dishes:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -876px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -876px no-repeat;
   width: 34px;
   height: 36px;
   z-index: 1;
@@ -1923,7 +1923,7 @@ body {
 .souvenirs-link__img.sets:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2657px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2854px no-repeat;
   width: 32px;
   height: 32px;
   z-index: 1;
@@ -1932,7 +1932,7 @@ body {
 .souvenirs-link__img.promo:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2452px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2649px no-repeat;
   width: 24px;
   height: 31px;
   z-index: 1;
@@ -1941,7 +1941,7 @@ body {
 .souvenirs-link__img.bags:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -181px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -181px no-repeat;
   width: 27px;
   height: 36px;
   z-index: 1;
@@ -1950,7 +1950,7 @@ body {
 .souvenirs-link__img.office:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1865px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2062px no-repeat;
   width: 27px;
   height: 39px;
   z-index: 1;
@@ -1959,7 +1959,7 @@ body {
 .souvenirs-link__img.box:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -373px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -373px no-repeat;
   width: 25px;
   height: 32px;
   z-index: 1;
@@ -1968,7 +1968,7 @@ body {
 .souvenirs-link__img.gifts:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1085px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -1085px no-repeat;
   width: 30px;
   height: 39px;
   z-index: 1;
@@ -1977,7 +1977,7 @@ body {
 .souvenirs-link__img.notebook:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1763px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -1960px no-repeat;
   width: 26px;
   height: 32px;
   z-index: 1;
@@ -1986,7 +1986,7 @@ body {
 .souvenirs-link__img.house:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1483px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -1584px no-repeat;
   width: 32px;
   height: 32px;
   z-index: 1;
@@ -1995,7 +1995,7 @@ body {
 .souvenirs-link__img.trinkets:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2941px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -3138px no-repeat;
   width: 40px;
   height: 40px;
   z-index: 1;
@@ -2004,7 +2004,7 @@ body {
 .souvenirs-link__img.umbrellas:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -3051px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -3248px no-repeat;
   width: 35px;
   height: 35px;
   z-index: 1;
@@ -2013,7 +2013,7 @@ body {
 .souvenirs-link__img.honors:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -1384px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -1485px no-repeat;
   width: 29px;
   height: 29px;
   z-index: 1;
@@ -2022,7 +2022,7 @@ body {
 .souvenirs-link__img.desk:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -776px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -776px no-repeat;
   width: 29px;
   height: 30px;
   z-index: 1;
@@ -2031,7 +2031,7 @@ body {
 .souvenirs-link__img.postcards:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2172px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2369px no-repeat;
   width: 23px;
   height: 36px;
   z-index: 1;
@@ -2040,7 +2040,7 @@ body {
 .souvenirs-link__img.smoking:before {
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url('../images/icons-main-sc09bf13950.png') 0 -2759px no-repeat;
+  background: url('../images/icons-main-s3ada57b914.png') 0 -2956px no-repeat;
   width: 45px;
   height: 30px;
   z-index: 1;
@@ -2378,7 +2378,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: url('../images/icons-main-sc09bf13950.png') 0 -1295px no-repeat;
+    background: url('../images/icons-main-s3ada57b914.png') 0 -1295px no-repeat;
     width: 18px;
     height: 19px;
   }
