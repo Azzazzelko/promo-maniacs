@@ -51,7 +51,7 @@
   right: -38px;
 }
 .breadcrumbs-item.active:before {
-  background: url('../images/icons-catalog-scae96c2fb6.png') 0 0 no-repeat;
+  background: url('../images/icons-catalog-s8a9aaedf0e.png') 0 0 no-repeat;
   width: 9px;
   height: 5px;
   right: -15px;
@@ -134,7 +134,7 @@
   color: black;
 }
 .order-formed__payment-order:before {
-  background: url("../../../../images/yandex-money.png") no-repeat;
+  background: url('../images/yandex-money.png?1482710270') no-repeat;
   background-size: cover;
   width: 131px;
   height: 67px;
@@ -178,5 +178,40 @@
 }
 
 /* ======== media ========= */
+@media screen and (max-width: 767px) {
+  .header {
+    margin-bottom: 35px;
+  }
+
+  .order-formed {
+    padding-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .order-formed .wrapper {
+    padding-top: 0;
+    background: none;
+  }
+  .order-formed .container {
+    margin: 0 15px;
+    padding-top: 40px;
+    background: #fff;
+  }
+
+  .order-formed-title {
+    top: -15px;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .order-formed-title {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 8px;
+  }
+}
 
 /*# sourceMappingURL=order-is-formed.css.map */

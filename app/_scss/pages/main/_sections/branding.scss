@@ -22,7 +22,7 @@
 		display: block;
 		width: 670px;
 		height: 240px;
-		background: url('../../../../images/your-brand.png') no-repeat;
+		background: image-url('your-brand.png') no-repeat;
 		top: 0;
 		right: 0;
 		z-index: -1;
@@ -58,7 +58,7 @@
 		position: absolute;
 		content: "";
 		display: block;
-		background: url('../../../../images/rocket.png') no-repeat;
+		background: image-url('rocket.png') no-repeat;
 		width: 790px;
 		height: 450px;
 		z-index: -1;
@@ -110,7 +110,7 @@
 		content: "";
 		top: 0;
 		left: 0;
-		background: url('../../../../images/big-bomb-house.png') no-repeat;
+		background: image-url('big-bomb-house.png') no-repeat;
 		width: 276px;
 		height: 258px;
 		z-index: -1;
@@ -129,7 +129,7 @@
 		content: "";
 		top: 45px;
 		left: 25px;
-		background: url('../../../../images/books.png') no-repeat;
+		background: image-url('books.png') no-repeat;
 		width: 253px;
 		height: 267px;
 		z-index: -1;

@@ -17,7 +17,7 @@
 		@extend %pseudo;
 		left: 25px;
 		top: 0;
-		background: url('../../../../images/bomb_small.png') no-repeat;
+		background: image-url('bomb_small.png') no-repeat;
 		width: 81px;
 		height: 54px;
 		z-index: 1;

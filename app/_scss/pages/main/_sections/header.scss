@@ -132,7 +132,7 @@
 	line-height: 34px;
 	text-align: center;
 	padding-right: 35px;
-	font-size: 18px;
+	font-size: 17px;
 	color: $pink;
 	font-family: 'raleway_extrabold';
 	border-radius: 3px;
@@ -169,7 +169,7 @@
 }
 
 .header-bottom {
-	background: $fiol url('../../../../images/bg-search.png') no-repeat;
+	background: $fiol image-url('bg-search.png') no-repeat;
 	min-height: 130px;
 	border-radius: 5px;
 	position: absolute;

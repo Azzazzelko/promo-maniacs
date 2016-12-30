@@ -57,7 +57,7 @@
 
 	&:before {
 		@extend %pseudo;
-		background: url('../../../../images/yandex-money.png') no-repeat;
+		background: image-url('yandex-money.png') no-repeat;
 		background-size: cover;
 		width: 131px;
 		height: 67px;

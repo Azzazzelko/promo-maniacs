@@ -70,7 +70,10 @@
 			@extend %pseudo;
 			@include get-sprite($details-spr, card-bomb);
 			top: -82px;
-			left: 28%;
+			left: 50%;
+			width: 112px;
+			transform: translateX(-50%);
+			background-position-x: 15px;
 		}
 	}
 
@@ -282,9 +285,7 @@
 	}
 }
 
-.form-card__submit-button,
-.form-card__submit-button:hover,
-.form-card__submit-button:focus {
+.form-card__submit-button {
 	display: inline-block;
 	font-size: 22px;
 	vertical-align: middle;

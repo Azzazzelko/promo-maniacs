@@ -37,7 +37,7 @@
 }
 
 body {
-	background: url('../../../../images/404-bg.png') center top no-repeat,
-				url('../../../../images/body-bg.png') no-repeat;
+	background: image-url('404-bg.png') center top no-repeat,
+				image-url('body-bg.png') no-repeat;
 	background-size: 780px 987px, cover;
 }

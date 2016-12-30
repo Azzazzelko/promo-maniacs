@@ -51,7 +51,7 @@ html, body {
 body {
   display: table;
   font-family: 'raleway_regular';
-  background: url("../../images/body-bg.png") no-repeat;
+  background: url('../images/body-bg.png?1482152727') no-repeat;
   background-size: cover;
 }
 
@@ -245,7 +245,7 @@ body {
   margin-bottom: 100px;
 }
 .about .wrapper {
-  background: url("../../../../images/about-block.png") no-repeat;
+  background: url('../images/about-block.png?1482153709') no-repeat;
   background-size: cover;
   height: 655px;
   overflow: hidden;
@@ -260,7 +260,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../../../../images/about-bg.png") no-repeat;
+  background: url('../images/about-bg.png?1482269975') no-repeat;
 }
 
 .about-title {
@@ -318,7 +318,7 @@ body {
   z-index: 100;
 }
 .basket .wrapper {
-  background: url("../../../../images/basket-bg.png") no-repeat;
+  background: url('../images/basket-bg.png?1482304802') no-repeat;
   background-size: cover;
   height: 70px;
   text-align: center;
@@ -394,7 +394,7 @@ body {
   position: absolute;
   content: "";
   display: block;
-  background: url("../../../../images/yellow-block-left.png") no-repeat;
+  background: url('../images/yellow-block-left.png?1482197244') no-repeat;
   right: 0;
   top: 0;
   height: 330px;
@@ -411,7 +411,7 @@ body {
 }
 
 .biggest-block-middle {
-  background: url("../../../../images/pink-block.png") no-repeat;
+  background: url('../images/pink-block.png?1482197145') no-repeat;
   background-size: cover;
   height: 510px;
   border-radius: 5px;
@@ -435,7 +435,7 @@ body {
   display: block;
   width: 115px;
   height: 77px;
-  background: url("../../../../images/bomb-2.png") no-repeat;
+  background: url('../images/bomb-2.png?1482233035') no-repeat;
   top: -21px;
   left: 20px;
 }
@@ -451,7 +451,7 @@ body {
   position: absolute;
   content: "";
   display: block;
-  background: url("../../../../images/yellow-block-right.png") no-repeat;
+  background: url('../images/yellow-block-right.png?1482197190') no-repeat;
   background-size: cover;
   top: 0;
   height: 245px;
@@ -533,7 +533,7 @@ body {
   display: block;
   width: 670px;
   height: 240px;
-  background: url("../../../../images/your-brand.png") no-repeat;
+  background: url('../images/your-brand.png?1482151979') no-repeat;
   top: 0;
   right: 0;
   z-index: -1;
@@ -566,7 +566,7 @@ body {
   position: absolute;
   content: "";
   display: block;
-  background: url("../../../../images/rocket.png") no-repeat;
+  background: url('../images/rocket.png?1482152284') no-repeat;
   width: 790px;
   height: 450px;
   z-index: -1;
@@ -615,7 +615,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("../../../../images/big-bomb-house.png") no-repeat;
+  background: url('../images/big-bomb-house.png?1482152095') no-repeat;
   width: 276px;
   height: 258px;
   z-index: -1;
@@ -633,7 +633,7 @@ body {
   content: "";
   top: 45px;
   left: 25px;
-  background: url("../../../../images/books.png") no-repeat;
+  background: url('../images/books.png?1482152306') no-repeat;
   width: 253px;
   height: 267px;
   z-index: -1;
@@ -757,7 +757,7 @@ body {
   margin-bottom: 80px;
 }
 .feedback .wrapper {
-  background: url("../../../../images/face.png") no-repeat;
+  background: url('../images/face.png?1482151229') no-repeat;
   background-size: cover;
   min-height: 500px;
   padding: 65px 0 55px 0;
@@ -1237,7 +1237,7 @@ body {
   line-height: 34px;
   text-align: center;
   padding-right: 35px;
-  font-size: 18px;
+  font-size: 17px;
   color: #f7689e;
   font-family: 'raleway_extrabold';
   border-radius: 3px;
@@ -1278,7 +1278,7 @@ body {
 }
 
 .header-bottom {
-  background: #7261aa url("../../../../images/bg-search.png") no-repeat;
+  background: #7261aa url('../images/bg-search.png?1482182768') no-repeat;
   min-height: 130px;
   border-radius: 5px;
   position: absolute;
@@ -1520,7 +1520,7 @@ body {
 .authorization-pop__socials-block {
   margin: 0 -130px 0 -130px;
   padding: 35px 130px 40px 130px;
-  background: url("../../../../images/pop-bg.png") no-repeat;
+  background: url('../images/pop-bg.png?1482588937') no-repeat;
   background-size: cover;
 }
 
@@ -1577,7 +1577,7 @@ body {
 }
 
 .feedback-pop__container {
-  background: #7261aa url("../../../../images/feedback-pop-bg.png") no-repeat;
+  background: #7261aa url('../images/feedback-pop-bg.png?1482843535') no-repeat;
   min-height: 610px;
   padding: 45px 130px 0 130px;
   border-radius: 3px;

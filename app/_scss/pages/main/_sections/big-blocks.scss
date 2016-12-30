@@ -35,7 +35,7 @@
 		position: absolute;
 		content: "";
 		display: block;
-		background: url('../../../../images/yellow-block-left.png') no-repeat;
+		background: image-url('yellow-block-left.png') no-repeat;
 		right: 0;
 		top: 0;
 		height: 330px;
@@ -55,7 +55,7 @@
 }
 
 .biggest-block-middle {
-	background: url('../../../../images/pink-block.png') no-repeat;
+	background: image-url('pink-block.png') no-repeat;
 	background-size: cover;
 	height: 510px;
 	border-radius: 5px;
@@ -82,7 +82,7 @@
 	display: block;
 	width: 115px;
 	height: 77px;
-	background: url('../../../../images/bomb-2.png') no-repeat;
+	background: image-url('bomb-2.png') no-repeat;
 	top: -21px;
 	left: 20px;
 }
@@ -98,7 +98,7 @@
 		position: absolute;
 		content: "";
 		display: block;
-		background: url('../../../../images/yellow-block-right.png') no-repeat;
+		background: image-url('yellow-block-right.png') no-repeat;
 		background-size: cover;
 		top: 0;
 		height: 245px;

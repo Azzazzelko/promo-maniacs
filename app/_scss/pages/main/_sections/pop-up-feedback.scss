@@ -8,7 +8,7 @@
 }
 
 .feedback-pop__container {
-	background: $fiol url('../../../../images/feedback-pop-bg.png') no-repeat;
+	background: $fiol image-url('feedback-pop-bg.png') no-repeat;
 	min-height: 610px;
 	padding: 45px 130px 0 130px;
 	border-radius: 3px;

@@ -88,21 +88,18 @@
 	letter-spacing: 5px;
 }
 
-.clothing-item__button,
+.clothing-item__button, 
 .clothing-item__button:hover,
-.clothing-item__button:focus {
+.clothing-item__button:focus,
+.clothing-item__button:active {
 	width: 165px;
 	height: 48px;
-	background: $pink;
-	color: #fff;
-	text-transform: lowercase;
-	font-size: 22px;
-	line-height: 46px;
-	font-family: 'raleway_medium';
+	line-height: 45px;
 	text-align: center;
 	display: inline-block;
-	border-radius: 2px;
 	margin-bottom: 34px;
+
+	&:last-child {
+		margin-bottom: 34px;
+	}
 }
-
-

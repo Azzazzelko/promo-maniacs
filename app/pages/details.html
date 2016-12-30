@@ -486,7 +486,7 @@
 			<div class="wrapper">
 				<div class="container">
 					<div class="row text-center">
-						<ul class="breadcrumbs-list">
+						<ul class="breadcrumbs-list hidden-xs">
 							<li class="breadcrumbs-item">
 								<a class="breadcrumbs-link" href="#">Главная</a>
 							</li>
@@ -663,7 +663,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="row text-center">
+					<div class="row text-center card-title_position">
 						<div class="card-title col-sm-8 col-centered">ALESSANDRIA Жен. Толстовка Италия с капюшоном</div>
 					</div>
 					<div class="row text-center">
@@ -689,11 +689,20 @@
 													<img src="../images/cloth-7.png" alt="img" class="slide-img">
 												</div>
 											</div>
+
+											<div class="slider-card-indicators_left visible-xs">
+												<a class="left carousel-controls" href="#carousel-card" data-slide="prev">
+												</a>
+											</div>
+											<div class="slider-card-indicators_right visible-xs">
+												<a class="right carousel-controls" href="#carousel-card" data-slide="next">
+												</a>
+											</div>
 										</div>
 										<a href="#custom-img-creator" class="custom-picture-button" data-toggle="collapse">Нанести свой рисунок</a>
 									</div>
 								</div>
-								<div class="col-sm-2">
+								<div class="col-sm-2 hidden-xs">
 									<div class="slider-thumbs" id="slider-thumbs">
 										<ul class="slider-thumbs__list row">
 											<li class="slider-thumbs__item active">
@@ -801,12 +810,12 @@
 									<div class="card-count__text">2</div>
 									<a href="#" class="card-count__plus"></a>
 								</div>
-								<button type="submit" class="form-card__submit-button">в корзину</button>
+								<button type="submit" class="form-card__submit-button button-default">в корзину</button>
 							</form>
-							<div class="card-description">
+							<div class="card-description hidden-xs">
 								Возврат к восьмидесятым или новый взгляд на классическую флисовую толстовку. Billabong Take Me Back меняет представление о спортивных пуловерах, добавляя элементы женственности и аккуратности спортивной одежде.
 							</div>
-							<div class="card-tabs">
+							<div class="card-tabs hidden-xs">
 								<ul class="nav nav-tabs price-tab-list">
 									<li class="price-tab-item active">
 										<a href="#characteristics" class="price-tab-link" data-toggle="tab">Характеристики</a>
@@ -866,14 +875,57 @@
 									</div>
 								</div>
 							</div>
+
+							<!-- Characteristics_xs -->
+							<div class="card-characteristics_xs visible-xs">
+								<a href="#card-characteristics_xs-container" class="card-characteristics_xs-button" data-toggle="collapse">Характеристики</a>
+								<div class="card-characteristics_xs-container collapse container" id="card-characteristics_xs-container">
+									<div class="card-characteristics_xs__top">
+										<div class="card-characteristics_xs__top-title">Характеристики</div>
+										<a href="#card-characteristics_xs-container" class="card-characteristics_xs__exit" data-toggle="collapse"></a>
+									</div>
+									<div class="card-characteristics_xs__wrapper text-left">
+										<div class="card-characteristics_xs__description">
+											Возврат к восьмидесятым или новый взгляд на классическую флисовую толстовку. Billabong Take Me Back меняет представление о спортивных пуловерах, добавляя элементы женственности и аккуратности спортивной одежде.
+										</div>
+										<ul class="card-characteristics_xs__list">
+											<li class="card-characteristics_xs__item">
+												<div class="card-characteristics_xs__item-title">Состав</div>
+												<div class="card-characteristics_xs__list-item-description">хлопок 80%, полиэстер 20%</div>
+											</li>
+											<li class="card-characteristics_xs__item">
+												<div class="card-characteristics_xs__item-title">Тип нанесения</div>
+												<div class="card-characteristics_xs__list-item-description">Вышивка, Вышивка шеврона, Сигнальный образец вышивки</div>
+											</li>
+											<li class="card-characteristics_xs__item">
+												<div class="card-characteristics_xs__item-title">Модель</div>
+												<div class="card-characteristics_xs__list-item-description">толстовка</div>
+											</li>
+											<li class="card-characteristics_xs__item">
+												<div class="card-characteristics_xs__item-title">Размер</div>
+												<div class="card-characteristics_xs__list-item-description">38, 40, 42, 44, 46 (RU)</div>
+											</li>
+											<li class="card-characteristics_xs__item">
+												<div class="card-characteristics_xs__item-title">Производитель</div>
+												<div class="card-characteristics_xs__list-item-description">Billabong</div>
+											</li>
+										</ul>
+										<div class="card-characteristics_xs__inner-title">Упаковка</div>
+										<div class="card-characteristics_xs__description">
+											Возврат к восьмидесятым или новый взгляд на классическую флисовую толстовку. Billabong Take Me Back меняет представление о спортивных пуловерах, добавляя элементы женственности и аккуратности спортивной одежде.
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
+
 						<div class="col-sm-12 custom-img-creator collapse" id="custom-img-creator">
 							<a href="#custom-img-creator" class="creator-close-button" data-toggle="collapse"></a>
 							<div class="row">
 								<div class="creator-title col-sm-12">Создание своего дизайна</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-3 creator_padding">
+								<div class="col-sm-3 creator_padding flex_xs">
 									<a href="#" class="creator-upload-button">загрузить картинку</a>
 									<ul class="creator-list">
 										<li class="creator-item active">
@@ -972,7 +1024,49 @@
 											<div class="card-count__text">2</div>
 											<a href="#" class="card-count__plus"></a>
 										</div>
-										<button type="submit" class="form-card__submit-button">в корзину</button>
+										<button type="submit" class="form-card__submit-button button-default">в корзину</button>
+
+										<!-- Characteristics_xs -->
+										<div class="card-characteristics_xs visible-xs">
+											<a href="#card-characteristics_xs-container" class="card-characteristics_xs-button" data-toggle="collapse">Характеристики</a>
+											<div class="card-characteristics_xs-container collapse container" id="card-characteristics_xs-container">
+												<div class="card-characteristics_xs__top">
+													<div class="card-characteristics_xs__top-title">Характеристики</div>
+													<a href="#card-characteristics_xs-container" class="card-characteristics_xs__exit" data-toggle="collapse"></a>
+												</div>
+												<div class="card-characteristics_xs__wrapper text-left">
+													<div class="card-characteristics_xs__description">
+														Возврат к восьмидесятым или новый взгляд на классическую флисовую толстовку. Billabong Take Me Back меняет представление о спортивных пуловерах, добавляя элементы женственности и аккуратности спортивной одежде.
+													</div>
+													<ul class="card-characteristics_xs__list">
+														<li class="card-characteristics_xs__item">
+															<div class="card-characteristics_xs__item-title">Состав</div>
+															<div class="card-characteristics_xs__list-item-description">хлопок 80%, полиэстер 20%</div>
+														</li>
+														<li class="card-characteristics_xs__item">
+															<div class="card-characteristics_xs__item-title">Тип нанесения</div>
+															<div class="card-characteristics_xs__list-item-description">Вышивка, Вышивка шеврона, Сигнальный образец вышивки</div>
+														</li>
+														<li class="card-characteristics_xs__item">
+															<div class="card-characteristics_xs__item-title">Модель</div>
+															<div class="card-characteristics_xs__list-item-description">толстовка</div>
+														</li>
+														<li class="card-characteristics_xs__item">
+															<div class="card-characteristics_xs__item-title">Размер</div>
+															<div class="card-characteristics_xs__list-item-description">38, 40, 42, 44, 46 (RU)</div>
+														</li>
+														<li class="card-characteristics_xs__item">
+															<div class="card-characteristics_xs__item-title">Производитель</div>
+															<div class="card-characteristics_xs__list-item-description">Billabong</div>
+														</li>
+													</ul>
+													<div class="card-characteristics_xs__inner-title">Упаковка</div>
+													<div class="card-characteristics_xs__description">
+														Возврат к восьмидесятым или новый взгляд на классическую флисовую толстовку. Billabong Take Me Back меняет представление о спортивных пуловерах, добавляя элементы женственности и аккуратности спортивной одежде.
+													</div>
+												</div>
+											</div>
+										</div>
 									</form>
 								</div>
 							</div>
@@ -983,7 +1077,7 @@
 		</div>
 
 		<!-- Can-enjoy -->
-		<div class="can-enjoy">
+		<div class="can-enjoy hidden-xs">
 			<div class="wrapper">
 				<div class="container">
 					<div class="row">
@@ -1007,7 +1101,7 @@
 							</ul>
 							<a href="#" class="clothing-item__title">Allesandria Жен. Толстовка Италия с капюшоном, на молнии</a>
 							<div class="clothing-item__price">3 035.00 &#8381;</div>
-							<a href="#" class="clothing-item__button">в корзину</a>
+							<a href="#" class="clothing-item__button button-default">в корзину</a>
 						</li>
 						<li class="clothing-item col-sm-3">
 							<div class="clothing-item__img-container">
@@ -1020,7 +1114,7 @@
 							</ul>
 							<a href="#" class="clothing-item__title">AMALFI Куртка нейлон теслон бежевый</a>
 							<div class="clothing-item__price">2 700.00 &#8381;</div>
-							<a href="#" class="clothing-item__button">в корзину</a>
+							<a href="#" class="clothing-item__button button-default">в корзину</a>
 						</li>
 						<li class="clothing-item col-sm-3">
 							<div class="clothing-item__img-container">
@@ -1030,7 +1124,7 @@
 							</ul>
 							<a href="#" class="clothing-item__title">ASPEN Жилет софтшел, водонеприницаемый, темно-синий</a>
 							<div class="clothing-item__price">3 035.00 &#8381;</div>
-							<a href="#" class="clothing-item__button">в корзину</a>
+							<a href="#" class="clothing-item__button button-default">в корзину</a>
 						</li>
 						<li class="clothing-item col-sm-3">
 							<div class="clothing-item__img-container">
@@ -1040,7 +1134,7 @@
 							</ul>
 							<a href="#" class="clothing-item__title">ALESSANDRIA Жен. Толстовка Италия с капюшоном, на молнии</a>
 							<div class="clothing-item__price">3 035.00 &#8381;</div>
-							<a href="#" class="clothing-item__button">в корзину</a>
+							<a href="#" class="clothing-item__button button-default">в корзину</a>
 						</li>
 					</ul>
 				</div>
@@ -1061,7 +1155,7 @@
 		</div>
 	</main>
 
- 	<footer class="footer">
+	<footer class="footer">
 		<div class="container">
 			<div class="footer-top row">
 				<div class="col-sm-2 hidden-xs">

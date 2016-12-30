@@ -40,7 +40,7 @@
 }
 
 body {
-  background: url("../../../../images/404-bg.png") center top no-repeat, url("../../../../images/body-bg.png") no-repeat;
+  background: url('../images/404-bg.png?1482493617') center top no-repeat, url('../images/body-bg.png?1482152727') no-repeat;
   background-size: 780px 987px, cover;
 }
 

@@ -3,7 +3,7 @@
 	margin-bottom: 100px;
 
 	.wrapper {
-		background: url('../../../../images/about-block.png') no-repeat;
+		background: image-url('about-block.png') no-repeat;
 		background-size: cover;
 		height: 655px;
 		overflow: hidden;
@@ -19,7 +19,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		background: url('../../../../images/about-bg.png') no-repeat;
+		background: image-url('about-bg.png') no-repeat;
 	}
 
 }

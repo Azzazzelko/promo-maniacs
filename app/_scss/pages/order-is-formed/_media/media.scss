@@ -1,0 +1,41 @@
+@media screen and (max-width: 767px) { 
+
+	.header {
+		margin-bottom: 35px;
+	}
+
+	.order-formed {
+		padding-top: 15px;
+		margin-bottom: 0;
+		text-align: center;
+
+		.wrapper {
+			padding-top: 0;
+			background: none;
+		}
+
+		.container {
+			margin: 0 15px;
+			padding-top: 40px;
+			background: #fff;
+		}
+	}
+
+	.order-formed-title {
+		top: -15px;
+		font-size: 20px;
+		line-height: 25px;
+		letter-spacing: 3px;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+	.order-formed-title {
+		font-size: 50px;
+		line-height: 50px;
+		letter-spacing: 8px;
+	}
+
+}
