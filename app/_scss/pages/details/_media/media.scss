@@ -353,12 +353,6 @@
 			line-height: initial;
 		}
 
-		.card-tabs .overlay-img-container {
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
 	}
 
 }
@@ -404,12 +398,6 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
-		}
-
-		.card-tabs .overlay-img-container {
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%,-50%);
 		}
 
 		.creator-upload-button, .creator-upload-button:hover, .creator-upload-button:focus {
@@ -465,6 +453,11 @@
 				display: none;
 			}
 		}
+	}
+
+	.creator-upload-button,
+	.creator-upload-button:hover {
+		font-size: 20px;
 	}
 
 }

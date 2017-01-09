@@ -926,16 +926,11 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-3 creator_padding flex_xs">
-									<a href="#" class="creator-upload-button">загрузить картинку</a>
+									<label for="creator-upload-button" class="creator-upload-button">загрузить картинку</label>
+									<input id="creator-upload-button" type="file" name="file" class="creator-upload-button-input">
+
 									<ul class="creator-list">
-										<li class="creator-item active">
-											<img src="../images/small-img-1.png" alt="img" class="creator-img img-responsive">
-											<a href="#" class="creator-item-close"></a>
-										</li>
-										<li class="creator-item">
-											<img src="../images/small-img-2.png" alt="img" class="creator-img img-responsive">
-											<a href="#" class="creator-item-close"></a>
-										</li>
+										<!-- Images here -->
 									</ul>
 									<ul class="creator-warning-list">
 										<li class="creator-warning-item">Загрузите .png или .jpg;</li>
@@ -955,7 +950,7 @@
 												<a href="#back-side" class="price-tab-link" data-toggle="tab">обратная сторона</a>
 											</li>
 										</ul>
-										<div class="tab-content">
+										<div class="tab-content" id="tab-content-container">
 											<div class="tab-pane fade in active" id="front-side">
 												<img src="../images/cloth-7.png" alt="img" class="img-responsive tab-img">
 											</div>
@@ -964,9 +959,10 @@
 											</div>
 
 											<div class="overlay-img-container">
-												<a href="#" class="overlay-img-control refresh"></a>
-												<a href="#" class="overlay-img-control resize"></a>
-												<img src="../images/small-img-1.png" alt="img" class="overlay-img img-responsive">
+												<!-- Overlay-img here -->
+												<a href="#" class="overlay-img-control refresh"></a> 		
+												<a href="#" class="overlay-img-control resize ui-resizable-handle ui-resizable-se"></a>	
+												<img src="" alt="img" class="overlay-img img-responsive">
 											</div>
 										</div>
 									</div>
@@ -1305,6 +1301,7 @@
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/select2.full.min.js"></script>
 	<script src="../js/jquery.qtip.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
 	<script src="../js/main.js"></script>
 </body>
 </html>

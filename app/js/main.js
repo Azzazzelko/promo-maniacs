@@ -13,8 +13,8 @@ $(function() {
 	var $thumbs = $(".slider-thumbs__list .slider-thumbs__item");
 
 	$thumbs.on("click", function(e){
-		var $this = this;
-		$($this).addClass('active').siblings().removeClass('active');
+		var $this = $(this);
+		$this.addClass('active').siblings().removeClass('active');
 	});
 
 	/*************************************
@@ -147,6 +147,121 @@ $(function() {
 				event: 'focus'
 			}
 		})
+	};
+
+	/******************
+	**  file-preview **
+	******************/
+
+	var previewList = $('.creator-list');
+	var overlayContainer = $('.overlay-img-container');
+
+	$('.overlay-img-control').on("click", function(e){
+		e.preventDefault();
+	});
+
+	$('.overlay-img-control.refresh').on("click", defaultImage);
+	$('#creator-upload-button').on('change', loadFile);
+	previewList.on('click', '.creator-item', activeOverlay);
+	previewList.on('click', '.creator-item-close', deletePreviewImg);
+
+	function loadFile(e){
+		var creatorItem = $('.creator-item');
+		console.log(e.target.files[0]);
+		if ( e.target.files[0] ) {
+			if ( e.target.files[0].type != 'image/jpeg' ) {
+				if ( e.target.files[0].type != 'image/png' ) {
+					return;
+				}
+			}
+		};
+
+		var output = URL.createObjectURL(e.target.files[0]);
+
+		creatorItem.removeClass('active');
+
+		var preview = '<li class="creator-item active"> \
+		<img src="'+output+'" alt="img" class="creator-img img-responsive"> \
+		<a href="#" class="creator-item-close"></a> \
+		</li>';
+		previewList.append(preview);
+
+		addOverlayImg(output);
+	};
+
+	function activeOverlay(e){
+		var $this = $(this);
+		$this.addClass('active').siblings().removeClass('active');
+
+		var src = $this.find("img").attr('src');
+		addOverlayImg(src);
+	};
+
+	function addOverlayImg(src){
+		overlayContainer.show().find("img").attr("src", src);
+	};
+
+	function deletePreviewImg(e){
+		e.preventDefault();
+		e.stopPropagation();
+
+		var $this = $(this);
+		$this.parent().remove();
+
+		if ( !previewList.children().length ) 
+			overlayContainer.hide();	
+	};
+
+	function defaultImage(e){
+		overlayContainer.css({
+			"width" : "auto",
+			"height" : "auto",
+			"top" : "0",
+			"left" : "0"
+		})
+	};
+
+	if ( overlayContainer.length ) {
+		overlayContainer.resizable({
+			aspectRatio: true,
+			minWidth: 25,
+			containment: "#tab-content-container"
+		}).draggable({ 
+			containment: "#tab-content-container", 
+			scroll: false 
+		});
+	};
+
+	/******************
+	**  counts  *******
+	******************/
+
+	var countContainer = $(".card-count");
+	var cardMinus = $(".card-count .card-count__minus");
+	var cardPlus = $(".card-count .card-count__plus");
+
+	cardMinus.on("click", function(e){
+		e.preventDefault();
+
+		var $this = $(this);
+		var textContainer = $this.siblings('.card-count__text');
+		var text = parseInt( textContainer.html() );
+		( text == 0 ) ? "" : textContainer.html(text-1);
+	});
+
+	cardPlus.on("click", function(e){
+		e.preventDefault();
+
+		var $this = $(this);
+		var textContainer = $this.siblings('.card-count__text');
+		var text = parseInt( textContainer.html() );
+		( text == 99 ) ? "" : textContainer.html(text+1);
+	});
+
+	function changeCount(val){
+		event.preventDefault();
+
+		( text == 0 ) ? "" : cardText.html(text+val);
 	};
 
 }());
