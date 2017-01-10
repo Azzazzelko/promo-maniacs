@@ -1,13 +1,29 @@
+@keyframes animatedFeedback {
+	0% {
+		background-position: center, 0 0;
+	}
+	100% {
+		background-position: center, 0px 600px; 
+	}
+}
+
 .feedback {
 	text-align: center;
 	margin-bottom: 80px;
 
 	.wrapper {
-		background: image-url('face.png') no-repeat;
-		background-size: cover;
+		background: image-url('new-face.png') no-repeat,
+					$fiol image-url('fiol-block.png') repeat;
 		min-height: 500px;
-		padding: 65px 0 55px 0;
+		padding: 50px 0 55px 0;
 		background-position: center;
+		border-radius: 10px;
+		animation: animatedFeedback 30s linear infinite;
+		animation-play-state: paused;
+
+		&:hover {
+			animation-play-state: running;
+		}
 	}
 }
 
@@ -16,7 +32,7 @@
 	text-transform: uppercase;
 	font-family: 'raleway_extrabold';
 	color: #fff;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	letter-spacing: 10px;
 }
 
@@ -25,7 +41,7 @@
 	text-transform: uppercase;
 	font-family: 'raleway_extrabold';
 	color: #fff;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	letter-spacing: 6px;
 }
 

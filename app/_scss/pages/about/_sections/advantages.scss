@@ -1,3 +1,12 @@
+@keyframes animatedFeedback {
+	0% {
+		background-position: center, 0 0;
+	}
+	100% {
+		background-position: center, 0px 600px; 
+	}
+}
+
 .advantages {
 	.wrapper {
 		background: #fff;
@@ -35,7 +44,14 @@
 }
 
 .feedback .wrapper {
-	background: #7362ab image-url("face.png") no-repeat;
+	background: image-url('new-face.png') no-repeat,
+	$fiol image-url('fiol-block.png') repeat;
 	background-position: center;
-	background-size: cover;
+	animation: animatedFeedback 30s linear infinite;
+	animation-play-state: paused;
+	border-radius: 10px;
+
+	&:hover {
+		animation-play-state: running;
+	}
 }

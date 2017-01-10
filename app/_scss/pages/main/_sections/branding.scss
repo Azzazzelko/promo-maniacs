@@ -25,7 +25,7 @@
 		background: image-url('your-brand.png') no-repeat;
 		top: 0;
 		right: 0;
-		z-index: -1;
+		// z-index: -1;
 	}
 }
 
@@ -61,7 +61,7 @@
 		background: image-url('rocket.png') no-repeat;
 		width: 790px;
 		height: 450px;
-		z-index: -1;
+		// z-index: -1;
 		top: -40px;
 		left: 125px;
 	}
@@ -113,7 +113,7 @@
 		background: image-url('big-bomb-house.png') no-repeat;
 		width: 276px;
 		height: 258px;
-		z-index: -1;
+		// z-index: -1;
 	}
 }
 
@@ -132,7 +132,7 @@
 		background: image-url('books.png') no-repeat;
 		width: 253px;
 		height: 267px;
-		z-index: -1;
+		// z-index: -1;
 	}
 }
 
@@ -142,6 +142,7 @@
 	letter-spacing: 5px;
 	margin-bottom: 15px;
 	text-transform: uppercase;
+	position: relative;
 }
 
 .branding-right-link,

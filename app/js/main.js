@@ -1,12 +1,6 @@
 $(function() {
 
 	/*****************
-	** custom select *
-	*****************/
-
-	$('select').select2();
-
-	/*****************
 	**  slider card **
 	*****************/
 
@@ -21,247 +15,309 @@ $(function() {
 	**   inner-pop-up - password pop   **
 	*************************************/
 
-	var innerModal = $(".inner-modal");			 //Внутренние модалки
-	var openButtons = $("[data-my-pop='true']"); //Кнопки с дата атрибутом, открывающие внутренние модалки.
+	var modals = (function(){
 
-	innerModal.on("click", closePopup);
-	openButtons.on("click", thatWillBeOpen);
+		var innerModal = $(".inner-modal");			 	//Внутренние модалки
+		var openButtons = $("[data-my-pop='true']"); 	//Кнопки с дата атрибутом, открывающие внутренние модалки.
 
-	function thatWillBeOpen(e){		//открываем модалку по Хрефу.
-		e.preventDefault();
+		var init = function(){
+			setUpListeners();
+		};
 
-		var $this = $(this);
-		var href = $this.attr("href");
+		var setUpListeners = function(){
+			innerModal.on("click", closePopup);
+			openButtons.on("click", thatWillBeOpen);
+			$(".modal").on('hidden.bs.modal', hideQTips);
+			$(".modal a").on("click", hideQTips);     //при клике на любой линк в модалке, убираем ошибки валида
+			$('select').select2();					  //custom select
+		};
 
-		openPopup(href);
-	};
+		function thatWillBeOpen(e){		//открываем модалку по Хрефу.
+			e.preventDefault();
 
-	function openPopup(target) { 
-		$(target).fadeIn(200);
-	};
+			var $this = $(this);
+			var href = $this.attr("href");
 
-	function closePopup(e) {
-		var $target = $(e.target);
+			openPopup(href);
+		};
 
-		if ($target.hasClass('inner-modal') || $target.attr('data-my-pop-close')) {
-			innerModal.fadeOut(200);
+		function openPopup(target) { 
+			$(target).fadeIn(200);
+		};
+
+		function closePopup(e) {
+			var $target = $(e.target);
+
+			if ($target.hasClass('inner-modal') || $target.attr('data-my-pop-close')) {
+				innerModal.fadeOut(200);
+				$('.qtip').hide();
+			}
+		};
+
+		function hideQTips(){
 			$('.qtip').hide();
+		};
+
+		return {
+			init:init
 		}
-	};
+	}());
 
-	$(".modal").on('hidden.bs.modal', function () {
-		$('.qtip').hide();
-	});
-
-	$(".modal a").on("click", function(e){     //при клике на любой линк в модалке, убираем ошибки валида
-		$('.qtip').hide();
+	$(document).ready(function(){
+		modals.init();
 	});
 
     /******************
 	**  validation   **
 	******************/
 
-	var inputs = $("form").find('input, textarea'); //инпуты в формах
+	var validation = (function(){
 
-	inputs.on('keydown', function(e){ //удаляем ошибки при нажатии клавишь на поле ввода
-		var $this = $(this);
-		$this.removeClass('input_error');
-	});
+		var inputs = $("form").find('input, textarea'); //инпуты в формах
 
-	$("form").on("submit", function(e){
-		e.preventDefault();
-		
-		( isValid($(this)) ) ? console.log("well done!") : console.log("valid fail!");
+		var init = function(){
+			setUpListeners();
+		};
 
-	});
+		var setUpListeners = function(){
+			inputs.on('keydown', function(e){ 	        //удаляем ошибки при нажатии клавишь на поле ввода
+				var $this = $(this);
+				$this.removeClass('input_error');
+			});
 
-	function isValid(thisForm){
+			$("form").on("submit", function(e){
+				e.preventDefault();
 
-		var isValid = true;
+				( isValid($(this)) ) ? console.log("well done!") : console.log("valid fail!");
+			});
+		};
 
-		thisForm.find('input, textarea').each(function(i){
+		function isValid(thisForm){
 
-			var $this = $(this),
-			thisVal = $this.val();
+			var isValid = true;
 
-			if ($this.prop('required')) {
+			thisForm.find('input, textarea').each(function(i){
 
-				if ($this.is('input[type="email"]')) {
+				var $this = $(this),
+				thisVal = $this.val();
 
-					if (validateEmail(thisVal)) {
+				if ($this.prop('required')) {
 
-						$this.removeClass('input_error');
-						return isValid = true;
+					if ($this.is('input[type="email"]')) {
 
-					} else {
+						if (validateEmail(thisVal)) {
+
+							$this.removeClass('input_error');
+							return isValid = true;
+
+						} else {
+
+							$this.addClass('input_error');
+							showErrors($this);
+							return isValid = false;
+						}
+
+					}
+
+					if (!thisVal.trim()) {
 
 						$this.addClass('input_error');
 						showErrors($this);
 						return isValid = false;
+
+					} else {
+
+						$this.removeClass('input_error');
+						return isValid = true;
+
+					}	
+
+				}
+
+			});
+
+			return isValid;
+		};
+
+		function validateEmail(email){
+			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+			return re.test(email);
+		};
+
+		function showErrors(elem){
+			elem.qtip({ 
+				content: {
+					text: 'Нужно заполнить все поля' 
+				},
+				position: {
+					my: 'left center', 
+					at: 'right center',
+					adjust: {
+						x: 40
 					}
-
+				}, 
+				show: {
+					ready: true,
+					event: false
+				},
+				hide: {
+					event: 'focus'
 				}
+			})
+		};
 
-				if (!thisVal.trim()) {
+		return {
+			init:init
+		}
+	}());
 
-					$this.addClass('input_error');
-					showErrors($this);
-					return isValid = false;
-
-				} else {
-
-					$this.removeClass('input_error');
-					return isValid = true;
-
-				}	
-
-			}
-
-		});
-		return isValid;
-
-	};
-
-	function validateEmail(email){
-		var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-		return re.test(email);
-	};
-
-	function showErrors(elem){
-		elem.qtip({ 
-			content: {
-				text: 'Нужно заполнить все поля' 
-			},
-			position: {
-				my: 'left center', 
-				at: 'right center',
-				adjust: {
-					x: 40
-				}
-			}, 
-			show: {
-				ready: true,
-				event: false
-			},
-			hide: {
-				event: 'focus'
-			}
-		})
-	};
+	$(document).ready(function(){
+		validation.init();
+	});
 
 	/******************
 	**  file-preview **
 	******************/
 
-	var previewList = $('.creator-list');
-	var overlayContainer = $('.overlay-img-container');
+	var filePreview = (function(){
 
-	$('.overlay-img-control').on("click", function(e){
-		e.preventDefault();
-	});
+		var previewList = $('.creator-list');
+		var overlayContainer = $('.overlay-img-container');
 
-	$('.overlay-img-control.refresh').on("click", defaultImage);
-	$('#creator-upload-button').on('change', loadFile);
-	previewList.on('click', '.creator-item', activeOverlay);
-	previewList.on('click', '.creator-item-close', deletePreviewImg);
-
-	function loadFile(e){
-		var creatorItem = $('.creator-item');
-		console.log(e.target.files[0]);
-		if ( e.target.files[0] ) {
-			if ( e.target.files[0].type != 'image/jpeg' ) {
-				if ( e.target.files[0].type != 'image/png' ) {
-					return;
-				}
-			}
+		var init = function(){
+			setUpListeners();
+			resAndDrag();
 		};
 
-		var output = URL.createObjectURL(e.target.files[0]);
+		var setUpListeners = function(){
+			$('.overlay-img-control').on("click", function(e){
+				e.preventDefault();
+			});
 
-		creatorItem.removeClass('active');
+			$('.overlay-img-control.refresh').on("click", defaultImage);
+			$('#creator-upload-button').on('change', loadFile);
+			previewList.on('click', '.creator-item', activeOverlay);
+			previewList.on('click', '.creator-item-close', deletePreviewImg);
+		};
 
-		var preview = '<li class="creator-item active"> \
-		<img src="'+output+'" alt="img" class="creator-img img-responsive"> \
-		<a href="#" class="creator-item-close"></a> \
-		</li>';
-		previewList.append(preview);
+		function loadFile(e){
+			var creatorItem = $('.creator-item');
+			console.log(e.target.files[0]);
+			if ( e.target.files[0] ) {
+				if ( e.target.files[0].type != 'image/jpeg' ) {
+					if ( e.target.files[0].type != 'image/png' ) {
+						return;
+					}
+				}
+			};
 
-		addOverlayImg(output);
-	};
+			var output = URL.createObjectURL(e.target.files[0]);
 
-	function activeOverlay(e){
-		var $this = $(this);
-		$this.addClass('active').siblings().removeClass('active');
+			creatorItem.removeClass('active');
 
-		var src = $this.find("img").attr('src');
-		addOverlayImg(src);
-	};
+			var preview = '<li class="creator-item active"> \
+			<img src="'+output+'" alt="img" class="creator-img img-responsive"> \
+			<a href="#" class="creator-item-close"></a> \
+			</li>';
+			previewList.append(preview);
 
-	function addOverlayImg(src){
-		overlayContainer.show().find("img").attr("src", src);
-	};
+			addOverlayImg(output);
+		};
 
-	function deletePreviewImg(e){
-		e.preventDefault();
-		e.stopPropagation();
+		function activeOverlay(e){
+			var $this = $(this);
+			$this.addClass('active').siblings().removeClass('active');
 
-		var $this = $(this);
-		$this.parent().remove();
+			var src = $this.find("img").attr('src');
+			addOverlayImg(src);
+		};
 
-		if ( !previewList.children().length ) 
-			overlayContainer.hide();	
-	};
+		function addOverlayImg(src){
+			overlayContainer.show().find("img").attr("src", src);
+		};
 
-	function defaultImage(e){
-		overlayContainer.css({
-			"width" : "auto",
-			"height" : "auto",
-			"top" : "0",
-			"left" : "0"
-		})
-	};
+		function deletePreviewImg(e){
+			e.preventDefault();
+			e.stopPropagation();
 
-	if ( overlayContainer.length ) {
-		overlayContainer.resizable({
-			aspectRatio: true,
-			minWidth: 25,
-			containment: "#tab-content-container"
-		}).draggable({ 
-			containment: "#tab-content-container", 
-			scroll: false 
-		});
-	};
+			var $this = $(this);
+			$this.parent().remove();
+
+			if ( !previewList.children().length ) 
+				overlayContainer.hide();	
+		};
+
+		function defaultImage(e){
+			overlayContainer.css({
+				"width" : "auto",
+				"height" : "auto",
+				"top" : "0",
+				"left" : "0"
+			})
+		};
+
+		function resAndDrag(){
+			overlayContainer.resizable({
+				aspectRatio: true,
+				minWidth: 25,
+				containment: "#tab-content-container"
+			}).draggable({ 
+				containment: "#tab-content-container", 
+				scroll: false 
+			});
+		};
+
+		return {
+			init:init
+		}
+	}());
+
+	$(document).ready(function(){
+		if ( $('.overlay-img-container').length )
+			filePreview.init();
+	});
 
 	/******************
 	**  counts  *******
 	******************/
 
-	var countContainer = $(".card-count");
-	var cardMinus = $(".card-count .card-count__minus");
-	var cardPlus = $(".card-count .card-count__plus");
+	var counts = (function(){
 
-	cardMinus.on("click", function(e){
-		e.preventDefault();
+		var countContainer = $(".card-count");					//контейнер к кол-ву товара
+		var cardMinus = $(".card-count .card-count__minus");	//кнопка минуса
+		var cardPlus = $(".card-count .card-count__plus");		//кнопка плюса
 
-		var $this = $(this);
-		var textContainer = $this.siblings('.card-count__text');
-		var text = parseInt( textContainer.html() );
-		( text == 0 ) ? "" : textContainer.html(text-1);
+		var init = function(){
+			setUpListeners();
+		};
+
+		var setUpListeners = function(){
+			cardMinus.on("click", function(e){
+				e.preventDefault();
+
+				var $this = $(this);
+				var textContainer = $this.siblings('.card-count__text');
+				var text = parseInt( textContainer.html() );
+				( text == 0 ) ? "" : textContainer.html(text-1);
+			});
+
+			cardPlus.on("click", function(e){
+				e.preventDefault();
+
+				var $this = $(this);
+				var textContainer = $this.siblings('.card-count__text');
+				var text = parseInt( textContainer.html() );
+				( text == 99 ) ? "" : textContainer.html(text+1);
+			});
+		};
+
+		return {
+			init:init
+		}
+	}());
+
+	$(document).ready(function(){
+		counts.init();
 	});
-
-	cardPlus.on("click", function(e){
-		e.preventDefault();
-
-		var $this = $(this);
-		var textContainer = $this.siblings('.card-count__text');
-		var text = parseInt( textContainer.html() );
-		( text == 99 ) ? "" : textContainer.html(text+1);
-	});
-
-	function changeCount(val){
-		event.preventDefault();
-
-		( text == 0 ) ? "" : cardText.html(text+val);
-	};
 
 }());

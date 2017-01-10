@@ -359,6 +359,14 @@ body {
   letter-spacing: 3px;
 }
 
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0px 600px;
+  }
+}
 .big-blocks {
   margin-bottom: 80px;
 }
@@ -390,33 +398,45 @@ body {
   position: relative;
   padding: 10px 20px 10px 0;
 }
+.normal-block-left:hover:before {
+  animation-play-state: running;
+}
 .normal-block-left:before {
   position: absolute;
   content: "";
   display: block;
-  background: url('../images/yellow-block-left.png?1482197244') no-repeat;
+  background: #d3de3e url('../images/yellow-block-left.png?1482197244') repeat;
   right: 0;
   top: 0;
   height: 330px;
   width: 450px;
-  z-index: -1;
+  border-radius: 5px;
+  animation: animatedBackground 40s linear infinite;
+  animation-play-state: paused;
 }
 .normal-block-left .normal-block-left__img-container {
   max-width: 100%;
   height: 180px;
   line-height: 180px;
+  position: relative;
 }
 .normal-block-left .big-blocks__title {
   margin-bottom: 10px;
+  position: relative;
 }
 
 .biggest-block-middle {
-  background: url('../images/pink-block.png?1482197145') no-repeat;
+  background: #f7689e url('../images/pink-block.png?1482197145') repeat;
   background-size: cover;
   height: 510px;
   border-radius: 5px;
   position: relative;
   padding: 30px 80px 30px 80px;
+  animation: animatedBackground 40s linear infinite;
+  animation-play-state: paused;
+}
+.biggest-block-middle:hover {
+  animation-play-state: running;
 }
 .biggest-block-middle .biggest-block-middle__img-container {
   max-width: 100%;
@@ -446,25 +466,32 @@ body {
   padding: 10px 20px 20px 45px;
   position: relative;
 }
+.normal-block-right:hover:before {
+  animation-play-state: running;
+}
 .normal-block-right:before {
   left: 0;
   position: absolute;
   content: "";
   display: block;
-  background: url('../images/yellow-block-right.png?1482197190') no-repeat;
+  background: #d3de3e url('../images/yellow-block-right.png?1482197190') repeat;
   background-size: cover;
   top: 0;
   height: 245px;
   width: 450px;
-  z-index: -1;
+  animation: animatedBackground 40s linear infinite;
+  animation-play-state: paused;
+  border-radius: 5px;
 }
 .normal-block-right .normal-block-right__img-container {
   height: 125px;
   max-width: 100%;
   line-height: 125px;
+  position: relative;
 }
 .normal-block-right .big-blocks__title {
   margin-bottom: 10px;
+  position: relative;
 }
 
 .small-block-right {
@@ -536,7 +563,6 @@ body {
   background: url('../images/your-brand.png?1482151979') no-repeat;
   top: 0;
   right: 0;
-  z-index: -1;
 }
 
 .branding-slogan-text {
@@ -569,7 +595,6 @@ body {
   background: url('../images/rocket.png?1482152284') no-repeat;
   width: 790px;
   height: 450px;
-  z-index: -1;
   top: -40px;
   left: 125px;
 }
@@ -618,7 +643,6 @@ body {
   background: url('../images/big-bomb-house.png?1482152095') no-repeat;
   width: 276px;
   height: 258px;
-  z-index: -1;
 }
 
 .branding-right-container_book {
@@ -636,7 +660,6 @@ body {
   background: url('../images/books.png?1482152306') no-repeat;
   width: 253px;
   height: 267px;
-  z-index: -1;
 }
 
 .branding-right-description {
@@ -645,6 +668,7 @@ body {
   letter-spacing: 5px;
   margin-bottom: 15px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .branding-right-link,
@@ -752,16 +776,29 @@ body {
   height: 19px;
 }
 
+@keyframes animatedFeedback {
+  0% {
+    background-position: center, 0 0;
+  }
+  100% {
+    background-position: center, 0px 600px;
+  }
+}
 .feedback {
   text-align: center;
   margin-bottom: 80px;
 }
 .feedback .wrapper {
-  background: url('../images/face.png?1482151229') no-repeat;
-  background-size: cover;
+  background: url('../images/new-face.png?1484040328') no-repeat, #7261aa url('../images/fiol-block.png?1484039011') repeat;
   min-height: 500px;
-  padding: 65px 0 55px 0;
+  padding: 50px 0 55px 0;
   background-position: center;
+  border-radius: 10px;
+  animation: animatedFeedback 30s linear infinite;
+  animation-play-state: paused;
+}
+.feedback .wrapper:hover {
+  animation-play-state: running;
 }
 
 .feedback-title {
@@ -769,7 +806,7 @@ body {
   text-transform: uppercase;
   font-family: 'raleway_extrabold';
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   letter-spacing: 10px;
 }
 
@@ -778,7 +815,7 @@ body {
   text-transform: uppercase;
   font-family: 'raleway_extrabold';
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   letter-spacing: 6px;
 }
 

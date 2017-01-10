@@ -70,6 +70,14 @@
   font-family: 'raleway_medium';
 }
 
+@keyframes animatedFeedback {
+  0% {
+    background-position: center, 0 0;
+  }
+  100% {
+    background-position: center, 0px 600px;
+  }
+}
 .advantages .wrapper {
   background: #fff;
   min-height: 590px;
@@ -122,9 +130,14 @@
 }
 
 .feedback .wrapper {
-  background: #7362ab url('../images/face.png?1482151229') no-repeat;
+  background: url('../images/new-face.png?1484040328') no-repeat, #7261aa url('../images/fiol-block.png?1484039011') repeat;
   background-position: center;
-  background-size: cover;
+  animation: animatedFeedback 30s linear infinite;
+  animation-play-state: paused;
+  border-radius: 10px;
+}
+.feedback .wrapper:hover {
+  animation-play-state: running;
 }
 
 .breadcrumbs-list {
@@ -364,6 +377,7 @@
     padding-top: 50px;
     padding-bottom: 55px;
     min-height: auto;
+    border-radius: 0;
   }
   .feedback .feedback-title {
     font-size: 20px;
