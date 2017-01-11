@@ -166,15 +166,15 @@
 .clothing-item__button:focus {
   width: 165px;
   height: 48px;
-  background: #f7689e;
-  color: #fff;
   text-transform: lowercase;
-  font-size: 22px;
   line-height: 46px;
-  font-family: 'raleway_medium';
   text-align: center;
   display: inline-block;
   border-radius: 2px;
+  margin-bottom: 34px;
+}
+
+.clothing-item__button:last-child, .clothing-item__button:hover:last-child, .clothing-item__button:focus:last-child, .clothing-item__button:active:last-child {
   margin-bottom: 34px;
 }
 

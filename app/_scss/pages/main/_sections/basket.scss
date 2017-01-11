@@ -1,5 +1,5 @@
 .basket {
-	display: none;
+	display: block;
 
 	position: fixed;
 	bottom: 0;
@@ -7,11 +7,11 @@
 	z-index: 100;
 
 	.wrapper {
-		background: image-url('basket-bg.png') no-repeat;
+		background: #ed6498 image-url('basket-bg.png') no-repeat;
 		background-size: cover;
 		height: 70px;
 		text-align: center;
-		box-shadow: 0px 20px 160px 50px #fff, inset 0px 1px 0px 0px #ed6498;
+		box-shadow: 0px 20px 155px 40px #fff;
 	}
 
 	.container {

@@ -311,18 +311,18 @@ body {
 }
 
 .basket {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 100;
 }
 .basket .wrapper {
-  background: url('../images/basket-bg.png?1482304802') no-repeat;
+  background: #ed6498 url('../images/basket-bg.png?1482304802') no-repeat;
   background-size: cover;
   height: 70px;
   text-align: center;
-  box-shadow: 0px 20px 160px 50px #fff, inset 0px 1px 0px 0px #ed6498;
+  box-shadow: 0px 20px 155px 40px #fff;
 }
 .basket .container {
   padding-top: 28px;
@@ -2089,6 +2089,10 @@ body {
     background-size: initial;
   }
 
+  .basket {
+    display: none;
+  }
+
   .panel {
     margin-bottom: 0;
     background-color: inherit;
@@ -2980,7 +2984,6 @@ body {
 
   .footer .container {
     padding-top: 50px;
-    padding-bottom: 50px;
   }
   .footer .footer-list-title {
     font-size: 16px;

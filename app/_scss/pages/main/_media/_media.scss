@@ -4,6 +4,10 @@
 		background-size: initial;
 	}
 
+	.basket {
+		display: none;
+	}
+
 	.panel {
 		margin-bottom: 0;
 		background-color: inherit;
@@ -1055,7 +1059,6 @@
 
 		.container {
 			padding-top: 50px;
-			padding-bottom: 50px;
 		}
 
 		.footer-list-title {

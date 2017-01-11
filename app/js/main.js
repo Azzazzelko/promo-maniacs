@@ -320,4 +320,41 @@ $(function() {
 		counts.init();
 	});
 
+	/****************************
+	**  basket-animation  *******
+	****************************/
+
+	if ( $('.basket').is(":visible") ) { //корзина спрятана на мобилках, свойственно анимация там и не нужна
+		$(".clothing-item__button").click(function(e){
+			e.preventDefault();
+
+			var $this = $(this);
+			var target = $this.parent().find("img:not(.clone)");
+			var _top = target.offset().top - $(window).scrollTop();
+			var _left = target.offset().left - $(window).scrollLeft();
+			var basket = $(".basket-in");
+			var basTop = basket.offset().top - $(window).scrollTop();
+			var basLeft = basket.offset().left - $(window).scrollLeft();
+
+			target 
+			.clone()
+			.addClass('clone')  
+			.css({
+				'position' : 'fixed',
+				'z-index' : '100',
+				'top' : _top,
+				'left' : _left
+			})  
+			.insertBefore(target) 
+			.animate({
+				opacity: 0.5,   
+				top: basTop,
+				left: basLeft,   
+				width: 50,   
+				height: 50 
+			},700, function(){ $(this).remove() });  
+		});
+	};
+
+
 }());
