@@ -101,15 +101,15 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
-
-	&.green {
-		background: green;
-	}
-
-	&.violet {
-		background: violet;
-	}
 }	
+
+@each $key,$value in $all-colors-set {
+	.basket-page__item-colors-item {
+		&.#{$key} {
+			background: $value;
+		}
+	}
+};
 
 .basket-page__item-code {
 	font-size: 16px;

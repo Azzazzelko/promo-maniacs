@@ -8,12 +8,6 @@
   transform: translateY(-50%);
 }
 
-.order-formed__payment-order:before {
-  position: absolute;
-  display: block;
-  content: "";
-}
-
 /* ======= sections ====== */
 .breadcrumbs-list {
   text-align: center;
@@ -128,19 +122,18 @@
 
 .order-formed__payment-order {
   position: relative;
-  margin-bottom: 130px;
   font-size: 22px;
   font-family: 'raleway_medium';
   color: black;
 }
-.order-formed__payment-order:before {
-  background: url('../images/yandex-money.png?1482710270') no-repeat;
-  background-size: cover;
-  width: 131px;
-  height: 67px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -90px;
+
+.order-formed__payment-order-img-container {
+  max-width: 100%;
+  margin: 40px 0 50px;
+}
+
+.order-formed__payment-order-img {
+  margin: 0 auto;
 }
 
 .order-formed__services {

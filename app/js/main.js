@@ -356,5 +356,27 @@ $(function() {
 		});
 	};
 
+	/************************
+	*** filters close btn ***
+	************************/
+	// Крестик на фильтрах. При нажатии, смотрит текст где лежал,
+	// если текст совпадает с текстом инпута вложенным в сплывашку
+	// убирает *checked* атрибут;
+
+	var filtCloseBtns = $(".filters-item__close");
+	filtCloseBtns.on("click", function(e){
+		e.preventDefault();
+		var $this = $(this);
+
+		var $thisTxt = $(this).prev().text();
+		var $inputsTexts = $this.parent().parent().next().find('.drop-brand-label-text');
+		
+		$inputsTexts.each(function() {
+			var $this = $(this);
+
+			if ( $this.text() == $thisTxt )
+				$this.prev().removeAttr("checked");
+		});
+	});
 
 }());

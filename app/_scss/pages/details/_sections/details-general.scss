@@ -81,7 +81,7 @@
 
 		&.bomb:before {
 			@extend %pseudo;
-			background: url('../../../../images/bomb_small.png') no-repeat;
+			background: image-url('bomb_small.png') no-repeat;
 			background-size: cover;
 			width: 115px;
 			height: 80px;
@@ -204,23 +204,15 @@
 	height: 16px;
 	border-radius: 50%;
 	position: relative;
-
-	&.blue {
-		background: blue;
-	}
-
-	&.red {
-		background: red;
-	}
-
-	&.green {
-		background: green;
-	}
-
-	&.black {
-		background: black;
-	}
 }
+
+@each $key,$value in $all-colors-set {
+	.card-color__label-text {
+		&.#{$key} {
+			background: $value;
+		}
+	}
+};
 
 .card-color__input-radio:checked + .card-color__label-text:before {
 	width: 22px;

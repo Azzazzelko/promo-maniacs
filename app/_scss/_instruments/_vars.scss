@@ -32,8 +32,47 @@ $catalog-spr: sprite-map('icons-catalog/*.png', $spacing: 70px);
 $details-spr: sprite-map('icons-details/*.png', $spacing: 70px);
 $about-spr  : sprite-map('icons-about/*.png'  , $spacing: 70px);
 $cabinet-spr: sprite-map('icons-cabinet/*.png', $spacing: 70px);
-                         
+
 
 $souvenirs : clothes, pens, accessories, clock, relax, electro, dishes, sets, promo, bags, office, box, gifts, notebook, house, trinkets, umbrellas, honors, desk, postcards, smoking;
 
 $advantages : items, note, cloth;
+
+$all-colors-set: (
+	white		: 	white,
+	black		: 	black,
+	red			: 	red,
+	orange		: 	orange,
+	yellow		: 	yellow,
+	green 		: 	green,
+	blue 		: 	#42aaff,
+	power-blue 	: 	#0000ff,
+	purple 		: 	purple,
+	gold 		: 	gold,
+	silver 		: 	silver,
+	gray 		: 	gray,
+	transparent : 	#f9f7f7,
+	brown 		: 	brown,
+	vinous 		: 	#9b2d30,
+	pink 		: 	pink,
+	bronze 		: 	#cd7f32,
+	turquoise 	: 	turquoise,
+	beige 		: 	beige,
+	lilac 		: 	#c8a2c8,
+	crimson 	: 	crimson,
+	khaki 		: 	khaki,
+	citric 		: 	#fde910,
+	violet 		: 	violet,
+	military 	: 	#4B5320,
+	green-apple	: 	#77DD77,
+	cobalt		: 	#0047AB,
+	anthracite	: 	#464451,
+	silvery		: 	#c9c0bb,
+	bordeaux	: 	#B00000,
+	golden		: 	goldenrod,
+	gray-melange: 	#808080,
+	dark-blue	: 	#000080,
+
+	substrate 	: 	red,
+	full-color 	:	red
+);

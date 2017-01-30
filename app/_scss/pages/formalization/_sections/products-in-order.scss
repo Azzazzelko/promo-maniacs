@@ -53,18 +53,18 @@
 	margin-bottom: 10px;
 	border-radius: 50%;
 
-	&.violet {
-		background: violet;
-	}
-
-	&.green {
-		background: green;
-	}
-
 	&:last-child {
 		margin-bottom: 0;
 	}
 }
+
+@each $key,$value in $all-colors-set {
+	.products-in-order__item-colors-item {
+		&.#{$key} {
+			background: $value;
+		}
+	}
+};
 
 .products-in-order__item-code {
 	font-size: 16px;

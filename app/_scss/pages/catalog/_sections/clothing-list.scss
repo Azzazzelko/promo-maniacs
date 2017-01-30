@@ -56,19 +56,15 @@
 	&:last-child {
 		margin-right: 0;
 	}
-
-	&.blue {
-		background: blue;
-	}
-
-	&.green {
-		background: green;
-	}
-
-	&.red {
-		background: red;
-	}
 }
+
+@each $key,$value in $all-colors-set {
+	.clothing-item__color-item {
+		&.#{$key} {
+			background: $value;
+		}
+	}
+};
 
 .clothing-item__title {
 	color: black;

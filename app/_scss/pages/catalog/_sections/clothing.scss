@@ -155,7 +155,7 @@
 }
 
 .filters-color {
-	.filters-item__text.blue {
+	.filters-item__text {
 		padding-left: 15px;
 
 		&:before {
@@ -164,6 +164,10 @@
 			width: 9px;
 			height: 9px;
 			border-radius: 50%;
+			background: transparent;
+		}
+
+		&.blue:before {
 			background: blue;
 		}
 	}
@@ -186,6 +190,14 @@
 		}
 	}
 }
+
+@each $key,$value in $all-colors-set {
+	.filters-color {
+		.filters-item__text.#{$key}:before {
+			background: $value;
+		}
+	}
+};
 
 .filters-material {
 	.dropdown-menu {
@@ -229,6 +241,8 @@
 
 .drop-brand-list {
 	margin-bottom: 10px;
+	height: 108px;
+	overflow: auto;
 }
 
 .drop-brand-input-checkbox {

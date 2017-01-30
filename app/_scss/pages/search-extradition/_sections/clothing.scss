@@ -155,7 +155,7 @@
 }
 
 .filters-color {
-	.filters-item__text.blue {
+	.filters-item__text {
 		padding-left: 15px;
 
 		&:before {
@@ -164,7 +164,7 @@
 			width: 9px;
 			height: 9px;
 			border-radius: 50%;
-			background: blue;
+			background: transparent;
 		}
 	}
 
@@ -186,6 +186,14 @@
 		}
 	}
 }
+
+@each $key,$value in $all-colors-set {
+	.filters-color {
+		.filters-item__text.#{$key}:before {
+			background: $value;
+		}
+	}
+};
 
 .filters-material {
 	.dropdown-menu {

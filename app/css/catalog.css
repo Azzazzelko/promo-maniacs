@@ -2,7 +2,7 @@
 /* ===== instruments ====== */
 .breadcrumbs-item.active:before, .filters-button-open:before, .filters-item__close,
 .filters-item__close:hover,
-.filters-item__close:focus, .filters-color .filters-item__text.blue:before, .drop-brand-input-checkbox:checked + .drop-brand-label-text:after, .filters-check-input-checkbox:checked + .filters-check-label-text:after, .sidebar-item__link.active:before {
+.filters-item__close:focus, .filters-color .filters-item__text:before, .drop-brand-input-checkbox:checked + .drop-brand-label-text:after, .filters-check-input-checkbox:checked + .filters-check-label-text:after, .sidebar-item__link.active:before {
   position: absolute;
   display: block;
   content: "";
@@ -131,13 +131,144 @@
 .clothing-item__color-item:last-child {
   margin-right: 0;
 }
-.clothing-item__color-item.blue {
-  background: blue;
+
+.clothing-item__color-item.white {
+  background: white;
 }
+
+.clothing-item__color-item.black {
+  background: black;
+}
+
+.clothing-item__color-item.red {
+  background: red;
+}
+
+.clothing-item__color-item.orange {
+  background: orange;
+}
+
+.clothing-item__color-item.yellow {
+  background: yellow;
+}
+
 .clothing-item__color-item.green {
   background: green;
 }
-.clothing-item__color-item.red {
+
+.clothing-item__color-item.blue {
+  background: #42aaff;
+}
+
+.clothing-item__color-item.power-blue {
+  background: #0000ff;
+}
+
+.clothing-item__color-item.purple {
+  background: purple;
+}
+
+.clothing-item__color-item.gold {
+  background: gold;
+}
+
+.clothing-item__color-item.silver {
+  background: silver;
+}
+
+.clothing-item__color-item.gray {
+  background: gray;
+}
+
+.clothing-item__color-item.transparent {
+  background: #f9f7f7;
+}
+
+.clothing-item__color-item.brown {
+  background: brown;
+}
+
+.clothing-item__color-item.vinous {
+  background: #9b2d30;
+}
+
+.clothing-item__color-item.pink {
+  background: pink;
+}
+
+.clothing-item__color-item.bronze {
+  background: #cd7f32;
+}
+
+.clothing-item__color-item.turquoise {
+  background: turquoise;
+}
+
+.clothing-item__color-item.beige {
+  background: beige;
+}
+
+.clothing-item__color-item.lilac {
+  background: #c8a2c8;
+}
+
+.clothing-item__color-item.crimson {
+  background: crimson;
+}
+
+.clothing-item__color-item.khaki {
+  background: khaki;
+}
+
+.clothing-item__color-item.citric {
+  background: #fde910;
+}
+
+.clothing-item__color-item.violet {
+  background: violet;
+}
+
+.clothing-item__color-item.military {
+  background: #4B5320;
+}
+
+.clothing-item__color-item.green-apple {
+  background: #77DD77;
+}
+
+.clothing-item__color-item.cobalt {
+  background: #0047AB;
+}
+
+.clothing-item__color-item.anthracite {
+  background: #464451;
+}
+
+.clothing-item__color-item.silvery {
+  background: #c9c0bb;
+}
+
+.clothing-item__color-item.bordeaux {
+  background: #B00000;
+}
+
+.clothing-item__color-item.golden {
+  background: goldenrod;
+}
+
+.clothing-item__color-item.gray-melange {
+  background: #808080;
+}
+
+.clothing-item__color-item.dark-blue {
+  background: #000080;
+}
+
+.clothing-item__color-item.substrate {
+  background: red;
+}
+
+.clothing-item__color-item.full-color {
   background: red;
 }
 
@@ -325,14 +456,17 @@
   display: inline-block;
 }
 
-.filters-color .filters-item__text.blue {
+.filters-color .filters-item__text {
   padding-left: 15px;
 }
-.filters-color .filters-item__text.blue:before {
+.filters-color .filters-item__text:before {
   left: 7px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
+  background: transparent;
+}
+.filters-color .filters-item__text.blue:before {
   background: blue;
 }
 .filters-color .dropdown-menu {
@@ -352,6 +486,146 @@
   background: url('../images/icons-catalog-s8a9aaedf0e.png') 0 -150px no-repeat;
   width: 9px;
   height: 5px;
+}
+
+.filters-color .filters-item__text.white:before {
+  background: white;
+}
+
+.filters-color .filters-item__text.black:before {
+  background: black;
+}
+
+.filters-color .filters-item__text.red:before {
+  background: red;
+}
+
+.filters-color .filters-item__text.orange:before {
+  background: orange;
+}
+
+.filters-color .filters-item__text.yellow:before {
+  background: yellow;
+}
+
+.filters-color .filters-item__text.green:before {
+  background: green;
+}
+
+.filters-color .filters-item__text.blue:before {
+  background: #42aaff;
+}
+
+.filters-color .filters-item__text.power-blue:before {
+  background: #0000ff;
+}
+
+.filters-color .filters-item__text.purple:before {
+  background: purple;
+}
+
+.filters-color .filters-item__text.gold:before {
+  background: gold;
+}
+
+.filters-color .filters-item__text.silver:before {
+  background: silver;
+}
+
+.filters-color .filters-item__text.gray:before {
+  background: gray;
+}
+
+.filters-color .filters-item__text.transparent:before {
+  background: #f9f7f7;
+}
+
+.filters-color .filters-item__text.brown:before {
+  background: brown;
+}
+
+.filters-color .filters-item__text.vinous:before {
+  background: #9b2d30;
+}
+
+.filters-color .filters-item__text.pink:before {
+  background: pink;
+}
+
+.filters-color .filters-item__text.bronze:before {
+  background: #cd7f32;
+}
+
+.filters-color .filters-item__text.turquoise:before {
+  background: turquoise;
+}
+
+.filters-color .filters-item__text.beige:before {
+  background: beige;
+}
+
+.filters-color .filters-item__text.lilac:before {
+  background: #c8a2c8;
+}
+
+.filters-color .filters-item__text.crimson:before {
+  background: crimson;
+}
+
+.filters-color .filters-item__text.khaki:before {
+  background: khaki;
+}
+
+.filters-color .filters-item__text.citric:before {
+  background: #fde910;
+}
+
+.filters-color .filters-item__text.violet:before {
+  background: violet;
+}
+
+.filters-color .filters-item__text.military:before {
+  background: #4B5320;
+}
+
+.filters-color .filters-item__text.green-apple:before {
+  background: #77DD77;
+}
+
+.filters-color .filters-item__text.cobalt:before {
+  background: #0047AB;
+}
+
+.filters-color .filters-item__text.anthracite:before {
+  background: #464451;
+}
+
+.filters-color .filters-item__text.silvery:before {
+  background: #c9c0bb;
+}
+
+.filters-color .filters-item__text.bordeaux:before {
+  background: #B00000;
+}
+
+.filters-color .filters-item__text.golden:before {
+  background: goldenrod;
+}
+
+.filters-color .filters-item__text.gray-melange:before {
+  background: #808080;
+}
+
+.filters-color .filters-item__text.dark-blue:before {
+  background: #000080;
+}
+
+.filters-color .filters-item__text.substrate:before {
+  background: red;
+}
+
+.filters-color .filters-item__text.full-color:before {
+  background: red;
 }
 
 .filters-material .dropdown-menu {
@@ -394,6 +668,8 @@
 
 .drop-brand-list {
   margin-bottom: 10px;
+  height: 108px;
+  overflow: auto;
 }
 
 .drop-brand-input-checkbox {
@@ -780,21 +1056,123 @@
   }
   .filters_xs .filters_xs-item .filters-item_xs__text {
     position: relative;
-  }
-  .filters_xs .filters_xs-item .filters-item_xs__text.blue {
     padding-left: 30px;
   }
-  .filters_xs .filters_xs-item .filters-item_xs__text.blue:before {
+  .filters_xs .filters_xs-item .filters-item_xs__text:before {
     position: absolute;
     content: "";
     display: block;
-    background: blue;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+  .filters_xs .filters-item_xs__text.white:before {
+    background: white;
+  }
+  .filters_xs .filters-item_xs__text.black:before {
+    background: black;
+  }
+  .filters_xs .filters-item_xs__text.red:before {
+    background: red;
+  }
+  .filters_xs .filters-item_xs__text.orange:before {
+    background: orange;
+  }
+  .filters_xs .filters-item_xs__text.yellow:before {
+    background: yellow;
+  }
+  .filters_xs .filters-item_xs__text.green:before {
+    background: green;
+  }
+  .filters_xs .filters-item_xs__text.blue:before {
+    background: #42aaff;
+  }
+  .filters_xs .filters-item_xs__text.power-blue:before {
+    background: #0000ff;
+  }
+  .filters_xs .filters-item_xs__text.purple:before {
+    background: purple;
+  }
+  .filters_xs .filters-item_xs__text.gold:before {
+    background: gold;
+  }
+  .filters_xs .filters-item_xs__text.silver:before {
+    background: silver;
+  }
+  .filters_xs .filters-item_xs__text.gray:before {
+    background: gray;
+  }
+  .filters_xs .filters-item_xs__text.transparent:before {
+    background: #f9f7f7;
+  }
+  .filters_xs .filters-item_xs__text.brown:before {
+    background: brown;
+  }
+  .filters_xs .filters-item_xs__text.vinous:before {
+    background: #9b2d30;
+  }
+  .filters_xs .filters-item_xs__text.pink:before {
+    background: pink;
+  }
+  .filters_xs .filters-item_xs__text.bronze:before {
+    background: #cd7f32;
+  }
+  .filters_xs .filters-item_xs__text.turquoise:before {
+    background: turquoise;
+  }
+  .filters_xs .filters-item_xs__text.beige:before {
+    background: beige;
+  }
+  .filters_xs .filters-item_xs__text.lilac:before {
+    background: #c8a2c8;
+  }
+  .filters_xs .filters-item_xs__text.crimson:before {
+    background: crimson;
+  }
+  .filters_xs .filters-item_xs__text.khaki:before {
+    background: khaki;
+  }
+  .filters_xs .filters-item_xs__text.citric:before {
+    background: #fde910;
+  }
+  .filters_xs .filters-item_xs__text.violet:before {
+    background: violet;
+  }
+  .filters_xs .filters-item_xs__text.military:before {
+    background: #4B5320;
+  }
+  .filters_xs .filters-item_xs__text.green-apple:before {
+    background: #77DD77;
+  }
+  .filters_xs .filters-item_xs__text.cobalt:before {
+    background: #0047AB;
+  }
+  .filters_xs .filters-item_xs__text.anthracite:before {
+    background: #464451;
+  }
+  .filters_xs .filters-item_xs__text.silvery:before {
+    background: #c9c0bb;
+  }
+  .filters_xs .filters-item_xs__text.bordeaux:before {
+    background: #B00000;
+  }
+  .filters_xs .filters-item_xs__text.golden:before {
+    background: goldenrod;
+  }
+  .filters_xs .filters-item_xs__text.gray-melange:before {
+    background: #808080;
+  }
+  .filters_xs .filters-item_xs__text.dark-blue:before {
+    background: #000080;
+  }
+  .filters_xs .filters-item_xs__text.substrate:before {
+    background: red;
+  }
+  .filters_xs .filters-item_xs__text.full-color:before {
+    background: red;
   }
   .filters_xs .filters_xs-label {
     display: block;

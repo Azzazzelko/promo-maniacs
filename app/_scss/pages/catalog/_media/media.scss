@@ -196,25 +196,29 @@
 
 			.filters-item_xs__text {
 				position: relative;
+				padding-left: 30px;
 
-				&.blue {
-					padding-left: 30px;
-
-					&:before {
-						position: absolute;
-						content: "";
-						display: block;
-						background: blue;
-						width: 20px;
-						height: 20px;
-						border-radius: 50%;
-						left: 0;
-						top: 50%;
-						transform: translateY(-50%);
-					}
+				&:before {
+					position: absolute;
+					content: "";
+					display: block;
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
 				}
 			}
 		}
+
+		@each $key,$value in $all-colors-set {
+			.filters-item_xs__text {
+				&.#{$key}:before {
+					background: $value;
+				}
+			}
+		};
 
 		.filters_xs-label {
 			display: block;

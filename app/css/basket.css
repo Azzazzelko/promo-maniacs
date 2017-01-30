@@ -123,11 +123,145 @@
 .basket-page__item-colors-item:last-child {
   margin-bottom: 0;
 }
+
+.basket-page__item-colors-item.white {
+  background: white;
+}
+
+.basket-page__item-colors-item.black {
+  background: black;
+}
+
+.basket-page__item-colors-item.red {
+  background: red;
+}
+
+.basket-page__item-colors-item.orange {
+  background: orange;
+}
+
+.basket-page__item-colors-item.yellow {
+  background: yellow;
+}
+
 .basket-page__item-colors-item.green {
   background: green;
 }
+
+.basket-page__item-colors-item.blue {
+  background: #42aaff;
+}
+
+.basket-page__item-colors-item.power-blue {
+  background: #0000ff;
+}
+
+.basket-page__item-colors-item.purple {
+  background: purple;
+}
+
+.basket-page__item-colors-item.gold {
+  background: gold;
+}
+
+.basket-page__item-colors-item.silver {
+  background: silver;
+}
+
+.basket-page__item-colors-item.gray {
+  background: gray;
+}
+
+.basket-page__item-colors-item.transparent {
+  background: #f9f7f7;
+}
+
+.basket-page__item-colors-item.brown {
+  background: brown;
+}
+
+.basket-page__item-colors-item.vinous {
+  background: #9b2d30;
+}
+
+.basket-page__item-colors-item.pink {
+  background: pink;
+}
+
+.basket-page__item-colors-item.bronze {
+  background: #cd7f32;
+}
+
+.basket-page__item-colors-item.turquoise {
+  background: turquoise;
+}
+
+.basket-page__item-colors-item.beige {
+  background: beige;
+}
+
+.basket-page__item-colors-item.lilac {
+  background: #c8a2c8;
+}
+
+.basket-page__item-colors-item.crimson {
+  background: crimson;
+}
+
+.basket-page__item-colors-item.khaki {
+  background: khaki;
+}
+
+.basket-page__item-colors-item.citric {
+  background: #fde910;
+}
+
 .basket-page__item-colors-item.violet {
   background: violet;
+}
+
+.basket-page__item-colors-item.military {
+  background: #4B5320;
+}
+
+.basket-page__item-colors-item.green-apple {
+  background: #77DD77;
+}
+
+.basket-page__item-colors-item.cobalt {
+  background: #0047AB;
+}
+
+.basket-page__item-colors-item.anthracite {
+  background: #464451;
+}
+
+.basket-page__item-colors-item.silvery {
+  background: #c9c0bb;
+}
+
+.basket-page__item-colors-item.bordeaux {
+  background: #B00000;
+}
+
+.basket-page__item-colors-item.golden {
+  background: goldenrod;
+}
+
+.basket-page__item-colors-item.gray-melange {
+  background: #808080;
+}
+
+.basket-page__item-colors-item.dark-blue {
+  background: #000080;
+}
+
+.basket-page__item-colors-item.substrate {
+  background: red;
+}
+
+.basket-page__item-colors-item.full-color {
+  background: red;
 }
 
 .basket-page__item-code {
