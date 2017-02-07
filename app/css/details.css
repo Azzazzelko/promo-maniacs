@@ -1401,6 +1401,10 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  #slider-thumbs {
+    height: 365px;
+  }
+
   .card .row_relative {
     min-height: 895px;
   }
