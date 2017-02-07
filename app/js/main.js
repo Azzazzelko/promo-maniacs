@@ -183,7 +183,7 @@ $(function() {
 
 		var previewList = $('.creator-list');
 		var overlayContainer = $('.overlay-img-container');
-
+		
 		var init = function(){
 			setUpListeners();
 			resAndDrag();
@@ -202,7 +202,7 @@ $(function() {
 
 		function loadFile(e){
 			var creatorItem = $('.creator-item');
-			console.log(e.target.files[0]);
+			
 			if ( e.target.files[0] ) {
 				if ( e.target.files[0].type != 'image/jpeg' ) {
 					if ( e.target.files[0].type != 'image/png' ) {
@@ -221,7 +221,49 @@ $(function() {
 			</li>';
 			previewList.append(preview);
 
-			addOverlayImg(output);
+			var realHeight;
+			var realWidth;
+
+			$('.creator-item.active').find("img").load(function(e){
+				realHeight = $('.creator-item.active').find("img")[0].naturalHeight;
+				realWidth = $('.creator-item.active').find("img")[0].naturalWidth;
+				
+				var containerHeight = $("#tab-content-container").outerHeight();
+				var containerWidth = $("#tab-content-container").outerWidth();
+
+				var procHeigt = 0;
+				var procWidth = 0;
+
+				if (realHeight > containerHeight) {
+					procHeigt = (realHeight-containerHeight)/realHeight*100;
+				}
+
+				if (realWidth > containerWidth) {
+					procWidth = (realWidth-containerWidth)/realWidth*100;
+				}
+
+				procHeigt > procWidth ? proc = procHeigt : proc = procWidth;
+
+				proc = proc.toFixed(0);
+				
+
+				var _newH = (realHeight/100*(100-proc)).toFixed(0)-10;
+				var _newW = (realWidth/100*(100-proc)).toFixed(0)-10;
+
+				overlayContainer.height(_newH);
+				overlayContainer.width(_newW);
+
+				overlayContainer.attr("data-w", _newW);
+				overlayContainer.attr("data-h", _newH);
+
+				overlayContainer.css({
+					"top"  : 0,
+					"left" : 0
+				});
+
+				addOverlayImg(output);
+			});
+
 		};
 
 		function activeOverlay(e){
@@ -229,8 +271,43 @@ $(function() {
 			$this.addClass('active').siblings().removeClass('active');
 
 			var src = $this.find("img").attr('src');
+
+			var containerHeight = $("#tab-content-container").outerHeight();
+			var containerWidth = $("#tab-content-container").outerWidth();
+			var realHeight = $this.find("img")[0].naturalHeight;
+			var realWidth = $this.find("img")[0].naturalWidth;
+
+			var procHeigt = 0;
+			var procWidth = 0;
+
+			if (realHeight > containerHeight) {
+				procHeigt = (realHeight-containerHeight)/realHeight*100;
+			}
+
+			if (realWidth > containerWidth) {
+				procWidth = (realWidth-containerWidth)/realWidth*100;
+			}
+
+			procHeigt > procWidth ? proc = procHeigt : proc = procWidth;
+
+			proc = proc.toFixed(0);
+			
+			var _newH = (realHeight/100*(100-proc));
+			var _newW = (realWidth/100*(100-proc));
+			
+			overlayContainer.height(_newH);
+			overlayContainer.width(_newW);
+			overlayContainer.css({
+				"top"  : 0,
+				"left" : 0
+			});
+
+			overlayContainer.attr("data-w", _newW);
+			overlayContainer.attr("data-h", _newH);
+
 			addOverlayImg(src);
 		};
+
 
 		function addOverlayImg(src){
 			overlayContainer.show().find("img").attr("src", src);
@@ -248,18 +325,21 @@ $(function() {
 		};
 
 		function defaultImage(e){
+			var _w = overlayContainer.attr("data-w");
+			var _h = overlayContainer.attr("data-h");
+
 			overlayContainer.css({
-				"width" : "auto",
-				"height" : "auto",
 				"top" : "0",
-				"left" : "0"
-			})
+				"left" : "0",
+				"width" : _w,
+				"height" : _h
+			});
 		};
 
 		function resAndDrag(){
 			overlayContainer.resizable({
 				aspectRatio: true,
-				minWidth: 25,
+				minWidth: 30,
 				containment: "#tab-content-container"
 			}).draggable({ 
 				containment: "#tab-content-container", 
@@ -272,10 +352,10 @@ $(function() {
 		}
 	}());
 
-	$(document).ready(function(){
-		if ( $('.overlay-img-container').length )
-			filePreview.init();
-	});
+$(document).ready(function(){
+	if ( $('.overlay-img-container').length )
+		filePreview.init();
+});
 
 	/******************
 	**  counts  *******
