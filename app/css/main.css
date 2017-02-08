@@ -1051,7 +1051,7 @@ body {
   border-radius: 0;
   box-shadow: none;
   top: 50px;
-  z-index: 3;
+  z-index: 12;
 }
 
 .full-catalog-container {

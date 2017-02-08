@@ -14,7 +14,7 @@
   content: "";
 }
 
-.slider-thumbs__item.active .slider-thumbs__link:before, .card-color__input-radio:checked + .card-color__label-text:before, .card-count .card-count__minus:before, .card-count .card-count__plus:before, .custom-img-creator .card-tabs .overlay-img-control.refresh:before, .custom-img-creator .card-tabs .overlay-img-control.resize:before, .creator-item-close:before {
+.card-color__input-radio:checked + .card-color__label-text:before, .card-count .card-count__minus:before, .card-count .card-count__plus:before, .custom-img-creator .card-tabs .overlay-img-control.refresh:before, .custom-img-creator .card-tabs .overlay-img-control.resize:before, .creator-item-close:before {
   position: absolute;
   display: block;
   content: "";
@@ -439,20 +439,44 @@
 
 .slider-thumbs__item {
   max-width: 100%;
-  height: 50px;
+  height: 54px;
   width: 40px;
   text-align: left;
   line-height: 50px;
   margin-bottom: 30px;
+  position: relative;
+  border: 4px solid transparent !important;
+  border-left: 0px solid transparent !important;
+}
+.slider-thumbs__item.active {
+  border: 4px solid #fe3d86 !important;
+  border-left: 0px solid transparent !important;
 }
 .slider-thumbs__item.active .slider-thumbs__link {
   position: relative;
 }
-.slider-thumbs__item.active .slider-thumbs__link:before {
-  background: url('../images/icons-details-s506e3351b3.png') 0 -736px no-repeat;
-  width: 51px;
-  height: 26px;
-  left: 35%;
+.slider-thumbs__item.active:before {
+  width: 4px;
+  height: 33px;
+  background: #fe3d86;
+  display: block;
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -7px;
+  transform: rotate(25deg);
+  z-index: 10;
+}
+.slider-thumbs__item.active:after {
+  width: 4px;
+  height: 34px;
+  background: #fe3d86;
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: -4px;
+  left: -7px;
+  transform: rotate(-25deg);
 }
 .slider-thumbs__item:last-child {
   margin-bottom: 0;
@@ -463,6 +487,7 @@
   vertical-align: middle;
   max-width: inherit;
   max-height: 100%;
+  width: 100%;
 }
 
 .card-size__list,

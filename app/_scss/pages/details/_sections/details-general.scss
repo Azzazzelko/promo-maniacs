@@ -99,22 +99,48 @@
 
 .slider-thumbs__item {
 	max-width: 100%;
-	height: 50px;
+	height: 54px;
 	width: 40px;
 	text-align: left;
 	line-height: 50px;
 	margin-bottom: 30px;
+	position: relative;
+	border: 4px solid transparent !important;
+	border-left: 0px solid transparent !important;
 
 	&.active {
 		.slider-thumbs__link {
 			position: relative;
 		}
 
-		.slider-thumbs__link:before {
-			@extend %center;
-			@include get-sprite($details-spr, selection);
-			left: 35%;
+		border: 4px solid #fe3d86 !important;
+		border-left: 0px solid transparent !important;
+
+		&:before {
+			width: 4px;
+			height: 33px;
+			background: #fe3d86;
+			display: block;
+			position: absolute;
+			content: "";
+			top: -4px;
+			left: -7px;
+			transform: rotate(25deg);
+			z-index: 10;
 		}
+
+		&:after {
+			width: 4px;
+			height: 34px;
+			background: #fe3d86;
+			display: block;
+			position: absolute;
+			content: "";
+			bottom: -4px;
+			left: -7px;
+			transform: rotate(-25deg);
+		}
+
 	}
 
 	&:last-child {
@@ -127,6 +153,7 @@
 	vertical-align: middle;
 	max-width: inherit;
 	max-height: 100%;
+	width: 100%;
 }
 
 .card-size__list,
