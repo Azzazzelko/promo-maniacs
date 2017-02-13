@@ -9,6 +9,14 @@
 }
 
 /* ======= sections ====== */
+.breadcrumbs-link {
+  transition: all .3s ease-in-out;
+  opacity: 1;
+}
+.breadcrumbs-link:hover {
+  opacity: 0.7;
+}
+
 .breadcrumbs-list {
   text-align: center;
   margin-bottom: 40px;
@@ -116,6 +124,9 @@
   border: 1px solid #f7689e;
   color: #f7689e;
   font-family: 'raleway_extrabold';
+  text-decoration: none;
+}
+.paggination-item:hover {
   text-decoration: none;
 }
 

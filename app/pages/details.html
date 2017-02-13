@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="../css/fonts.css">
 	<link rel="stylesheet" href="../css/select2.min.css">
 	<link rel="stylesheet" href="../css/jquery.qtip.min.css">
-	<link rel="stylesheet" href="../css/thumbs.css">
+	<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/details.css">
 
@@ -722,60 +723,61 @@
 									</div>
 								</div>
 								<div class="col-sm-2 hidden-xs">
-									<div id="slider-thumbs">
-										<div class="inner">
-											<ul class="slider-thumbs__list row">
-												<li class="slider-thumbs__item active">
-													<a href="#carousel-card" data-slide-to="0" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="1" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="2" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="3" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="4" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="5" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="6" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="7" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="8" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-												<li class="slider-thumbs__item">
-													<a href="#carousel-card" data-slide-to="9" class="slider-thumbs__link">
-														<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
-													</a>
-												</li>
-											</ul>
+									<div id="slider-thumbs" class="slider">
+										<div>
+											<a href="#carousel-card" data-slide-to="0" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="1" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="2" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="3" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="4" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="5" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="6" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="7" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="8" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="9" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
+										</div>
+										<div>
+											<a href="#carousel-card" data-slide-to="10" class="slider-thumbs__link">
+												<img class="img-responsive img-thumbs" src="../images/cloth-1_sm.png" alt="img">
+											</a>
 										</div>
 									</div>
 								</div>
@@ -1353,6 +1355,8 @@
 	<script src="../js/select2.full.min.js"></script>
 	<script src="../js/jquery.qtip.min.js"></script>
 	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/jquery.maskedinput.min.js"></script>
+	<script src="../js/slick.min.js"></script>
 	<script src="../js/main.js"></script>
 </body>
 </html>

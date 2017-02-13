@@ -42,6 +42,7 @@
 	font-family: 'raleway_medium';
 	text-decoration: underline;
 	position: relative;
+	@include linksHover();
 
 	&:before {
 		@extend %icons;

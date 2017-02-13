@@ -71,6 +71,7 @@
 }
 
 .feedback-form__button-submit {
+	@include linksHover();
 	border: 4px solid #fff;
 	border-radius: 3px;
 	height: 60px;

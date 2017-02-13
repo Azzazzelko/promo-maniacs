@@ -192,3 +192,9 @@
 		text-decoration: none;
 	}
 }
+
+.big-blocks__link {
+	&:hover {
+		@include linksHover();
+	}
+}

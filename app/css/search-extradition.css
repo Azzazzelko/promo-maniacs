@@ -297,10 +297,11 @@
   vertical-align: top;
   display: inline-block;
   margin-right: 40px;
+  margin-bottom: 10px;
 }
 
 .filters-material {
-  margin-right: 0;
+  margin-right: 40px;
 }
 
 .filters-text {
@@ -310,6 +311,11 @@
   font-family: 'raleway_medium';
   vertical-align: middle;
   margin-right: 5px;
+  transition: all .3s ease-in-out;
+  opacity: 1;
+}
+.filters-text:hover {
+  opacity: 0.7;
 }
 
 .filters-price__selected {
@@ -326,6 +332,11 @@
   width: 25px;
   height: 25px;
   position: relative;
+  transition: all .3s ease-in-out;
+  opacity: 1;
+}
+.filters-button-open:hover {
+  opacity: 0.7;
 }
 .filters-button-open:before {
   background: url('../images/icons-catalog-s8a9aaedf0e.png') 0 -75px no-repeat;
@@ -354,12 +365,17 @@
   height: 5px;
 }
 .filters-price .dropdown-menu .filters-price__select {
+  transition: all .3s ease-in-out;
+  opacity: 1;
   font-size: 16px;
   display: block;
   color: black;
   line-height: 16px;
   font-family: 'raleway_medium';
   margin-bottom: 15px;
+}
+.filters-price .dropdown-menu .filters-price__select:hover {
+  opacity: 0.7;
 }
 .filters-price .dropdown-menu .filters-price__select:last-child {
   margin-bottom: 0;
@@ -615,12 +631,17 @@
 }
 
 .drop-brand-label-text {
+  transition: all .3s ease-in-out;
+  opacity: 1;
   font-size: 16px;
   color: black;
   font-family: 'raleway_medium';
   padding-left: 20px;
   font-weight: normal;
   position: relative;
+}
+.drop-brand-label-text:hover {
+  opacity: 0.7;
 }
 .drop-brand-label-text:before {
   position: absolute;
@@ -665,10 +686,17 @@
   font-family: 'raleway_medium';
   background: #f7689e;
   border-radius: 3px;
+  transition: all 0.3s;
+}
+.filters-brand__form-submit:hover {
+  background: #fe3d86;
+}
+.filters-brand__form-submit:active {
+  background: #b42a5e;
 }
 
 .filters-check-list {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .filters-check-item {
@@ -691,6 +719,10 @@
   position: relative;
   font-weight: normal;
   cursor: pointer;
+  opacity: 1;
+}
+.filters-check-label-text:hover {
+  opacity: 0.8;
 }
 .filters-check-label-text:before {
   position: absolute;
@@ -738,6 +770,9 @@
   border: 1px solid #f7689e;
   color: #f7689e;
   font-family: 'raleway_extrabold';
+  text-decoration: none;
+}
+.paggination-item:hover {
   text-decoration: none;
 }
 

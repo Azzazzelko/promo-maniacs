@@ -31,6 +31,7 @@
 	font-size: 16px;
 	font-family: 'raleway_medium';
 	margin-right: 25px;
+	transition: all 0.3s;
 
 	&:last-child {
 		margin-right: 0;
@@ -52,6 +53,7 @@
 .info__tel,
 .info__tel:hover,
 .info__tel:focus {
+	@include linksHover();
 	display: inline-block;
 	margin-right: 40px;
 	font-size: 26px;
@@ -76,6 +78,7 @@
 .info__cabinet,
 .info__cabinet:hover,
 .info__cabinet:focus {
+	@include linksHover();
 	font-family: 'raleway_extrabold';
 	padding-left: 35px;
 	font-size: 18px;
@@ -140,6 +143,7 @@
 	margin-right: -30px;
 	position: relative;
 	z-index: 3;
+	@include linksHover();
 
 	&:before {
 		@extend %icons;
@@ -157,6 +161,7 @@
 }
 
 .nav-item {
+	transition: all 0.3s;
 	display: inline-block;
 	font-size: 18px;
 	color: black;
@@ -165,6 +170,11 @@
 
 	&:last-child {
 		margin-right: 0;
+	}
+
+	&:hover {
+		color: #f7689e;
+		text-decoration: underline;
 	}
 }
 
@@ -194,6 +204,7 @@
 		right: 222px;
 		position: absolute;
 		border-left: 2px solid #efefef;
+		@include linksHover();
 	}
 
 	.select2-selection.select2-selection--single {
@@ -263,6 +274,12 @@
 	background: transparent;
 	border-radius: 3px;
 	width: 120px;
+	transition: all 0.3s;
+
+	&:hover {
+		color: $pink;
+		border-color: $pink;
+	}
 }
 
 .header-bottom__example {
@@ -273,6 +290,7 @@
 	.example__border {
 		border-bottom: 0.1px dashed #fff;
 		display: inline;
+		@include linksHover();
 	}
 }
 

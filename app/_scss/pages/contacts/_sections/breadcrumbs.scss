@@ -1,3 +1,7 @@
+.breadcrumbs-link {
+	@include linksHover();
+}
+
 .breadcrumbs-list {
 	text-align: center;
 	margin-bottom: 60px;

@@ -46,10 +46,11 @@
 	vertical-align: top;
 	display: inline-block;
 	margin-right: 40px;
+	margin-bottom: 10px;
 }
 
 .filters-material {
-	margin-right: 0;
+	margin-right: 40px;
 }
 
 .filters-text {
@@ -59,6 +60,7 @@
 	font-family: 'raleway_medium';
 	vertical-align: middle;
 	margin-right: 5px;
+	@include linksHover();
 }
 
 .filters-price__selected {
@@ -75,6 +77,7 @@
 	width: 25px;
 	height: 25px;
 	position: relative;
+	@include linksHover();
 
 	&:before {
 		@extend %icons;
@@ -104,6 +107,7 @@
 		}
 
 		.filters-price__select {
+			@include linksHover();
 			font-size: 16px;
 			display: block;
 			color: black;
@@ -167,9 +171,6 @@
 			background: transparent;
 		}
 
-		&.blue:before {
-			background: blue;
-		}
 	}
 
 	.dropdown-menu {
@@ -250,6 +251,7 @@
 }
 
 .drop-brand-label-text {
+	@include linksHover();
 	font-size: 16px;
 	color: black;
 	font-family: 'raleway_medium';
@@ -302,10 +304,19 @@
 	font-family: 'raleway_medium';
 	background: $pink;
 	border-radius: 3px;
+	transition: all 0.3s;
+
+	&:hover {
+		background: #fe3d86;
+	}
+
+	&:active {
+		background: #b42a5e;
+	}
 }
 
 .filters-check-list {
-	margin-top: 20px
+	margin-top: 10px
 }
 
 .filters-check-item {
@@ -329,6 +340,11 @@
 	position: relative;
 	font-weight: normal;
 	cursor: pointer;
+	opacity: 1;
+
+	&:hover {
+		opacity: 0.8;
+	}
 
 	&:before {
 		position: absolute;
@@ -351,4 +367,4 @@
 	left: 3px;
 }
 
-
+	
