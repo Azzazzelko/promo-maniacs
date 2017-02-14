@@ -4,35 +4,27 @@ $(function() {
 	**  slider card **
 	*****************/
 
-	// var $thumbs = $(".slider-thumbs__list .slider-thumbs__item");
-
-	// $thumbs.on("click", function(e){
-	// 	e.preventDefault();
-
-	// 	var $this = $(this);
-	// 	var id = "#carousel-card";
-	// 	var slide = $this.find("a").attr('data-slide-to');
-	// 	var btn = '<a href="'+id+'" data-slide-to="'+slide+'" class="btn_click_only">';
-
-	// 	$this.addClass('active').siblings().removeClass('active');
-	// 	$("body").append(btn);
-	// 	$(".btn_click_only").click();
-	// 	setTimeout(function(){ $(".btn_click_only").remove() }, 1000);
-	// });
-
-	$("#slider-thumbs").slick({
-		infinite: false,
-		vertical: true,
-		verticalSwiping: true,
-		focusOnSelect: true,
-		swipeToSlide: false,
-		slidesToScroll: 1,
-		touchMove:false
+	$('#carousel-card').carousel({
+		ride : false,
+		pause : true,
+		interval : false
 	});
 
-	$("#slider-thumbs").on('click', function(e){
-		console.log("tess");
-	})
+	if ( $("#slider-thumbs").length ){
+		$("#slider-thumbs").slick({
+			infinite: false,
+			vertical: true,
+			verticalSwiping: true,
+			focusOnSelect: true,
+			swipeToSlide: false,
+			slidesToScroll: 1,
+			touchMove:false
+		});
+	}
+
+	$("#slider-thumbs").on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+		$('#carousel-card').carousel(nextSlide);
+	});
 
 	/*************************************
 	**   inner-pop-up - password pop   **
@@ -485,6 +477,7 @@ $(document).ready(function(){
 	/********************
 	*** filters click ***
 	********************/
+	//открываем дроп по нажатию на
 
 	$('.filters-toggle-drop').on('click', function(e){
 		e.preventDefault();
@@ -494,9 +487,27 @@ $(document).ready(function(){
 		$this.parent().parent().find(".dropdown-toggle").dropdown('toggle');
 	});
 
-	/* input mask */
+	/*******************
+	**** input mask ****
+	*******************/
 	if ( $("input[name='tel']").length ) {
 		$("input[name='tel']").mask("+7 (999) 999-99-99",{placeholder:"_"});
 	}
+
+	/*******************
+	**** dropdown fix **
+	*******************/
+	// Фикс дропдауна, при наличии инпутов внутри. (Убираем с кнопок data-toggle)
+
+	$('.filters .dropdown .dropdown-toggle').on('click', function (e) {
+		e.preventDefault();
+		$(this).parent().toggleClass('open');
+	});
+
+	$('body').on('click', function (e) {
+		if ( !$('.filters .dropdown').is(e.target) && $('.filters .dropdown').has(e.target).length === 0 && $('.open').has(e.target).length === 0 ) {
+			$('.filters .dropdown').removeClass('open');
+		};
+	});
 
 }());

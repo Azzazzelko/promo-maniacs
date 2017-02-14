@@ -82,7 +82,7 @@
 
 		&.bomb:before {
 			@extend %pseudo;
-			background: image-url('bomb_small.png') no-repeat;
+			background: image-url('bomb_small.svg') no-repeat;
 			background-size: cover;
 			width: 115px;
 			height: 80px;
@@ -163,16 +163,17 @@
 }
 
 .slick-prev {
-	left: 37%;
+	left: 28px;
 	top: -23px;
-	transform: rotate(90deg) translateX(-50%);
+	transform: rotate(90deg);
 }
 
 .slick-next {
 	top: auto;
-	left: 37%;
+	left: 28px;
+	right: auto;
 	bottom: -45px;
-	transform: rotate(90deg) translateX(-50%);
+	transform: rotate(90deg);
 }
 
 .img-thumbs {

@@ -102,7 +102,7 @@
 .clothing-item.bomb:before {
   left: 25px;
   top: 0;
-  background: url('../images/bomb_small.png?1482329325') no-repeat;
+  background: url('../images/bomb_small.svg?1487061954') no-repeat;
   width: 81px;
   height: 54px;
   z-index: 1;
