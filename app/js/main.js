@@ -510,4 +510,16 @@ $(document).ready(function(){
 		};
 	});
 
+
+	/*******************
+	**** sidebar-items**
+	*******************/
+
+	$('.sidebar-item').on('click', function(e){
+		$('.sidebar-item').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	$('.sidebar-item.active').find('.collapse').addClass('in');
+
 }());

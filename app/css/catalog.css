@@ -857,6 +857,16 @@
 .sidebar-item:last-child {
   margin-bottom: 0;
 }
+.sidebar-item.active .sidebar-item__title {
+  letter-spacing: 3px;
+  color: #f7689e;
+}
+.sidebar-item.active .sidebar-item__title + .sidebar-collapse .sidebar-item__list {
+  color: #f7689e;
+}
+.sidebar-item.active .sidebar-item__link.active:before {
+  left: -40px;
+}
 .sidebar-item .sidebar-item__title[aria-expanded=true] + .sidebar-collapse .sidebar-item__link.active:before {
   left: -40px;
 }

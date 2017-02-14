@@ -10,6 +10,21 @@
 		margin-bottom: 0;
 	}
 
+	&.active {
+		.sidebar-item__title {
+			letter-spacing: 3px;
+			color: $pink;
+
+			& + .sidebar-collapse .sidebar-item__list {
+				color: $pink;
+			}
+		}
+
+		.sidebar-item__link.active:before {
+			left: -40px;
+		}
+	}
+
 	.sidebar-item__title[aria-expanded=true] + .sidebar-collapse {
 		.sidebar-item__link.active:before {
 			left: -40px;
