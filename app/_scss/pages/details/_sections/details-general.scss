@@ -158,6 +158,11 @@
 	}
 }
 
+.slider-thumbs__link {
+	height: 100%;
+	line-height: 52px;
+}
+
 .slick-prev:before, .slick-next:before {
 	color: black;
 }
@@ -177,7 +182,7 @@
 }
 
 .img-thumbs {
-	display: inline-block;
+	display: inline-block !important;
 	vertical-align: middle;
 	max-width: inherit;
 	max-height: 100%;
