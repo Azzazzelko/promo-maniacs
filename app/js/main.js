@@ -487,6 +487,16 @@ $(document).ready(function(){
 		$this.parent().parent().find(".dropdown-toggle").dropdown('toggle');
 	});
 
+	$('.filters-list').on('click', function(e){
+		e.preventDefault();
+		e.stopPropagation();
+
+		var $this = $(this);
+		
+		if ( !$(e.target).hasClass('filters-item__close') ) 
+			$this.parent().find(".dropdown-toggle").dropdown('toggle');
+	});
+
 	/*******************
 	**** input mask ****
 	*******************/

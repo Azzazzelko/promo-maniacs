@@ -385,6 +385,7 @@
 }
 
 .filters-list {
+  cursor: pointer;
   display: inline-block;
   vertical-align: middle;
 }
