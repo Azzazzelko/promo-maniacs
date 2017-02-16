@@ -487,7 +487,7 @@ $(document).ready(function(){
 		$this.parent().parent().find(".dropdown-toggle").dropdown('toggle');
 	});
 
-	$('.filters-list').on('click', function(e){
+	$('.filters-list, .filters-price__selected').on('click', function(e){
 		e.preventDefault();
 		e.stopPropagation();
 
