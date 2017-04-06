@@ -12,10 +12,6 @@
 	}
 }
 
-.header {
-	margin-bottom: 155px;
-}
-
 .news-back,
 .news-back:hover,
 .news-back:focus {
@@ -35,7 +31,7 @@
 .h1-title {
 	font-size: 60px;
 	line-height: 60px;
-	font-family: 'raleway_extrabold';
+	font-family: 'ProximaNova-ExtraBold';
 	width: 100%;
 	letter-spacing: 10px;
 	text-transform: uppercase;
@@ -49,7 +45,7 @@
 .h2-title {
 	text-align: center;
 	font-size: 40px;
-	@include font(ext);
+	font-family: 'ProximaNova-ExtraBold';
 	color: black;
 	margin-bottom: 65px;
 	letter-spacing: 10px;
@@ -69,7 +65,7 @@
 
 	p {
 		font-size: 16px;
-		@include font(med);
+		font-family: 'ProximaNova-Regular';
 		color: black;
 		margin-bottom: 30px;
 	}
@@ -82,7 +78,7 @@
 			padding-left: 20px;
 			position: relative;
 			font-size: 16px;
-			font-family: 'raleway_medium';
+			font-family: 'ProximaNova-Regular';
 			color: black;
 			margin-bottom: 3px;
 
@@ -108,7 +104,7 @@
 		li {
 			padding-left: 20px;
 			font-size: 16px;
-			font-family: 'raleway_medium';
+			font-family: 'ProximaNova-Regular';
 			color: black;
 			margin-bottom: 3px;
 			list-style: none;
@@ -121,7 +117,7 @@
 				content: counter(myCounter) ".";
 				color: $fiol;
 				display: inline;
-				@include font(ext);
+				font-family: 'ProximaNova-ExtraBold';
 				font-size: 16px;
 			}
 		}
@@ -130,7 +126,7 @@
 	table {
 		padding-left: 22px !important;
 		font-size: 16px;
-		@include font(med);
+		font-family: 'ProximaNova-Regular';
 		color: black;
 
 		thead {
@@ -166,7 +162,7 @@
 .h3-title {
 	text-align: center;
 	font-size: 30px;
-	@include font(ext);
+	font-family: 'ProximaNova-ExtraBold';
 	color: black;
 	margin-bottom: 65px;
 	letter-spacing: 10px;
@@ -181,7 +177,7 @@
 	line-height: 36px;
 	margin-bottom: 22px;
 	font-size: 16px;
-	@include font(med);
+	font-family: 'ProximaNova-Regular';
 	color: black;
 
 	&:last-child {

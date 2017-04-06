@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="69.785004mm"
+   height="20.480297mm"
+   viewBox="0 0 247.2697 72.567981"
+   id="svg4412"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs4414" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="113.10008"
+     inkscape:cy="-88.759223"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4417">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-219.2223,-378.93536)">
+    <g
+       id="g4406"
+       transform="translate(7.8571457,172.71707)">
+      <text
+         y="278.66202"
+         x="250.65173"
+         id="text4146"
+         style="font-variant:normal;font-weight:600;font-stretch:normal;font-size:15.53162479px;font-family:Raleway;-inkscape-font-specification:Raleway-SemiBold;writing-mode:lr-tb;fill:#373535;fill-opacity:1;fill-rule:nonzero;stroke:none">
+        <tspan
+           id="tspan4148"
+           sodipodi:role="line"
+           y="278.66202"
+           x="250.65173 268.82373 283.96707 300.53931 309.4234 324.16138 339.44449 355.80084 363.45795 378.63388 394.97159">MANIACS.COM</tspan>
+      </text>
+      <text
+         y="251.95677"
+         x="207.00911"
+         id="text4150"
+         style="font-variant:normal;font-weight:600;font-stretch:normal;font-size:64.05950165px;font-family:Raleway;-inkscape-font-specification:Raleway-SemiBold;writing-mode:lr-tb;fill:#292929;fill-opacity:1;fill-rule:nonzero;stroke:none">
+        <tspan
+           id="tspan4152"
+           sodipodi:role="line"
+           y="251.95677"
+           x="207.00911 250.12115 295.66745 352.74448 411.67923">PR MO</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

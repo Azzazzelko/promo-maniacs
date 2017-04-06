@@ -267,7 +267,7 @@
 .basket-page__item-code {
   font-size: 16px;
   color: #b7b7b7;
-  font-family: 'raleway_medium';
+  font-family: 'ProximaNova-Regular';
   margin-bottom: 15px;
 }
 
@@ -277,7 +277,7 @@
   text-decoration: underline;
   font-size: 16px;
   color: black;
-  font-family: 'raleway_medium';
+  font-family: 'ProximaNova-Regular';
 }
 
 .card-count {
@@ -320,7 +320,7 @@
 .basket-page__item-price {
   margin-left: 40px;
   font-size: 18px;
-  font-family: 'raleway_extrabold';
+  font-family: 'ProximaNova-ExtraBold';
   color: #7261aa;
   margin-right: 55px;
   position: relative;
@@ -337,7 +337,7 @@
 .basket-page__item-total-price {
   font-size: 25px;
   color: #7261aa;
-  font-family: 'raleway_extrabold';
+  font-family: 'ProximaNova-ExtraBold';
   letter-spacing: 5px;
 }
 
@@ -370,7 +370,7 @@
 .basket-page__bottom-price {
   font-size: 25px;
   color: #fff;
-  font-family: 'raleway_extrabold';
+  font-family: 'ProximaNova-ExtraBold';
   margin-right: 60px;
   letter-spacing: 5px;
 }

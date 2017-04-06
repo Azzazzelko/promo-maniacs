@@ -28,14 +28,14 @@
 
 .order-formed-description {
 	font-size: 18px;
-	@include font(med);
+    font-family: 'ProximaNova-Regular';
 	color: black;
 	margin-bottom: 10px; 
 }
 
 .order-formed-tracking {
 	font-size: 18px;
-	@include font(med);
+    font-family: 'ProximaNova-Regular';
 	color: black;
 	margin-bottom: 30px;
 
@@ -51,7 +51,7 @@
 .order-formed__payment-order {
 	position: relative;
 	font-size: 22px;
-	@include font(med);
+    font-family: 'ProximaNova-Regular';
 	color: black;
 }
 
@@ -66,14 +66,14 @@
 
 .order-formed__services {
 	font-size: 18px;
-	@include font(med);
+    font-family: 'ProximaNova-Regular';
 	color: black;
 	margin-bottom: 15px; 
 }
 
 .order-formed__summ {
+    font-family: 'ProximaNova-ExtraBold';
 	font-size: 25px;
-	@include font(ext);
 	color: $fiol;
 	letter-spacing: 5px;
 	margin-bottom: 30px;
@@ -93,7 +93,7 @@
 
 .order-formed__attention {
 	font-size: 18px;
-	@include font(med);
+	font-family: 'ProximaNova-Regular';
 	color: black;
 	margin-bottom: 55px;
 }

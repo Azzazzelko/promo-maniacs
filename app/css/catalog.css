@@ -98,6 +98,7 @@
   border: 5px solid transparent;
   position: relative;
   margin-bottom: 5px;
+  transition: all 0.3s;
 }
 .clothing-item.bomb:before {
   left: 25px;
@@ -109,6 +110,9 @@
 }
 .clothing-item:hover {
   border: 5px solid #7261aa;
+}
+.clothing-item.clothing-item_border-pink:hover {
+  border: 5px solid #f7689e;
 }
 
 .clothing-item__img {
@@ -294,13 +298,16 @@
 .clothing-item__price {
   color: #7261aa;
   font-size: 25px;
-  font-family: 'raleway_extrabold';
+  font-family: 'ProximaNova-ExtraBold';
   line-height: 25px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 25px;
   letter-spacing: 5px;
+}
+.clothing-item__price.old {
+  font-family: 'ProximaNova-ExtraBold';
 }
 
 .clothing-item__button,
@@ -321,7 +328,7 @@
 }
 
 .clothing {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .clothing .wrapper {
   min-height: 200px;
@@ -349,7 +356,7 @@
 .filters {
   min-height: 110px;
   padding: 25px 10px 5px 10px;
-  background: #f7689e;
+  background: #7261aa;
   border-radius: 5px;
   margin-bottom: 50px;
 }
@@ -833,7 +840,7 @@
   color: black;
   font-size: 18px;
   line-height: 26px;
-  font-family: 'raleway_medium';
+  font-family: 'ProximaNova-Regular';
 }
 .paggination-item:last-child {
   margin-right: 0;
@@ -841,7 +848,7 @@
 .paggination-item.active {
   border: 1px solid #f7689e;
   color: #f7689e;
-  font-family: 'raleway_extrabold';
+  font-family: 'ProximaNova-ExtraBold';
   text-decoration: none;
 }
 .paggination-item:hover {
@@ -852,7 +859,7 @@
   text-transform: uppercase;
   font-size: 17px;
   line-height: 17px;
-  font-family: 'raleway_extrabold';
+  font-family: 'raleway_bold';
   color: #7261aa;
   margin-bottom: 30px;
 }
@@ -860,6 +867,7 @@
   margin-bottom: 0;
 }
 .sidebar-item.active .sidebar-item__title {
+  font-family: 'raleway_extrabold';
   letter-spacing: 3px;
   color: #f7689e;
 }
@@ -886,7 +894,6 @@
 .sidebar-item__item,
 .sidebar-item__item__item {
   padding-left: 20px;
-  text-decoration: underline;
   font-size: 16px;
   font-family: 'raleway_medium';
   line-height: 16px;

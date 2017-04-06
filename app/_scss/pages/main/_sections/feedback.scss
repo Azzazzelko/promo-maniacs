@@ -9,11 +9,11 @@
 
 .feedback {
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 
 	.wrapper {
 		background: image-url('new-face.png') no-repeat,
-					$fiol image-url('fiol-block.png') repeat;
+		$fiol image-url('fiol-block.png') repeat;
 		min-height: 500px;
 		padding: 50px 0 55px 0;
 		background-position: center;

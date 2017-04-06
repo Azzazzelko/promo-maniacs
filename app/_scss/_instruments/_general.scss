@@ -31,7 +31,7 @@ body {
 	display: table;
 	font-family: 'raleway_regular';
 	background: image-url('body-bg.png') no-repeat;
-	background-size: cover;
+	background-size: initial;
 }
 
 .wrapper {
@@ -73,7 +73,7 @@ body {
 	line-height: 36px;
 	margin-bottom: 22px;
 	font-size: 16px;
-	@include font(med);
+	font-family: 'ProximaNova-Regular';
 	color: black;
 
 	&:last-child {

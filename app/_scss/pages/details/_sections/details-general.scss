@@ -1,5 +1,5 @@
 .card {
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 
 	.wrapper {
 		min-height: 200px;
@@ -30,7 +30,7 @@
 .card-articul {
 	font-size: 16px;
 	color: #d3d3d3;
-	font-family: 'raleway_medium';
+    font-family: 'ProximaNova-Regular';
 	margin-bottom: 40px;
 }
 
@@ -94,7 +94,7 @@
 }
 
 #slider-thumbs {
-	height: 420px;
+	height: 450px;
 	display: inline-block;
 	position: relative;
 	user-select: none;
@@ -117,6 +117,16 @@
 	position: relative;
 	border: 4px solid transparent !important;
 	border-left: 0px solid transparent !important;
+
+	&.slick-current.slick-active.slick-active_block {
+		border: 4px solid transparent !important;
+		border-left: 0px solid transparent !important;
+
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
 
 	&.slick-current.slick-active {
 		.slider-thumbs__link {
@@ -291,7 +301,7 @@
 	display: inline-block;
 	color: $fiol;
 	font-size: 25px;
-	@include font(ext);
+    font-family: 'ProximaNova-ExtraBold';
 	letter-spacing: 5px;
 	margin-right: 40px;
 	vertical-align: middle;
@@ -584,7 +594,7 @@
 	padding-left: 20px;
 	position: relative;
 	font-size: 16px;
-	@include font(med);
+    font-family: 'ProximaNova-Regular';
 	color: black;
 	margin-bottom: 3px;
 

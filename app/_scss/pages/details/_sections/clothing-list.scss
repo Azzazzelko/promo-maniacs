@@ -1,8 +1,8 @@
 .clothing-list {
 	margin-bottom: 50px;
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .clothing-item  {
@@ -10,6 +10,7 @@
 	border: 5px solid transparent;
 	position: relative;
 	margin-bottom: 5px;
+	transition: all 0.3s;
 
 	&.bomb:before {
 		@extend %pseudo;
@@ -23,6 +24,10 @@
 
 	&:hover {
 		border: 5px solid $fiol;
+	}
+
+	&.clothing-item_border-pink:hover {
+		border: 5px solid #f7689e;
 	}
 }
 
@@ -78,13 +83,17 @@
 .clothing-item__price {
 	color: $fiol;
 	font-size: 25px;
-	font-family: 'raleway_extrabold';
+	font-family: 'ProximaNova-ExtraBold';
 	line-height: 25px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	margin-bottom: 25px;
 	letter-spacing: 5px;
+
+	&.old {
+		font-family: 'ProximaNova-ExtraBold';
+	}
 }
 
 .clothing-item__button, 

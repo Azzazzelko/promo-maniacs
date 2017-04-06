@@ -114,7 +114,7 @@
 .basket-page__item-code {
 	font-size: 16px;
 	color: #b7b7b7;
-	@include font(med);
+	font-family: 'ProximaNova-Regular';
 	margin-bottom: 15px;
 }
 
@@ -124,7 +124,7 @@
 	text-decoration: underline;
 	font-size: 16px;
 	color: black;
-	@include font(med);
+	font-family: 'ProximaNova-Regular';
 }
 
 .card-count {
@@ -171,7 +171,7 @@
 .basket-page__item-price {
 	margin-left: 40px;
 	font-size: 18px;
-	@include font(ext);
+	font-family: 'ProximaNova-ExtraBold';
 	color: $fiol;
 	margin-right: 55px;
 	position: relative;
@@ -189,7 +189,7 @@
 .basket-page__item-total-price {
 	font-size: 25px;
 	color: $fiol;
-	@include font(ext);
+	font-family: 'ProximaNova-ExtraBold';
 	letter-spacing: 5px;
 }
 
@@ -221,7 +221,7 @@
 .basket-page__bottom-price {
 	font-size: 25px;
 	color: #fff;
-	@include font(ext);
+	font-family: 'ProximaNova-ExtraBold';
 	margin-right: 60px;
 	letter-spacing: 5px;
 }

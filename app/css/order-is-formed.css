@@ -109,14 +109,14 @@
 
 .order-formed-description {
   font-size: 18px;
-  font-family: 'raleway_medium';
+  font-family: 'ProximaNova-Regular';
   color: black;
   margin-bottom: 10px;
 }
 
 .order-formed-tracking {
   font-size: 18px;
-  font-family: 'raleway_medium';
+  font-family: 'ProximaNova-Regular';
   color: black;
   margin-bottom: 30px;
 }
@@ -131,7 +131,7 @@
 .order-formed__payment-order {
   position: relative;
   font-size: 22px;
-  font-family: 'raleway_medium';
+  font-family: 'ProximaNova-Regular';
   color: black;
 }
 
@@ -146,14 +146,14 @@
 
 .order-formed__services {
   font-size: 18px;
-  font-family: 'raleway_medium';
+  font-family: 'ProximaNova-Regular';
   color: black;
   margin-bottom: 15px;
 }
 
 .order-formed__summ {
+  font-family: 'ProximaNova-ExtraBold';
   font-size: 25px;
-  font-family: 'raleway_extrabold';
   color: #7261aa;
   letter-spacing: 5px;
   margin-bottom: 30px;
@@ -173,7 +173,7 @@
 
 .order-formed__attention {
   font-size: 18px;
-  font-family: 'raleway_medium';
+  font-family: 'ProximaNova-Regular';
   color: black;
   margin-bottom: 55px;
 }

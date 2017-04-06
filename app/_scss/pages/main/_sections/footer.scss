@@ -38,7 +38,7 @@
 	padding-left: 30px;
 	color: #fff;
 	font-size: 22px;
-	font-family: 'raleway_extrabold';
+	font-family: 'ProximaNova-ExtraBold';
 	position: relative;
 	margin-bottom: 50px;
 
@@ -55,7 +55,7 @@
 	padding-left: 30px;
 	color: #fff;
 	font-size: 18px;
-	font-family: 'raleway_medium';
+	font-family: 'ProximaNova-Regular';
 
 	&:before {
 		top: 3px;
@@ -156,6 +156,7 @@
 }
 
 .footer-copyright {
+	font-family: 'ProximaNova-Regular';
 	font-size: 14px;
 	color: #746b90;
 }

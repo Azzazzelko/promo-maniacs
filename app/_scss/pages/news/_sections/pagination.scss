@@ -15,7 +15,7 @@
 	color: black;
 	font-size: 18px;
 	line-height: 26px;
-	font-family: 'raleway_medium';
+	font-family: 'ProximaNova-Regular';
 
 	&:last-child {
 		margin-right: 0;
@@ -24,7 +24,7 @@
 	&.active {
 		border: 1px solid $pink;
 		color: $pink;
-		font-family: 'raleway_extrabold';
+		font-family: 'ProximaNova-ExtraBold';
 		text-decoration: none;
 	}
 

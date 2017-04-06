@@ -69,7 +69,7 @@
 .products-in-order__item-code {
 	font-size: 16px;
 	color: #b7b7b7;
-	font-family: 'raleway_medium';
+	font-family: 'ProximaNova-Regular';
 	margin-bottom: 15px;
 }
 
@@ -87,12 +87,12 @@
 	font-size: 18px;
 	text-align: center;
 	color: black;
-	@include font(med);
+	font-family: 'ProximaNova-Regular';
 }
 
 .products-in-order__item-price {
 	font-size: 18px;
-	font-family: 'raleway_extrabold';
+	font-family: 'ProximaNova-ExtraBold';
 	color: #7261aa;
 	position: relative;
 	letter-spacing: 3px;
@@ -104,6 +104,6 @@
 	display: block;
 	font-size: 25px;
 	color: #7261aa;
-	font-family: 'raleway_extrabold';
+	font-family: 'ProximaNova-ExtraBold';
 	letter-spacing: 5px;
 }
